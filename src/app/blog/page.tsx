@@ -26,6 +26,14 @@ export default function BlogPage() {
       category: "International",
       date: "21 Avril 2026",
       image: "/images/blog/pfl-mena.png"
+    },
+    {
+      id: "eva-dourthe-ksw-116",
+      title: "Eva Dourthe : Masterclass en Terre Polonaise au KSW 116",
+      excerpt: "Retour sur la performance magistrale d'Eva Dourthe face à Ewelina Woźniak. Une victoire par soumission qui marque un tournant pour 'La Soldat'.",
+      category: "Événement",
+      date: "15 Mars 2026",
+      image: "/images/blog/eva-dourthe-victory-real.jpg"
     }
   ];
 
