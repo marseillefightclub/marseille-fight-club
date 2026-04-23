@@ -90,31 +90,7 @@ export default function ArticlePage() {
             L'image parle d'elle-même. Cette rage de vaincre, cristallisée lors de ses victoires historiques par K.O. sur la scène internationale, traduit une faim de loup qui ne l'a jamais quitté. Même avec le statut de champion incontesté, Wilson Varela conserve dans le regard la férocité insatiable de ses premières années au Marseille Fight Club.
           </p>
 
-          <h2 className="text-3xl font-oswald font-bold text-white uppercase mt-12 mb-6 tracking-widest flex items-center">
-            <span className="bg-mfc-red w-8 h-1 mr-4 block"></span>
-            Face à Lui : Le Vétéran Davy Gallon
-          </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-10 items-center">
-            <div className="order-2 md:order-1 relative h-[400px] rounded-lg overflow-hidden border border-white/10">
-              <Image 
-                src="/images/blog/davy-gallon.png" 
-                alt="Davy Gallon, combattant MMA" 
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="order-1 md:order-2">
-              <p className="mb-4">
-                L'obstacle devant lui porte le nom de Davy Gallon. Vétéran reconnu du circuit, Gallon est un combattant complet doté d'une expérience colossale. Avec des passages remarqués au Bellator et une résilience à toute épreuve, il représente le test ultime pour The Prototype.
-              </p>
-              <p>
-                <strong>Ses forces ?</strong> Un grappling étouffant, une excellente gestion de la cage et une capacité à dicter le rythme dans les derniers rounds.
-                <br/>
-                <strong>Le point faible ?</strong> Il a parfois montré des difficultés face aux strikers longs et créatifs, exactement le profil de notre poulain.
-              </p>
-            </div>
-          </div>
 
           <h2 className="text-3xl font-oswald font-bold text-white uppercase mt-12 mb-6 tracking-widest flex items-center">
             <span className="bg-mfc-red w-8 h-1 mr-4 block"></span>
