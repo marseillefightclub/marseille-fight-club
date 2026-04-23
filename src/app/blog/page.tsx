@@ -4,6 +4,14 @@ import Image from "next/image";
 export default function BlogPage() {
   const articles = [
     {
+      id: "ylies-djiroun-pride-of-arabia-dubai",
+      title: "Ylies Djiroun au PFL MENA : 'Broly' à la Conquête de Dubaï",
+      excerpt: "Découvrez le portrait d'Ylies Djiroun avant son combat historique au Pride of Arabia le 24 mai 2026 à la Coca-Cola Arena de Dubaï.",
+      category: "Événement",
+      date: "23 Avril 2026",
+      image: "/images/blog/ylies-victory.jpg"
+    },
+    {
       id: "wilson-varela-vs-davy-gallon-hexagone-mma-44",
       title: "Wilson Varela En Route Vers Les 100 000 € À L'Hexagone MMA 44",
       excerpt: "Analyse complète de la demi-finale très attendue entre Wilson 'The Prototype' Varela du Marseille Fight Club et Davy Gallon lors de l'Hexagone MMA 44 à l'Arkéa Arena de Bordeaux.",
@@ -51,12 +59,12 @@ export default function BlogPage() {
                    </span>
                 </div>
               </div>
-              <div className="p-6 flex flex-col flex-grow">
+              <div className="p-6 flex flex-col grow">
                 <p className="text-gray-400 text-sm font-inter mb-3">{article.date}</p>
                 <h2 className="text-2xl font-oswald font-bold text-white uppercase tracking-wide mb-3 group-hover:text-mfc-red transition-colors duration-300 line-clamp-2">
                   {article.title}
                 </h2>
-                <p className="text-gray-400 font-inter text-sm mb-6 flex-grow line-clamp-3">
+                <p className="text-gray-400 font-inter text-sm mb-6 grow line-clamp-3">
                   {article.excerpt}
                 </p>
                 <div className="mt-auto inline-flex items-center text-white/50 font-oswald uppercase tracking-widest text-sm group-hover:text-mfc-red transition-colors duration-300">
