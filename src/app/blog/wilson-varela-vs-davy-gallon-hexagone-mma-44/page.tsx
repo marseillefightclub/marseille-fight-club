@@ -29,7 +29,7 @@ export default function ArticlePage() {
             fill
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-mfc-dark via-mfc-dark/50 to-transparent"></div>
+          <div className="absolute inset-0 bg-linear-to-t from-mfc-dark via-mfc-dark/50 to-transparent"></div>
           <div className="absolute bottom-0 left-0 p-8">
             <div className="flex gap-3 mb-4">
               <span className="px-3 py-1 bg-mfc-red text-white text-xs font-bold uppercase tracking-widest rounded-sm">Événement</span>
@@ -127,10 +127,7 @@ export default function ArticlePage() {
             L'Arkéa Arena sera le théâtre d'une nuit de violence et de technique. Le format du <em>Hexagone MMA 44</em> est pensé pour le spectacle total : entrées pyrotechniques, show à l'américaine et commentateurs de classe mondiale. Les fans attendent cette demi-finale avec impatience, beaucoup la qualifiant de "vraie finale avant l'heure".
           </p>
 
-          <h2 className="text-3xl font-oswald font-bold text-white uppercase mt-12 mb-6 tracking-widest flex items-center">
-            <span className="bg-mfc-red w-8 h-1 mr-4 block"></span>
-            Conclusion
-          </h2>
+
 
           <p className="pb-8">
             Si Wilson « The Prototype » Varela parvient à lever les bras à l'issue de ce choc titanique contre Davy Gallon, il ne s'assurera pas simplement un billet pour la finale. Il cimentera sa place parmi l'élite européenne des poids légers et fera rayonner les couleurs du <strong>Marseille Fight Club</strong> à l'international. Rendez-vous le 29 mai. Ne clignez pas des yeux.

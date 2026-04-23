@@ -107,10 +107,7 @@ export default function ArticlePage() {
             <footer className="text-sm text-mfc-red mt-2 font-oswald uppercase tracking-widest not-italic">— Coach Principal, Marseille Fight Club</footer>
           </blockquote>
 
-          <h2 className="text-3xl font-oswald font-bold text-white uppercase mt-12 mb-6 tracking-widest flex items-center">
-            <span className="bg-mfc-red w-8 h-1 mr-4 block"></span>
-            Conclusion : La Suite de la Saison
-          </h2>
+
 
           <p className="pb-8">
             L'impact de cette victoire par TKO résonne bien au-delà de la cage saoudienne. En s'imposant avec autant d'autorité au <strong>PFL MENA</strong>, Souhil Tairi fait le plein de points pour la saison régulière et confirme sa place parmi les hommes les plus dangereux du circuit. La montée en puissance internationale du Marseille Fight Club est en marche. La guerre continue, et Tairi est prêt pour la suite.

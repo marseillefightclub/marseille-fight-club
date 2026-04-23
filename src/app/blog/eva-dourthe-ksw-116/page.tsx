@@ -54,23 +54,20 @@ export default function ArticlePage() {
             Le Profil d'une Guerrière Complète
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-10 items-center">
-            <div>
-              <p className="mb-4">
-                Surnommée "La Soldat", Eva Dourthe n'est plus à présenter aux amateurs de MMA européen. Ceinture noire de Judo, elle a su transposer les codes de la voie de la souplesse vers l'octogone avec une efficacité redoutable.
-              </p>
-              <p>
-                Passée par des organisations prestigieuses comme l'Oktagon MMA, le Cage Warriors ou encore l'Hexagone MMA, Dourthe est arrivée à la KSW avec un bagage technique immense et une détermination sans faille. Son style, mêlant un grappling d'élite et une gestion de la distance millimétrée, fait d'elle une adversaire crainte de toutes.
-              </p>
-            </div>
-            <div className="relative h-[400px] rounded-lg overflow-hidden border border-white/10">
-              <Image 
-                src="/images/blog/eva-dourthe-action-real.jpg" 
-                alt="Eva Dourthe en combat" 
-                fill
-                className="object-cover"
-              />
-            </div>
+          <p className="mb-4 mt-6">
+            Surnommée "La Soldat", Eva Dourthe n'est plus à présenter aux amateurs de MMA européen. Ceinture noire de Judo, elle a su transposer les codes de la voie de la souplesse vers l'octogone avec une efficacité redoutable.
+          </p>
+          <p className="mb-8">
+            Passée par des organisations prestigieuses comme l'Oktagon MMA, le Cage Warriors ou encore l'Hexagone MMA, Dourthe est arrivée à la KSW avec un bagage technique immense et une détermination sans faille. Son style, mêlant un grappling d'élite et une gestion de la distance millimétrée, fait d'elle une adversaire crainte de toutes.
+          </p>
+
+          <div className="relative w-full h-[400px] rounded-xl mb-12 overflow-hidden border border-white/10">
+            <Image 
+              src="/images/blog/eva-dourthe-action-real.jpg" 
+              alt="Eva Dourthe en combat" 
+              fill
+              className="object-cover"
+            />
           </div>
 
           <h2 className="text-3xl font-oswald font-bold text-white uppercase mt-12 mb-6 tracking-widest flex items-center">
@@ -104,14 +101,7 @@ export default function ArticlePage() {
             Le Courage malgré l'Adversité
           </h2>
 
-          <div className="relative w-full h-[400px] rounded-xl mb-8 overflow-hidden border border-white/10">
-            <Image 
-              src="/images/blog/ewelina-wozniak.jpg" 
-              alt="Ewelina Woźniak" 
-              fill
-              className="object-cover"
-            />
-          </div>
+
           <p className="mb-8 text-justify">
             Il est important de souligner le courage héroïque d'Ewelina Woźniak. L'athlète polonaise a révélé par la suite s'être blessée sérieusement au sternum dès le début du premier round. Malgré une douleur atroce et des difficultés respiratoires, elle a continué à se battre jusqu'au bout. Hospitalisée après le combat pour un hématome médiastinal et un pneumothorax, elle a dû subir une intervention chirurgicale réussie à la fin du mois de mars.
           </p>
