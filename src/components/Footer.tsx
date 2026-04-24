@@ -12,28 +12,27 @@ export default function Footer() {
               Marseille <span className="text-mfc-red">Fight Club</span>
             </h3>
             <p className="text-gray-400 font-light max-w-sm">
-              L'excellence martiale au cœur de Marseille. Rejoignez notre communauté de combattants 
-              et dépassez vos limites dans un environnement premium et bienveillant.
+              Rejoignez notre communauté de combattants. Marseille dans l'âme, bienveillance dans le vestiaire, fierté sur la cage..
             </p>
           </div>
           
           <div>
             <h4 className="text-lg font-oswald font-bold text-white uppercase mb-4">Liens Rapides</h4>
             <ul className="space-y-2">
-              <li><a href="#about" className="text-gray-400 hover:text-mfc-red transition-colors">Le Club</a></li>
-              <li><a href="#coaches" className="text-gray-400 hover:text-mfc-red transition-colors">Nos Coachs</a></li>
-              <li><a href="#pricing" className="text-gray-400 hover:text-mfc-red transition-colors">Tarifs & Inscription</a></li>
-              <li><a href="/blog" className="text-gray-400 hover:text-mfc-red transition-colors">Blog & Actualités</a></li>
+              <li><a href="club" className="text-gray-400 hover:text-mfc-red transition-colors">Le Club</a></li>
+              <li><a href="coachs" className="text-gray-400 hover:text-mfc-red transition-colors">Nos Coachs</a></li>
+              <li><a href="tarifs" className="text-gray-400 hover:text-mfc-red transition-colors">Tarifs & Inscription</a></li>
+              <li><a href="blog" className="text-gray-400 hover:text-mfc-red transition-colors">Blog & Actualités</a></li>
             </ul>
           </div>
           
           <div>
             <h4 className="text-lg font-oswald font-bold text-white uppercase mb-4">Contact</h4>
             <ul className="space-y-2 text-gray-400">
-              <li>123 Avenue du Prado</li>
-              <li>13008 Marseille, France</li>
+              <li>268 Avenue de la Capelette</li>
+              <li>13010 Marseille, France</li>
               <li><a href="mailto:contact@marseillefightclub.com" className="hover:text-mfc-red transition-colors">contact@marseillefightclub.com</a></li>
-              <li>+33 6 12 34 56 78</li>
+              <li>+33 6 43 40 76 45</li>
             </ul>
           </div>
         </div>
@@ -49,7 +48,7 @@ export default function Footer() {
             </p>
           </div>
           <div className="flex gap-4">
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-mfc-red hover:text-white transition-all duration-300 transform hover:scale-110 shadow-lg cursor-pointer">
+            <a href="https://www.instagram.com/marseillefightclub/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-mfc-red hover:text-white transition-all duration-300 transform hover:scale-110 shadow-lg cursor-pointer">
               <span className="sr-only">Instagram</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
             </a>

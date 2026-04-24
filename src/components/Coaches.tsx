@@ -5,22 +5,25 @@ import Image from "next/image";
 
 const coaches = [
   {
-    name: "Julien 'The Gorilla' M.",
-    role: "Head Coach MMA & Grappling",
-    image: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=1000&auto=format&fit=crop",
-    bio: "Ex-combattant pro, ceinture noire de JJB. Un technicien hors pair.",
+    name: "Jean Michel Froissard 'Papy'",
+    role: "Head Coach MMA",
+    image: "/images/coaches/papy.png",
+    bio: "Fondateur du Marseille fight Club.",
+    instagram: "https://www.instagram.com/foissardjm/",
   },
   {
-    name: "Sarah 'Lightning' D.",
-    role: "Coach Striking & Muay Thaï",
-    image: "https://images.unsplash.com/photo-1548690312-e3b507d8c110?q=80&w=1000&auto=format&fit=crop",
-    bio: "Championne d'Europe de Kickboxing. Spécialiste du pied-poing.",
+    name: "Hassou",
+    role: "Coach Boxe Anglaise",
+    image: "/images/coaches/hassou.png",
+    bio: "Ex-combattant, transmet rigueur et technique.",
+    instagram: "https://www.instagram.com/hassou_captaincrochet/",
   },
   {
-    name: "Marcus T.",
-    role: "Préparateur Physique",
-    image: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=1000&auto=format&fit=crop",
-    bio: "Expert en explosivité et cardio. Prépare les athlètes de haut niveau.",
+    name: "Souhil Taïri",
+    role: "Coach Grappling",
+    image: "/images/coaches/souhil.png",
+    bio: "Combattant pro MMA PFL MENA, ceinture violette Luta Livre.",
+    instagram: "https://www.instagram.com/souhil.t/",
   }
 ];
 
@@ -35,9 +38,9 @@ export default function Coaches() {
             viewport={{ once: true }}
             className="text-4xl md:text-5xl font-oswald font-bold uppercase tracking-wide text-white"
           >
-            L'Élite de <span className="text-mfc-red">l'Encadrement</span>
+            Une équipe <span className="text-mfc-red">d'Encadrement</span>
           </motion.h2>
-          <p className="mt-4 text-xl text-gray-400 font-light">Des experts pour vous guider vers le sommet.</p>
+          <p className="mt-4 text-xl text-gray-400 font-light">En groupe ou en individuel.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
@@ -48,8 +51,14 @@ export default function Coaches() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group relative overflow-hidden rounded-xl bg-mfc-dark h-[400px] md:h-[500px] shadow-2xl"
+              className="group relative overflow-hidden rounded-xl bg-mfc-dark h-[400px] md:h-[500px] shadow-2xl cursor-pointer"
             >
+              <a 
+                href={coach.instagram} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="absolute inset-0 z-10"
+              />
               <Image 
                 src={coach.image} 
                 alt={coach.name} 

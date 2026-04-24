@@ -24,8 +24,8 @@ export default function ArticlePage() {
         {/* Header Image */}
         <div className="relative w-full h-[400px] md:h-[500px] rounded-xl overflow-hidden mb-10 shadow-2xl shadow-mfc-red/10 border border-white/5">
           <Image 
-            src="/images/blog/hexagone-44.png" 
-            alt="Ambiance spectaculaire dans la cage lors de l'Hexagone MMA 44" 
+            src="/images/blog/varela-fight.jpg" 
+            alt="Wilson Varela célébrant sa victoire" 
             fill
             className="object-cover"
           />

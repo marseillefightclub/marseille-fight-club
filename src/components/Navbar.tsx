@@ -37,7 +37,7 @@ export default function Navbar() {
                 src="/images/logo.png" 
                 alt="Marseille Fight Club Logo Gorilla" 
                 fill
-                className="object-contain invert mix-blend-screen opacity-90 group-hover:opacity-100 transition-opacity"
+                className="object-contain opacity-90 group-hover:opacity-100 transition-opacity"
                 sizes="(max-width: 768px) 56px, 64px"
                 priority
               />

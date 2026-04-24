@@ -7,18 +7,18 @@ export default function About() {
   const features = [
     {
       icon: <Shield size={40} className="text-mfc-red" />,
-      title: "Discipline",
-      description: "Notre méthodologie est forgée dans la rigueur. Le talent n'est rien sans le travail acharné."
+      title: "Ancré à Marseille",
+      description: "Un club à l'image de la ville : intense, chaleureux, authentique."
     },
     {
       icon: <Zap size={40} className="text-mfc-red" />,
-      title: "Performance",
-      description: "Des entraînements conçus pour repousser vos limites physiques et mentales."
+      title: "MMA & combat",
+      description: "Boxe, grappling, arts martiaux mixtes pour tous niveaux.."
     },
     {
       icon: <Dumbbell size={40} className="text-mfc-red" />,
-      title: "Haut Niveau",
-      description: "Une infrastructure de pointe et un encadrement par des professionnels du MMA."
+      title: "Progression réelle",
+      description: "Du premier cours débutant à la compétition, un suivi individualisé.."
     }
   ];
 
@@ -33,7 +33,7 @@ export default function About() {
             transition={{ duration: 0.6 }}
             className="text-4xl md:text-5xl font-oswald font-bold uppercase tracking-wide text-white"
           >
-            L'Antre de la <span className="text-mfc-red">Grandeur</span>
+            Sports de combat <span className="text-mfc-red">& MMA</span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -42,8 +42,7 @@ export default function About() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="mt-6 text-xl text-gray-400 font-light"
           >
-            Le Marseille Fight Club n'est pas qu'une simple salle, c'est un écosystème dédié au dépassement de soi. 
-            Que vous soyez débutant ou combattant pro, notre mission est la même : libérer votre plein potentiel.
+            Au cœur de la cité phocéenne, le Marseille Fight Club est une salle de référence dédiée aux sports de combat et au MMA. Fondé par Jean-Michel Froissard, véritable passionné des arts martiaux, le club allie exigence sportive et bienveillance humaine. Chaque élève — débutant ou compétiteur — y trouve un cadre sérieux, des coachs expérimentés et une progression concrète. L'ambiance est familiale, mais le travail reste au cœur de tout : discipline, respect et dépassement de soi guident chaque séance.
           </motion.p>
         </div>
 

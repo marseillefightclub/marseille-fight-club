@@ -28,7 +28,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
           className="mt-6 text-xl md:text-2xl text-gray-300 font-light max-w-2xl tracking-wide"
         >
-          Discipline. Performance. Respect. Le centre de MMA premium de la cité phocéenne.
+          Discipline. Performance. Respect. Le centre de MMA N°1 de la cité phocéenne.
         </motion.p>
 
         <motion.div
@@ -37,10 +37,10 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.6 }}
           className="mt-10 flex flex-col sm:flex-row gap-4 w-full sm:w-auto px-4 sm:px-0"
         >
-          <a href="#contact" className="w-full sm:w-auto text-center px-6 py-5 sm:px-8 sm:py-4 bg-mfc-red text-white font-oswald text-xl uppercase tracking-widest hover:bg-red-700 transition-colors duration-300 transform hover:scale-105 active:scale-95 shadow-lg shadow-red-900/50">
-            Rejoindre l'élite
+          <a href="tarifs" className="w-full sm:w-auto text-center px-6 py-5 sm:px-8 sm:py-4 bg-mfc-red text-white font-oswald text-xl uppercase tracking-widest hover:bg-red-700 transition-colors duration-300 transform hover:scale-105 active:scale-95 shadow-lg shadow-red-900/50">
+            Rejoignez Nous
           </a>
-          <a href="#about" className="w-full sm:w-auto text-center px-6 py-5 sm:px-8 sm:py-4 bg-transparent border border-white/30 text-white font-oswald text-xl uppercase tracking-widest hover:bg-white/10 transition-colors duration-300">
+          <a href="club" className="w-full sm:w-auto text-center px-6 py-5 sm:px-8 sm:py-4 bg-transparent border border-white/30 text-white font-oswald text-xl uppercase tracking-widest hover:bg-white/10 transition-colors duration-300">
             Découvrir le club
           </a>
         </motion.div>
@@ -53,7 +53,7 @@ export default function Hero() {
           className="mt-12 flex justify-center w-full"
         >
           <a 
-            href="https://instagram.com/" 
+            href="https://www.instagram.com/marseillefightclub/" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="group flex flex-col items-center gap-3 text-white/60 hover:text-white transition-colors duration-300"

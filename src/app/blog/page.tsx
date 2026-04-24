@@ -17,7 +17,7 @@ export default function BlogPage() {
       excerpt: "Analyse complète de la demi-finale très attendue entre Wilson 'The Prototype' Varela du Marseille Fight Club et Davy Gallon lors de l'Hexagone MMA 44 à l'Arkéa Arena de Bordeaux.",
       category: "Événement",
       date: "21 Avril 2026",
-      image: "/images/blog/hexagone-44.png"
+      image: "/images/blog/varela-fight.jpg"
     },
     {
       id: "souhil-tairi-pfl-mena",
@@ -44,7 +44,7 @@ export default function BlogPage() {
           Notre <span className="text-mfc-red">Blog</span>
         </h1>
         <p className="text-gray-400 text-lg max-w-2xl mx-auto text-center mb-16">
-          Retrouvez toutes les actualités du club, les annonces de combats de nos athlètes, et nos conseils d'entraînement.
+          Retrouvez toutes les actualités du club, les annonces de combats de nos athlètes.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
