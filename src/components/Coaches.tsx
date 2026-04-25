@@ -22,7 +22,7 @@ const coaches = [
     name: "Souhil Taïri",
     role: "Coach Grappling",
     image: "/images/coaches/souhil.png",
-    bio: "Combattant pro MMA PFL MENA, ceinture violette Luta Livre.",
+    bio: "Combattant pro MMA PFL MENA, ceinture Marron Luta Livre.",
     instagram: "https://www.instagram.com/souhil.t/",
   }
 ];
@@ -40,7 +40,7 @@ export default function Coaches() {
           >
             Une équipe <span className="text-mfc-red">d'Encadrement</span>
           </motion.h2>
-          <p className="mt-4 text-xl text-gray-400 font-light">En groupe ou en individuel.</p>
+          <p className="mt-4 text-xl text-gray-400 font-light">En groupe ou coaching individuel.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
@@ -57,7 +57,7 @@ export default function Coaches() {
                 href={coach.instagram} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="absolute inset-0 z-10"
+                className="absolute inset-0 z-20"
               />
               <Image 
                 src={coach.image} 
@@ -67,6 +67,23 @@ export default function Coaches() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
               
+              {/* Instagram Icon */}
+              <div className="absolute top-6 right-6 z-10 text-white/50">
+                <svg 
+                  viewBox="0 0 24 24" 
+                  fill="none" 
+                  stroke="currentColor" 
+                  strokeWidth="2" 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round"
+                  className="w-6 h-6"
+                >
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+                </svg>
+              </div>
+
               <div className="absolute bottom-0 left-0 w-full p-8 translate-y-8 group-hover:translate-y-0 transition-transform duration-300">
                 <p className="text-mfc-red font-oswald uppercase tracking-widest text-sm mb-2">{coach.role}</p>
                 <h3 className="text-3xl font-oswald font-bold text-white mb-3">{coach.name}</h3>

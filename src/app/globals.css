@@ -23,4 +23,11 @@
   .text-glow {
     text-shadow: 0 0 20px rgba(218, 41, 28, 0.5);
   }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
 }

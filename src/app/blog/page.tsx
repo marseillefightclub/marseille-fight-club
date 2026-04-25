@@ -1,5 +1,9 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+import { useRef } from "react";
 
 export default function BlogPage() {
   const articles = [
@@ -37,52 +41,165 @@ export default function BlogPage() {
     }
   ];
 
-  return (
-    <main className="min-h-screen bg-mfc-dark pt-32 pb-20 px-4">
-      <div className="max-w-7xl mx-auto">
-        <h1 className="text-5xl md:text-6xl font-oswald font-bold text-white mb-4 uppercase tracking-wider text-center">
-          Notre <span className="text-mfc-red">Blog</span>
-        </h1>
-        <p className="text-gray-400 text-lg max-w-2xl mx-auto text-center mb-16">
-          Retrouvez toutes les actualités du club, les annonces de combats de nos athlètes.
-        </p>
+  const heroArticle = articles[0];
+  const gridArticles = articles.slice(1);
+  const carouselArticles = [...articles].reverse();
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {articles.map((article) => (
+  const carouselRef = useRef<HTMLDivElement>(null);
+
+  const scroll = (direction: 'left' | 'right') => {
+    if (carouselRef.current) {
+      const { scrollLeft, clientWidth } = carouselRef.current;
+      const scrollTo = direction === 'left' ? scrollLeft - clientWidth / 2 : scrollLeft + clientWidth / 2;
+      carouselRef.current.scrollTo({ left: scrollTo, behavior: 'smooth' });
+    }
+  };
+
+  return (
+    <main className="min-h-screen bg-mfc-dark pt-32 pb-0 overflow-x-hidden">
+      {/* Header */}
+      <div className="max-w-7xl mx-auto px-4 mb-12">
+        <h1 className="text-5xl md:text-7xl font-oswald font-bold text-white uppercase tracking-tighter leading-none mb-4">
+          The <span className="text-mfc-red">Press</span>
+        </h1>
+        <p className="text-gray-500 text-lg font-inter uppercase tracking-widest border-l-2 border-mfc-red pl-6">
+          Actualités & Analyses du Marseille Fight Club
+        </p>
+      </div>
+
+      {/* Hero Article */}
+      <section className="mb-24">
+        <Link href={`/blog/${heroArticle.id}`} className="group block">
+          <div className="relative w-full aspect-video md:aspect-21/9 max-h-[500px] overflow-hidden mb-8">
+            <Image 
+              src={heroArticle.image} 
+              alt={heroArticle.title}
+              fill
+              className="object-cover group-hover:scale-105 transition-transform duration-1000"
+              priority
+            />
+          </div>
+          <div className="max-w-7xl mx-auto px-4">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+              <div className="lg:col-span-8">
+                <span className="inline-block px-3 py-1 bg-mfc-red text-white text-[10px] font-bold uppercase tracking-widest mb-4">
+                  Featured Story
+                </span>
+                <h2 className="text-3xl md:text-5xl font-oswald font-bold text-white uppercase leading-none group-hover:text-mfc-red transition-colors duration-300">
+                  {heroArticle.title}
+                </h2>
+              </div>
+              <div className="lg:col-span-4 lg:pt-8">
+                <p className="text-gray-400 text-lg mb-6 leading-relaxed font-inter">
+                  {heroArticle.excerpt}
+                </p>
+                <div className="flex items-center gap-4 text-white font-oswald uppercase tracking-widest text-sm group-hover:translate-x-3 transition-transform duration-300">
+                  Read Article <ArrowRight size={20} className="text-mfc-red" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </Link>
+      </section>
+
+      {/* Article Grid */}
+      <section className="max-w-7xl mx-auto px-4 mb-40">
+        <div className="flex items-center gap-8 mb-16 px-4">
+          <div className="h-px grow bg-white/10"></div>
+          <h2 className="text-2xl font-oswald font-bold text-white uppercase tracking-widest shrink-0">Derniers Articles</h2>
+          <div className="h-px grow bg-white/10"></div>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-24">
+          {gridArticles.map((article) => (
             <Link 
               href={`/blog/${article.id}`} 
               key={article.id}
-              className="group bg-white/5 border border-white/10 rounded-xl overflow-hidden hover:border-mfc-red/50 transition-all duration-300 hover:shadow-2xl hover:shadow-mfc-red/10 flex flex-col h-full"
+              className="group flex flex-col"
             >
-              <div className="relative w-full h-64 overflow-hidden">
+              <div className="relative aspect-4/5 overflow-hidden mb-8">
                 <Image 
                   src={article.image} 
                   alt={article.title}
                   fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-700"
+                  className="object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                 />
-                <div className="absolute top-4 left-4">
-                   <span className="px-3 py-1 bg-mfc-red text-white text-xs font-bold uppercase tracking-widest rounded-sm">
+                <div className="absolute top-6 left-6">
+                   <span className="px-3 py-1 bg-white text-black text-[10px] font-bold uppercase tracking-widest">
                      {article.category}
                    </span>
                 </div>
               </div>
-              <div className="p-6 flex flex-col grow">
-                <p className="text-gray-400 text-sm font-inter mb-3">{article.date}</p>
-                <h2 className="text-2xl font-oswald font-bold text-white uppercase tracking-wide mb-3 group-hover:text-mfc-red transition-colors duration-300 line-clamp-2">
-                  {article.title}
-                </h2>
-                <p className="text-gray-400 font-inter text-sm mb-6 grow line-clamp-3">
-                  {article.excerpt}
-                </p>
-                <div className="mt-auto inline-flex items-center text-white/50 font-oswald uppercase tracking-widest text-sm group-hover:text-mfc-red transition-colors duration-300">
-                  Lire l'article <span className="ml-2">→</span>
+              <div className="flex flex-col">
+                <div className="flex items-center gap-3 mb-4">
+                  <span className="text-mfc-red text-xs font-bold font-oswald uppercase tracking-tighter">— {article.date}</span>
                 </div>
+                <h3 className="text-2xl md:text-3xl font-oswald font-bold text-white uppercase leading-tight group-hover:text-mfc-red transition-colors duration-300 line-clamp-3">
+                  {article.title}
+                </h3>
               </div>
             </Link>
           ))}
         </div>
-      </div>
+      </section>
+
+      {/* Carousel Section */}
+      <section className="bg-mfc-gray py-32 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 mb-16 flex justify-between items-end">
+          <div>
+            <h2 className="text-4xl md:text-5xl font-oswald font-bold text-white uppercase tracking-tight">À ne pas manquer</h2>
+            <p className="text-gray-500 font-inter mt-2">Recommandations de la rédaction</p>
+          </div>
+          <div className="flex gap-4 mb-2">
+            <button 
+              onClick={() => scroll('left')}
+              className="p-3 border border-white/20 text-white hover:bg-mfc-red hover:border-mfc-red transition-all duration-300 rounded-full"
+              aria-label="Précédent"
+            >
+              <ChevronLeft size={24} />
+            </button>
+            <button 
+              onClick={() => scroll('right')}
+              className="p-3 border border-white/20 text-white hover:bg-mfc-red hover:border-mfc-red transition-all duration-300 rounded-full"
+              aria-label="Suivant"
+            >
+              <ChevronRight size={24} />
+            </button>
+          </div>
+        </div>
+        
+        <div 
+          ref={carouselRef}
+          className="flex gap-8 overflow-x-auto snap-x snap-mandatory no-scrollbar px-4 lg:px-[calc((100vw-80rem)/2+1rem)] cursor-grab active:cursor-grabbing pb-12"
+          style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+        >
+          {carouselArticles.map((article) => (
+            <Link 
+              href={`/blog/${article.id}`} 
+              key={`${article.id}-carousel`}
+              className="shrink-0 w-[85vw] md:w-[450px] snap-start group"
+            >
+              <div className="relative aspect-video overflow-hidden mb-6">
+                <Image 
+                  src={article.image} 
+                  alt={article.title}
+                  fill
+                  className="object-cover group-hover:scale-110 transition-transform duration-1000"
+                />
+              </div>
+              <h4 className="text-xl font-oswald font-bold text-white uppercase tracking-tight group-hover:text-mfc-red transition-colors line-clamp-1">
+                {article.title}
+              </h4>
+              <p className="text-gray-500 text-sm font-oswald uppercase tracking-widest mt-2">
+                Voir l'article —
+              </p>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* Footer minimal spacing */}
+      <div className="h-20 bg-mfc-dark"></div>
     </main>
   );
 }
+
