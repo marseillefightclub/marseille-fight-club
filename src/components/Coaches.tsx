@@ -9,21 +9,21 @@ const coaches = [
     role: "Head Coach MMA",
     image: "/images/coaches/papy.png",
     bio: "Fondateur du Marseille fight Club.",
-    instagram: "https://www.instagram.com/stories/foissardjm/",
+    instagram: "https://instagram.com/stories/foissardjm/?utm_source=ig_story_item_share",
   },
   {
     name: "Hassou",
     role: "Coach Boxe Anglaise",
     image: "/images/coaches/hassou.png",
     bio: "Ex-combattant, transmet rigueur et technique.",
-    instagram: "https://www.instagram.com/stories/hassou_captaincrochet/",
+    instagram: "https://instagram.com/stories/hassou_captaincrochet/?utm_source=ig_story_item_share",
   },
   {
     name: "Souhil Taïri",
     role: "Coach Grappling",
     image: "/images/coaches/souhil.png",
     bio: "Combattant pro MMA PFL MENA, ceinture Marron Luta Livre.",
-    instagram: "https://www.instagram.com/stories/souhil.t/",
+    instagram: "https://instagram.com/stories/souhil.t/?utm_source=ig_story_item_share",
   }
 ];
 
