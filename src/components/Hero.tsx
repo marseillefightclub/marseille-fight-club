@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { openInstagramStory } from "@/utils/instagram";
 
 export default function Hero() {
   return (
@@ -53,8 +52,10 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.8 }}
           className="mt-12 flex justify-center w-full"
         >
-          <button 
-            onClick={() => openInstagramStory('marseillefightclub')}
+          <a 
+            href="https://www.instagram.com/stories/marseillefightclub/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
             className="group flex flex-col items-center gap-3 text-white/60 hover:text-white transition-colors duration-300"
           >
             <div className="w-14 h-14 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-gradient-to-tr group-hover:from-yellow-500 group-hover:via-red-500 group-hover:to-fuchsia-600 group-hover:border-transparent transition-all duration-500 transform group-hover:scale-110 shadow-lg">
@@ -74,7 +75,7 @@ export default function Hero() {
               </svg>
             </div>
             <span className="font-oswald tracking-widest uppercase text-xs">Suivez-nous</span>
-          </button>
+          </a>
         </motion.div>
       </div>
     </section>
