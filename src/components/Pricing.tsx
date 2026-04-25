@@ -1,46 +1,214 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Check } from "lucide-react";
+import { Phone, Clock, User } from "lucide-react";
 
-const plans = [
+interface Group {
+  age: string;
+  schedule: string[];
+}
+
+interface PlanOption {
+  label: string;
+  schedule: string[];
+}
+
+interface StrikingOption {
+  name: string;
+  price: string;
+}
+
+interface Plan {
+  name: string;
+  price?: string;
+  subtitle?: string;
+  tel: string;
+  schedule?: string[];
+  groups?: Group[];
+  options?: PlanOption[];
+  strikingOptions?: StrikingOption[];
+}
+
+interface Section {
+  title: string;
+  plans: Plan[];
+}
+
+const sections: Section[] = [
   {
-    name: "Standard",
-    price: "60€",
-    period: "/mois",
-    features: [
-      "Accès aux cours 3x/semaine",
-      "Vestiaires premium",
-      "Accès espace musculation libre",
-      "Réduction sur la boutique"
-    ],
-    recommended: false
+    title: "Adultes",
+    plans: [
+      {
+        name: "MMA LOISIR – 2 jours/semaine",
+        price: "450 €",
+        options: [
+          {
+            label: "Option 1",
+            schedule: [
+              "Lundi : 18h30 – 20h00",
+              "Mercredi : 18h00 – 19h30"
+            ]
+          },
+          {
+            label: "Option 2",
+            schedule: [
+              "Mardi : 19h30 – 21h00",
+              "Vendredi : 19h30 – 21h00"
+            ]
+          }
+        ],
+        tel: "06 43 40 76 45 / 06 31 01 62 80"
+      },
+      {
+        name: "MMA LOISIR – 4 jours/semaine",
+        price: "550 €",
+        schedule: [
+          "Lundi : 18h30 – 20h00",
+          "Mardi : 19h30 – 21h00",
+          "Mercredi : 18h00 – 19h30",
+          "Vendredi : 19h30 – 21h00"
+        ],
+        tel: "06 43 40 76 45 / 06 31 01 62 80"
+      },
+      {
+        name: "100% FILLES",
+        price: "300 €",
+        schedule: [
+          "Mardi : 18h00 – 19h00",
+          "Mercredi : 18h30 – 19h30",
+          "Samedi : 10h30 – 12h00"
+        ],
+        tel: "06 67 71 68 57"
+      },
+      {
+        name: "BOXE",
+        price: "300 €",
+        schedule: [
+          "Lundi : 17h30 – 18h30",
+          "Mercredi : 19h30 – 21h00",
+          "Vendredi : 18h30 – 19h30"
+        ],
+        tel: "07 83 67 54 75"
+      },
+      {
+        name: "STRIKING",
+        tel: "06 14 95 88 49",
+        strikingOptions: [
+          { name: "Striking MMA (2J/S)", price: "390 €" },
+          { name: "Striking MMA (4J/S)", price: "490 €" },
+          { name: "Lady Striking", price: "390 €" },
+          { name: "Boxe Thaï", price: "290 €" },
+          { name: "Pieds Poings", price: "290 €" },
+          { name: "Striking Ados", price: "290 €" }
+        ]
+      },
+      {
+        name: "LUTA LIVRE",
+        price: "300 €",
+        schedule: [
+          "Mardi : 19h00 – 20h00",
+          "Mercredi : 12h30 – 13h30"
+        ],
+        tel: "06 67 71 68 57"
+      }
+    ]
   },
   {
-    name: "Performance",
-    price: "90€",
-    period: "/mois",
-    features: [
-      "Accès illimité à tous les cours",
-      "Suivi personnalisé mensuel",
-      "Vestiaires premium",
-      "Accès espace musculation libre",
-      "2 séminaires gratuits/an"
-    ],
-    recommended: true
+    title: "Ados",
+    plans: [
+      {
+        name: "MMA ADOS",
+        price: "330 €",
+        groups: [
+          {
+            age: "12–17 ans",
+            schedule: [
+              "Mardi : 18h30 – 19h30",
+              "Jeudi : 18h30 – 19h30"
+            ]
+          }
+        ],
+        tel: "06 43 40 76 45 / 06 31 01 62 80"
+      },
+      {
+        name: "MMA ADOS COMPÉTITEURS",
+        subtitle: "(sur sélection)",
+        price: "350 €",
+        schedule: [
+          "Lundi : 19h30 – 20h30",
+          "Mercredi : 17h00 – 18h00",
+          "Vendredi : 20h00 – 21h00"
+        ],
+        tel: "06 43 40 76 45 / 06 31 01 62 80"
+      },
+      {
+        name: "KICK ADOS",
+        price: "290 €",
+        tel: "06 14 95 88 49"
+      }
+    ]
   },
   {
-    name: "Compétiteur",
-    price: "120€",
-    period: "/mois",
-    features: [
-      "Programme spécifique compétition",
-      "Sparring pro le weekend",
-      "Suivi nutritionnel",
-      "Accès illimité 24/7",
-      "Équipement MFC offert"
-    ],
-    recommended: false
+    title: "Enfants",
+    plans: [
+      {
+        name: "JUDO",
+        price: "330 €",
+        groups: [
+          {
+            age: "3–5 ans",
+            schedule: ["Mercredi : 11h00 – 12h00"]
+          },
+          {
+            age: "6–11 ans",
+            schedule: [
+              "Lundi : 17h30 – 18h30",
+              "Mercredi : 10h00 – 11h00"
+            ]
+          }
+        ],
+        tel: "07 60 35 00 78"
+      },
+      {
+        name: "MMA KIDS",
+        price: "330 €",
+        groups: [
+          {
+            age: "– 6 ans",
+            schedule: ["Jeudi : 17h30 – 18h30"]
+          },
+          {
+            age: "6–11 ans",
+            schedule: [
+              "Lundi : 18h30 – 19h30",
+              "Jeudi : 18h30 – 19h30"
+            ]
+          }
+        ],
+        tel: "07 60 35 00 78"
+      },
+      {
+        name: "BOXE KIDS",
+        price: "290 €",
+        groups: [
+          {
+            age: "6–9 ans",
+            schedule: [
+              "Mercredi : 14h00 – 15h00",
+              "Samedi : 11h00 – 12h00"
+            ]
+          },
+          {
+            age: "10–13 ans",
+            schedule: [
+              "Mercredi : 15h00 – 16h00",
+              "Samedi : 12h00 – 13h00"
+            ]
+          }
+        ],
+        tel: "07 83 67 54 75"
+      }
+    ]
   }
 ];
 
@@ -55,48 +223,135 @@ export default function Pricing() {
             viewport={{ once: true }}
             className="text-4xl md:text-5xl font-oswald font-bold uppercase tracking-wide text-white"
           >
-            Nos <span className="text-mfc-red">Formules</span>
+            Nos <span className="text-mfc-red">Tarifs</span>
           </motion.h2>
-          <p className="mt-4 text-xl text-gray-400 font-light">Des offres adaptées à vos ambitions.</p>
+          <p className="mt-4 text-xl text-gray-400 font-light">Des offres adaptées pour tous les âges et tous les niveaux.</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-          {plans.map((plan, index) => (
-             <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
+        {sections.map((section: Section, sidx: number) => (
+          <div key={sidx} className="mb-20 last:mb-0">
+            <motion.h3 
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              className={`p-8 rounded-xl border ${plan.recommended ? 'bg-mfc-red/5 border-mfc-red relative' : 'bg-mfc-gray border-white/5'} hover:border-mfc-red/50 transition-colors duration-300`}
-             >
-              {plan.recommended && (
-                <div className="absolute top-0 right-0 bg-mfc-red text-white text-xs font-oswald uppercase px-4 py-1 rounded-bl-xl rounded-tr-xl">
-                  Recommandé
-                </div>
-              )}
-              
-              <h3 className="text-2xl font-oswald uppercase font-bold text-white mb-2">{plan.name}</h3>
-              <div className="mb-6">
-                <span className="text-5xl font-oswald font-bold text-white">{plan.price}</span>
-                <span className="text-gray-400 ml-1">{plan.period}</span>
-              </div>
-              
-              <ul className="mb-8 space-y-4">
-                {plan.features.map((feature, idx) => (
-                  <li key={idx} className="flex items-center text-gray-300 font-light">
-                    <Check size={20} className="text-mfc-red mr-3 shrink-0" />
-                    <span>{feature}</span>
-                  </li>
-                ))}
-              </ul>
-              
-              <button className={`w-full py-4 text-sm font-oswald uppercase tracking-widest transition-all duration-300 ${plan.recommended ? 'bg-mfc-red text-white hover:bg-red-700 shadow-lg shadow-red-900/30' : 'bg-transparent border border-white/20 text-white hover:bg-white hover:text-mfc-dark'}`}>
-                Sélectionner
-              </button>
-             </motion.div>
-          ))}
-        </div>
+              className="text-3xl font-oswald font-bold uppercase text-white mb-10 border-l-4 border-mfc-red pl-6"
+            >
+              Section {section.title}
+            </motion.h3>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {section.plans.map((plan: Plan, pidx: number) => (
+                <motion.div
+                  key={pidx}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: pidx * 0.1 }}
+                  className="bg-mfc-gray p-8 rounded-xl border border-white/5 hover:border-mfc-red/50 transition-all duration-300 flex flex-col h-full shadow-2xl group"
+                >
+                  <div className="mb-6">
+                    <h4 className="text-2xl font-oswald uppercase font-bold text-white group-hover:text-mfc-red transition-colors duration-300">
+                      {plan.name}
+                    </h4>
+                    {plan.subtitle && (
+                      <p className="text-mfc-red text-sm font-oswald uppercase tracking-widest mt-1 italic">
+                        {plan.subtitle}
+                      </p>
+                    )}
+                  </div>
+
+                  <div className="grow space-y-6">
+                    {/* Age Groups Context */}
+                    {plan.groups && plan.groups.map((group: Group, gidx: number) => (
+                      <div key={gidx} className="space-y-2 pb-4 border-b border-white/5 last:border-0 last:pb-0">
+                        <div className="flex items-center text-white/90 font-bold font-oswald uppercase tracking-wide text-sm">
+                          <User size={16} className="text-mfc-red mr-2" />
+                          {group.age}
+                        </div>
+                        <ul className="space-y-1">
+                          {group.schedule.map((time: string, tidx: number) => (
+                            <li key={tidx} className="flex items-center text-gray-400 text-sm font-light">
+                              <Clock size={14} className="text-mfc-red/60 mr-2 shrink-0" />
+                              {time}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
+
+                    {/* Standard Schedule Context */}
+                    {plan.schedule && (
+                      <div className="space-y-2">
+                        <div className="flex items-center text-mfc-red text-[10px] font-oswald uppercase tracking-[0.2em] mb-2 opacity-80">
+                          Horaires
+                        </div>
+                        <ul className="space-y-2">
+                          {plan.schedule.map((time: string, tidx: number) => (
+                            <li key={tidx} className="flex items-center text-gray-300 text-sm font-light">
+                              <Clock size={16} className="text-mfc-red mr-3 shrink-0" />
+                              {time}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+
+                    {/* Options (Opt 1, Opt 2) */}
+                    {plan.options && plan.options.map((opt: PlanOption, oidx: number) => (
+                      <div key={oidx} className="space-y-2 pb-4 border-b border-white/5 last:border-0 last:pb-0">
+                        <div className="text-mfc-red text-xs font-bold uppercase tracking-widest mb-2">
+                          {opt.label}
+                        </div>
+                        <ul className="space-y-1">
+                          {opt.schedule.map((time: string, tidx: number) => (
+                            <li key={tidx} className="flex items-center text-gray-300 text-sm font-light">
+                              <Clock size={14} className="text-mfc-red/60 mr-2 shrink-0" />
+                              {time}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
+
+                    {/* Striking Special Options */}
+                    {plan.strikingOptions && (
+                      <div className="space-y-3">
+                        {plan.strikingOptions.map((opt: StrikingOption, oidx: number) => (
+                          <div key={oidx} className="flex justify-between items-center bg-white/5 p-3 rounded-lg border border-white/5 group-hover:border-mfc-red/20 transition-colors">
+                            <span className="text-white text-sm font-light">{opt.name}</span>
+                            <span className="text-mfc-red font-bold font-oswald whitespace-nowrap">{opt.price}</span>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+
+                  <div className="mt-8 pt-6 border-t border-white/10">
+                    {plan.price && (
+                      <div className="flex items-baseline mb-4 justify-center">
+                        <span className="text-4xl font-oswald font-bold text-white">{plan.price}</span>
+                        <span className="text-gray-500 text-xs ml-2 uppercase tracking-widest">/ saison</span>
+                      </div>
+                    )}
+                    
+                    <div className="space-y-3">
+                      <div className="flex items-center justify-center text-gray-400 text-xs text-center flex-wrap gap-2">
+                        <Phone size={14} className="text-mfc-red" />
+                        <span className="font-light">{plan.tel}</span>
+                      </div>
+                      <a 
+                        href={`tel:${plan.tel.split('/')[0].trim()}`} 
+                        className="w-full block text-center py-3 bg-transparent border border-white/20 text-white text-xs font-oswald uppercase tracking-widest hover:bg-mfc-red hover:border-mfc-red transition-all duration-300 rounded-lg group-hover:border-mfc-red/50"
+                      >
+                        S'inscrire
+                      </a>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );

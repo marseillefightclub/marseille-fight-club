@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const coaches = [
   {
-    name: "Jean Michel Froissard 'Papy'",
+    name: "Jean Michel Foissard 'Papy'",
     role: "Head Coach MMA",
     image: "/images/coaches/papy.png",
     bio: "Fondateur du Marseille fight Club.",

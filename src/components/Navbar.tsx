@@ -34,7 +34,7 @@ export default function Navbar() {
           <Link href="/" className="flex items-center gap-3 cursor-pointer group">
             <div className="relative w-14 h-14 md:w-16 md:h-16 flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
               <Image 
-                src="/images/logo.png" 
+                src="/LogoGorill.jpg" 
                 alt="Marseille Fight Club Logo Gorilla" 
                 fill
                 className="object-contain opacity-90 group-hover:opacity-100 transition-opacity"
