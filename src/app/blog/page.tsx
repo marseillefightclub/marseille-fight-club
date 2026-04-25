@@ -25,10 +25,10 @@ export default function BlogPage() {
     },
     {
       id: "souhil-tairi-pfl-mena",
-      title: "Souhil Tairi au PFL MENA : Nouveau Défi en Arabie Saoudite",
-      excerpt: "Souhil Tairi s'apprête à faire ses preuves au PFL MENA. Focus sur la préparation de notre combattant pour ce rendez-vous majeur au Moyen-Orient.",
-      category: "Compétition",
-      date: "21 Avril 2026",
+      title: "Souhil Tairi Passe en Demi-Finales du PFL MENA Après un TKO au Deuxième Round",
+      excerpt: "Face à Abdullah Saleem, combattant koweïtien invaincu, notre pensionnaire Souhil Tairi a montré l'étendue de son talent : encaisser, rester lucide, et finir le travail avec un TKO magistral.",
+      category: "PFL MENA",
+      date: "9 Mai 2025",
       image: "/images/blog/pfl-mena.png"
     },
     {
