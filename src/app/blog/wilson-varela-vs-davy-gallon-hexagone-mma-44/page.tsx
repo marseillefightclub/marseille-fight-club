@@ -71,7 +71,7 @@ export default function ArticlePage() {
                 Sa carrière le mène rapidement au KSW, l'une des organisations les plus puissantes et les plus médiatisées d'Europe, où il enchaîne les victoires et se hisse jusqu'au combat pour la ceinture face à Salahdine Parnasse — l'un des meilleurs combattants européens de sa génération. Un passage au plus haut niveau qui valide son statut et nourrit son ambition.
               </p>
             </div>
-            <div className="relative aspect-[4/5] rounded-xl overflow-hidden border border-white/10">
+            <div className="relative aspect-4/5 rounded-xl overflow-hidden border border-white/10">
               <Image 
                 src="/images/blog/varela-belt.png" 
                 alt="Wilson Varela avec sa ceinture" 

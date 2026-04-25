@@ -102,19 +102,42 @@ export default function BlogPage() {
         </Link>
       </section>
 
-      {/* Article Grid */}
-      <section className="max-w-7xl mx-auto px-4 mb-40">
-        <div className="flex items-center gap-8 mb-16 px-4">
-          <div className="h-px grow bg-white/10"></div>
-          <h2 className="text-2xl font-oswald font-bold text-white uppercase tracking-widest shrink-0">Derniers Articles</h2>
-          <div className="h-px grow bg-white/10"></div>
+      {/* Article Grid / Carousel */}
+      <section className="max-w-7xl mx-auto px-4 mb-32">
+        <div className="flex items-center justify-between mb-16 px-4 gap-8">
+          <div className="flex items-center gap-8 grow">
+            <div className="h-px grow bg-white/10"></div>
+            <h2 className="text-2xl font-oswald font-bold text-white uppercase tracking-widest shrink-0">Derniers Articles</h2>
+            <div className="h-px grow bg-white/10"></div>
+          </div>
+          <div className="flex gap-4">
+            <button 
+              onClick={() => scroll('left')}
+              className="p-2 border border-white/20 text-white hover:bg-mfc-red hover:border-mfc-red transition-all duration-300 rounded-full"
+              aria-label="Précédent"
+            >
+              <ChevronLeft size={20} />
+            </button>
+            <button 
+              onClick={() => scroll('right')}
+              className="p-2 border border-white/20 text-white hover:bg-mfc-red hover:border-mfc-red transition-all duration-300 rounded-full"
+              aria-label="Suivant"
+            >
+              <ChevronRight size={20} />
+            </button>
+          </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-24">
+
+        <div 
+          ref={carouselRef}
+          className="flex gap-x-12 overflow-x-auto snap-x snap-mandatory no-scrollbar pb-12 px-4 scroll-smooth"
+          style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+        >
           {gridArticles.map((article) => (
             <Link 
               href={`/blog/${article.id}`} 
               key={article.id}
-              className="group flex flex-col"
+              className="shrink-0 w-[85vw] md:w-[380px] lg:w-[400px] snap-start group flex flex-col transition-all duration-500"
             >
               <div className="relative aspect-4/5 overflow-hidden mb-8">
                 <Image 
@@ -137,61 +160,6 @@ export default function BlogPage() {
                   {article.title}
                 </h3>
               </div>
-            </Link>
-          ))}
-        </div>
-      </section>
-
-      {/* Carousel Section */}
-      <section className="bg-mfc-gray py-32 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 mb-16 flex justify-between items-end">
-          <div>
-            <h2 className="text-4xl md:text-5xl font-oswald font-bold text-white uppercase tracking-tight">À ne pas manquer</h2>
-            <p className="text-gray-500 font-inter mt-2">Recommandations de la rédaction</p>
-          </div>
-          <div className="flex gap-4 mb-2">
-            <button 
-              onClick={() => scroll('left')}
-              className="p-3 border border-white/20 text-white hover:bg-mfc-red hover:border-mfc-red transition-all duration-300 rounded-full"
-              aria-label="Précédent"
-            >
-              <ChevronLeft size={24} />
-            </button>
-            <button 
-              onClick={() => scroll('right')}
-              className="p-3 border border-white/20 text-white hover:bg-mfc-red hover:border-mfc-red transition-all duration-300 rounded-full"
-              aria-label="Suivant"
-            >
-              <ChevronRight size={24} />
-            </button>
-          </div>
-        </div>
-        
-        <div 
-          ref={carouselRef}
-          className="flex gap-8 overflow-x-auto snap-x snap-mandatory no-scrollbar px-4 lg:px-[calc((100vw-80rem)/2+1rem)] cursor-grab active:cursor-grabbing pb-12"
-          style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
-        >
-          {carouselArticles.map((article) => (
-            <Link 
-              href={`/blog/${article.id}`} 
-              key={`${article.id}-carousel`}
-              className="shrink-0 w-[85vw] md:w-[450px] snap-start group"
-            >
-              <div className="relative aspect-video overflow-hidden mb-6">
-                <Image 
-                  src={article.image} 
-                  alt={article.title}
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-1000"
-                />
-              </div>
-              <h4 className="text-xl font-oswald font-bold text-white uppercase tracking-tight group-hover:text-mfc-red transition-colors line-clamp-1">
-                {article.title}
-              </h4>
-              <p className="text-gray-500 text-sm font-oswald uppercase tracking-widest mt-2">
-                Voir l'article —
-              </p>
             </Link>
           ))}
         </div>
