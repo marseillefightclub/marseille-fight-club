@@ -19,7 +19,7 @@ export default function BlogPage() {
       id: "wilson-varela-vs-davy-gallon-hexagone-mma-44",
       title: "Wilson \"The Prototype\" Varela en Demi-Finale de l'Hexagone MMA 44 à Bordeaux",
       excerpt: "Le 29 mai 2026, l'Arkéa Arena accueillera Wilson Varela face au vétéran Davy Gallon. Le champion marseillais arrive dans la forme de sa vie pour ce choc au sommet.",
-      category: "PFL MENA",
+      category: "Hexagone MMA",
       date: "25 Avril 2026",
       image: "/images/blog/varela-fight.jpg"
     },

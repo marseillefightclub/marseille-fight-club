@@ -22,14 +22,16 @@ export default function ArticlePage() {
         </div>
 
         {/* Header Image */}
-        <div className="relative w-full aspect-video md:aspect-21/9 rounded-xl overflow-hidden mb-12 border border-white/5 bg-mfc-gray/50">
-          <Image 
-            src="/images/blog/ylies-victory.jpg" 
-            alt="Ylies Djiroun" 
-            fill
-            className="object-cover"
-          />
-          <div className="absolute inset-0 bg-linear-to-t from-mfc-dark via-transparent to-transparent"></div>
+        <div className="relative w-full aspect-video md:aspect-21/9 rounded-xl overflow-hidden mb-12 border border-white/5 bg-mfc-gray/50 group">
+          <a href="/images/blog/ylies-victory.jpg" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+            <Image 
+              src="/images/blog/ylies-victory.jpg" 
+              alt="Ylies Djiroun" 
+              fill
+              className="object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+          </a>
+          <div className="absolute inset-0 bg-linear-to-t from-mfc-dark via-transparent to-transparent pointer-events-none"></div>
         </div>
 
         {/* Article Header */}
@@ -63,13 +65,15 @@ export default function ArticlePage() {
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 my-12 items-center">
-            <div className="relative aspect-square rounded-xl overflow-hidden border border-white/10">
-              <Image 
-                src="/images/blog/ylies-portrait.jpg" 
-                alt="Portrait d'Ylies Djiroun" 
-                fill
-                className="object-cover"
-              />
+            <div className="relative aspect-square rounded-xl overflow-hidden border border-white/10 group">
+              <a href="/images/blog/ylies-portrait.jpg" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                <Image 
+                  src="/images/blog/ylies-portrait.jpg" 
+                  alt="Portrait d'Ylies Djiroun" 
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </a>
             </div>
             <div>
               <p>
@@ -105,13 +109,15 @@ export default function ArticlePage() {
             C'est la première fois que le PFL MENA organise un événement hors d'Arabie saoudite. Dubaï représente un choix stratégique pour la ligue, et le poids symbolique de ce déplacement est réel. Comme l'a déclaré Jérôme Mazet, directeur général du PFL MENA : "Dubaï est un marché clé pour le PFL MENA et un hub mondial pour le sport et le entertainment, ce qui en fait le cadre idéal pour notre ouverture de saison 2026."
           </p>
 
-          <div className="relative w-full aspect-video rounded-xl my-12 overflow-hidden border border-white/10">
-            <Image 
-              src="/images/blog/ylies-training.png" 
-              alt="Ylies Djiroun à l'entraînement" 
-              fill
-              className="object-cover"
-            />
+          <div className="relative w-full aspect-video rounded-xl my-12 overflow-hidden border border-white/10 group">
+            <a href="/images/blog/ylies-training.png" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+              <Image 
+                src="/images/blog/ylies-training.png" 
+                alt="Ylies Djiroun à l'entraînement" 
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+            </a>
           </div>
 
           <p>

@@ -22,14 +22,16 @@ export default function ArticlePage() {
         </div>
 
         {/* Header Image */}
-        <div className="relative w-full aspect-video md:aspect-21/9 rounded-xl overflow-hidden mb-12 border border-white/5 bg-mfc-gray/50">
-          <Image 
-            src="/images/blog/pfl-mena.png" 
-            alt="Souhil Tairi au PFL MENA" 
-            fill
-            className="object-cover"
-          />
-          <div className="absolute inset-0 bg-linear-to-t from-mfc-dark via-transparent to-transparent"></div>
+        <div className="relative w-full aspect-video md:aspect-21/9 rounded-xl overflow-hidden mb-12 border border-white/5 bg-mfc-gray/50 group">
+          <a href="/images/blog/pfl-mena.png" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+            <Image 
+              src="/images/blog/pfl-mena.png" 
+              alt="Souhil Tairi au PFL MENA" 
+              fill
+              className="object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+          </a>
+          <div className="absolute inset-0 bg-linear-to-t from-mfc-dark via-transparent to-transparent pointer-events-none"></div>
         </div>
 
         {/* Article Header */}
@@ -77,13 +79,15 @@ export default function ArticlePage() {
                 Tairi a répondu avec quelques coudes depuis le bas et un upkick bien senti, mais la reprise a globalement appartenu à Saleem. Un point a également été déduit à Tairi pour un coup illégal accidentel avant la fin du round. La situation était claire : il fallait aller chercher la victoire par finition.
               </p>
             </div>
-            <div className="relative aspect-4/5 rounded-xl overflow-hidden border border-white/10">
-              <Image 
-                src="/images/blog/souhil-portrait.png" 
-                alt="Portrait de Souhil Tairi" 
-                fill
-                className="object-cover"
-              />
+            <div className="relative aspect-4/5 rounded-xl overflow-hidden border border-white/10 group">
+              <a href="/images/blog/souhil-portrait.png" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                <Image 
+                  src="/images/blog/souhil-portrait.png" 
+                  alt="Portrait de Souhil Tairi" 
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </a>
             </div>
           </div>
 

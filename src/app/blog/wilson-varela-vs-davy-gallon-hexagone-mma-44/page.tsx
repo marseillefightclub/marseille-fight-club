@@ -22,20 +22,22 @@ export default function ArticlePage() {
         </div>
 
         {/* Header Image */}
-        <div className="relative w-full aspect-video md:aspect-21/9 rounded-xl overflow-hidden mb-12 border border-white/5 bg-mfc-gray/50">
-          <Image 
-            src="/images/blog/varela-fight.jpg" 
-            alt="Wilson Varela" 
-            fill
-            className="object-cover"
-          />
-          <div className="absolute inset-0 bg-linear-to-t from-mfc-dark via-transparent to-transparent"></div>
+        <div className="relative w-full aspect-video md:aspect-21/9 rounded-xl overflow-hidden mb-12 border border-white/5 bg-mfc-gray/50 group">
+          <a href="/images/blog/varela-fight.jpg" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+            <Image 
+              src="/images/blog/varela-fight.jpg" 
+              alt="Wilson Varela" 
+              fill
+              className="object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+          </a>
+          <div className="absolute inset-0 bg-linear-to-t from-mfc-dark via-transparent to-transparent pointer-events-none"></div>
         </div>
 
         {/* Article Header */}
         <header className="mb-12">
           <div className="flex gap-3 mb-6">
-            <span className="px-3 py-1 bg-mfc-red text-white text-[10px] font-bold uppercase tracking-widest rounded-sm">PFL MENA</span>
+            <span className="px-3 py-1 bg-mfc-red text-white text-[10px] font-bold uppercase tracking-widest rounded-sm">Hexagone MMA</span>
             <span className="px-3 py-1 bg-white/10 text-white text-[10px] font-bold uppercase tracking-widest rounded-sm backdrop-blur-sm">Événement</span>
           </div>
           <h1 className="text-4xl md:text-6xl font-oswald font-bold text-white uppercase tracking-tight leading-tight mb-6">
@@ -71,13 +73,15 @@ export default function ArticlePage() {
                 Sa carrière le mène rapidement au KSW, l'une des organisations les plus puissantes et les plus médiatisées d'Europe, où il enchaîne les victoires et se hisse jusqu'au combat pour la ceinture face à Salahdine Parnasse — l'un des meilleurs combattants européens de sa génération. Un passage au plus haut niveau qui valide son statut et nourrit son ambition.
               </p>
             </div>
-            <div className="relative aspect-4/5 rounded-xl overflow-hidden border border-white/10">
-              <Image 
-                src="/images/blog/varela-belt.png" 
-                alt="Wilson Varela avec sa ceinture" 
-                fill
-                className="object-cover"
-              />
+            <div className="relative aspect-4/5 rounded-xl overflow-hidden border border-white/10 group">
+              <a href="/images/blog/varela-belt.png" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                <Image 
+                  src="/images/blog/varela-belt.png" 
+                  alt="Wilson Varela avec sa ceinture" 
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </a>
             </div>
           </div>
 
