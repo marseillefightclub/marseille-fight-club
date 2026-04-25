@@ -104,26 +104,27 @@ export default function BlogPage() {
 
       {/* Article Grid / Carousel */}
       <section className="max-w-7xl mx-auto px-4 mb-32">
-        <div className="flex items-center justify-between mb-16 px-4 gap-8">
+        <div className="flex flex-col md:flex-row md:items-center justify-between mb-16 px-4 gap-y-12 gap-x-8">
           <div className="flex items-center gap-8 grow">
             <div className="h-px grow bg-white/10"></div>
-            <h2 className="text-2xl font-oswald font-bold text-white uppercase tracking-widest shrink-0">Derniers Articles</h2>
+            <h2 className="text-2xl md:text-3xl font-oswald font-bold text-white uppercase tracking-widest shrink-0">Derniers Articles</h2>
             <div className="h-px grow bg-white/10"></div>
           </div>
-          <div className="flex gap-4">
+          <div className="flex justify-center md:justify-end gap-8 md:gap-4 items-center">
             <button 
               onClick={() => scroll('left')}
-              className="p-2 border border-white/20 text-white hover:bg-mfc-red hover:border-mfc-red transition-all duration-300 rounded-full"
+              className="p-3 md:p-2 border border-white/20 text-white hover:bg-mfc-red hover:border-mfc-red transition-all duration-300 rounded-full group/btn"
               aria-label="Précédent"
             >
-              <ChevronLeft size={20} />
+              <ChevronLeft size={24} className="md:w-5 md:h-5" />
             </button>
+            <div className="h-px w-8 bg-white/10 md:hidden"></div>
             <button 
               onClick={() => scroll('right')}
-              className="p-2 border border-white/20 text-white hover:bg-mfc-red hover:border-mfc-red transition-all duration-300 rounded-full"
+              className="p-3 md:p-2 border border-white/20 text-white hover:bg-mfc-red hover:border-mfc-red transition-all duration-300 rounded-full group/btn"
               aria-label="Suivant"
             >
-              <ChevronRight size={20} />
+              <ChevronRight size={24} className="md:w-5 md:h-5" />
             </button>
           </div>
         </div>
