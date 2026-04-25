@@ -17,10 +17,10 @@ export default function BlogPage() {
     },
     {
       id: "wilson-varela-vs-davy-gallon-hexagone-mma-44",
-      title: "Wilson Varela En Route Vers Les 100 000 € À L'Hexagone MMA 44",
-      excerpt: "Analyse complète de la demi-finale très attendue entre Wilson 'The Prototype' Varela du Marseille Fight Club et Davy Gallon lors de l'Hexagone MMA 44 à l'Arkéa Arena de Bordeaux.",
-      category: "Événement",
-      date: "21 Avril 2026",
+      title: "Wilson \"The Prototype\" Varela en Demi-Finale de l'Hexagone MMA 44 à Bordeaux",
+      excerpt: "Le 29 mai 2026, l'Arkéa Arena accueillera Wilson Varela face au vétéran Davy Gallon. Le champion marseillais arrive dans la forme de sa vie pour ce choc au sommet.",
+      category: "PFL MENA",
+      date: "25 Avril 2026",
       image: "/images/blog/varela-fight.jpg"
     },
     {
