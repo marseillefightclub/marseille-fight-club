@@ -25,9 +25,9 @@ export default function BlogPage() {
     },
     {
       id: "souhil-tairi-pfl-mena",
-      title: "Souhil Tairi au PFL MENA : Un Choc International en Arabie Saoudite",
-      excerpt: "Découvrez l'analyse complète du prochain combat de Souhil Tairi au PFL MENA, une étape historique pour sa carrière MMA et le Marseille Fight Club sur la scène mondiale.",
-      category: "International",
+      title: "Souhil Tairi au PFL MENA : Nouveau Défi en Arabie Saoudite",
+      excerpt: "Souhil Tairi s'apprête à faire ses preuves au PFL MENA. Focus sur la préparation de notre combattant pour ce rendez-vous majeur au Moyen-Orient.",
+      category: "Compétition",
       date: "21 Avril 2026",
       image: "/images/blog/pfl-mena.png"
     },
@@ -121,7 +121,7 @@ export default function BlogPage() {
                   src={article.image} 
                   alt={article.title}
                   fill
-                  className="object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
+                  className="object-cover group-hover:scale-105 transition-all duration-700"
                 />
                 <div className="absolute top-6 left-6">
                    <span className="px-3 py-1 bg-white text-black text-[10px] font-bold uppercase tracking-widest">
