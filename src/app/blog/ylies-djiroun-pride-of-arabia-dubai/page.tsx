@@ -3,9 +3,9 @@ import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
 export const metadata = {
-  title: "Ylies Djiroun au PFL MENA | 'Broly' à la Conquête de Dubaï",
-  description: "Découvrez le portrait d'Ylies Djiroun avant son combat historique au Pride of Arabia le 24 mai 2026 à la Coca-Cola Arena de Dubaï.",
-  keywords: "Ylies Djiroun, PFL MENA, Pride of Arabia, Marseille Fight Club, MMA Dubaï, Coca-Cola Arena, combat MMA, Broly MMA",
+  title: "Ylies \"Broly\" Djiroun Face au Champion en Titre à Dubaï — Le MFC au PFL MENA",
+  description: "Ylies Djiroun affronte le champion Salah Eddine Hamli au PFL MENA à Dubaï. Analyse du combat, portrait de Broly et contexte de l'événement.",
+  keywords: "Ylies Djiroun, Broly, PFL MENA, Salah Eddine Hamli, MMA Dubaï, Coca-Cola Arena, Marseille Fight Club",
 };
 
 export default function ArticlePage() {
@@ -14,110 +14,140 @@ export default function ArticlePage() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
         
         {/* Navigation */}
-        <div className="mb-8">
-          <Link href="/blog" className="inline-flex items-center text-mfc-red hover:text-white transition-colors duration-300 font-oswald tracking-widest uppercase">
-            <ArrowLeft className="mr-2" size={20} />
+        <div className="mb-4">
+          <Link href="/blog" className="inline-flex items-center text-mfc-red hover:text-white transition-colors duration-300 font-oswald tracking-widest uppercase text-sm">
+            <ArrowLeft className="mr-2" size={18} />
             Retour aux articles
           </Link>
         </div>
 
         {/* Header Image */}
-        <div className="relative w-full h-[400px] md:h-[500px] rounded-xl overflow-hidden mb-10 shadow-2xl shadow-mfc-red/10 border border-white/5">
+        <div className="relative w-full aspect-video md:aspect-21/9 rounded-xl overflow-hidden mb-12 border border-white/5 bg-mfc-gray/50">
           <Image 
             src="/images/blog/ylies-victory.jpg" 
-            alt="Ylies Djiroun victorieux dans la cage" 
+            alt="Ylies Djiroun" 
             fill
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-linear-to-t from-mfc-dark via-mfc-dark/50 to-transparent"></div>
-          <div className="absolute bottom-0 left-0 p-8">
-            <div className="flex gap-3 mb-4">
-              <span className="px-3 py-1 bg-mfc-red text-white text-xs font-bold uppercase tracking-widest rounded-sm">Événement</span>
-              <span className="px-3 py-1 bg-white/10 text-white text-xs font-bold uppercase tracking-widest rounded-sm backdrop-blur-md">PFL MENA</span>
-            </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-oswald font-bold text-white uppercase tracking-wider leading-tight mb-4">
-              Ylies <span className="text-mfc-red">Djiroun</span> : Dubaï Attend Sa Tempête
-            </h1>
-            <p className="text-gray-400 font-inter text-lg">Publié le 23 Avril 2026 • Par La Rédaction MFC</p>
-          </div>
+          <div className="absolute inset-0 bg-linear-to-t from-mfc-dark via-transparent to-transparent"></div>
         </div>
 
+        {/* Article Header */}
+        <header className="mb-12">
+          <div className="flex gap-3 mb-6">
+            <span className="px-3 py-1 bg-mfc-red text-white text-[10px] font-bold uppercase tracking-widest rounded-sm">PFL MENA</span>
+            <span className="px-3 py-1 bg-white/10 text-white text-[10px] font-bold uppercase tracking-widest rounded-sm backdrop-blur-sm">Co-Main Event</span>
+          </div>
+          <h1 className="text-4xl md:text-6xl font-oswald font-bold text-white uppercase tracking-tight leading-tight mb-6">
+            Ylies "Broly" Djiroun Face au Champion en Titre à Dubaï — Le MFC en Co-Main Event du PFL MENA
+          </h1>
+          <div className="flex items-center gap-4 text-gray-500 font-inter text-sm uppercase tracking-widest">
+            <span>25 Avril 2026</span>
+            <span className="w-4 h-px bg-white/20"></span>
+            <span>Par la rédaction MFC</span>
+          </div>
+        </header>
+
         {/* Article Content */}
-        <article className="prose prose-invert prose-lg max-w-none font-inter text-gray-300">
+        <article className="prose prose-invert prose-lg max-w-none font-inter text-gray-300 leading-relaxed">
           
           <p className="lead text-xl text-white font-medium mb-12 border-l-4 border-mfc-red pl-6">
-            Le 24 mai 2026 restera gravé comme une date charnière pour le Marseille Fight Club. Dans le cadre prestigieux du PFL MENA : "Pride of Arabia", notre fer de lance Ylies Djiroun s'apprête à fouler le sol de la Coca-Cola Arena à Dubaï. Un rendez-vous avec l'histoire pour celui que l'on surnomme "Broly".
+            Le 24 mai 2026, la Coca-Cola Arena de Dubaï accueillera le coup d'envoi de la saison 2026 du PFL MENA, sous le titre "Pride of Arabia". Dans le co-main event de la soirée, Ylies "Broly" Djiroun, 24 victoires et 9 défaites au compteur, affrontera Salah Eddine "Supersalah" Hamli, invaincu en 11 combats, dans un quart de finale des poids légers. Un choc de génération, un choc de styles, et une affiche qui positionne Marseille au cœur d'un des tournois régionaux les plus suivis du MMA mondial.
           </p>
 
-          <h2 className="text-3xl font-oswald font-bold text-white uppercase mt-12 mb-6 tracking-widest flex items-center">
-            <span className="bg-mfc-red w-8 h-1 mr-4 block"></span>
-            Ylies Djiroun : L'Expérience et la Puissance
+          <h2 className="text-3xl font-oswald font-bold text-white uppercase mt-16 mb-8 tracking-wider">
+            Qui est Ylies Djiroun ?
           </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-10 items-center">
-            <div>
-              <p className="mb-4">
-                Avec un palmarès impressionnant de <strong>24 victoires pour 9 défaites</strong>, Ylies Djiroun ne vient pas à Dubaï pour faire de la figuration. Vétéran aguerri des plus grandes organisations mondiales, il incarne l'excellence technique et la résilience du MMA français.
-              </p>
-              <p>
-                Son surnom, "Broly", n'est pas usurpé. Derrière son calme olympien se cache une force de la nature capable de renverser n'importe quel combat. À 33 ans, le représentant du <strong>Marseille Fight Club</strong> est au sommet de son art, alliant un grappling d'élite à un striking toujours plus percutant.
-              </p>
-            </div>
-            <div className="relative h-[400px] rounded-lg overflow-hidden border border-white/10">
+          <p>
+            Issu des quartiers nord de Marseille, Ylies Djiroun a construit sa carrière dans la discrétion avant de s'imposer progressivement sur la scène internationale. Il a commencé le sport de combat en 2009 dans un club de sambo à Marseille, et depuis, il n'a jamais vraiment arrêté d'apprendre. Judo, karaté, Muay Thai, taekwondo, kickboxing — il a traversé de nombreuses disciplines avant de les fondre dans une pratique du MMA à la fois complète et personnelle.
+          </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 my-12 items-center">
+            <div className="relative aspect-square rounded-xl overflow-hidden border border-white/10">
               <Image 
                 src="/images/blog/ylies-portrait.jpg" 
-                alt="Portrait d'Ylies Djiroun, combattant MMA" 
+                alt="Portrait d'Ylies Djiroun" 
                 fill
                 className="object-cover"
               />
             </div>
+            <div>
+              <p>
+                Jean-Michel Foissard, fondateur du Marseille Fight Club, lui a tout apporté, autant sur le plan de l'entraînement physique que sur le plan mental — c'est Djiroun lui-même qui le dit. Ce lien avec le MFC est solide, ancré dans les années, et il dit beaucoup sur la manière dont le club forme ses combattants : pas dans la précipitation, pas dans la mise en scène, mais dans la durée et l'honnêteté du travail quotidien.
+              </p>
+              <p className="mt-4">
+                Son surnom, "Broly" ? Il vient de sa passion pour les mangas, Dragon Ball en tête. Pas de mystère, pas de construction marketing — juste un combattant qui assume ses influences et qui s'est construit comme ça.
+              </p>
+            </div>
           </div>
 
-          <h2 className="text-3xl font-oswald font-bold text-white uppercase mt-12 mb-6 tracking-widest flex items-center">
-            <span className="bg-mfc-red w-8 h-1 mr-4 block"></span>
-            Le Choc : Direction la Coca-Cola Arena
+          <p>
+            Au fil de sa carrière, il a remporté deux titres de champion d'Europe et accumulé une expérience rare pour un combattant français de sa génération, en évoluant dans plusieurs organisations à travers le monde — dont le PFL, Brave CF, et ARES FC. Avec 24 victoires et 9 défaites, il entre dans ce quart de finale avec davantage d'expérience en cage que la quasi-totalité des combattants présents sur cette carte.
+          </p>
+
+          <h2 className="text-3xl font-oswald font-bold text-white uppercase mt-16 mb-8 tracking-wider">
+            En face : le champion en titre
           </h2>
-
-          <p className="mb-4">
-            Le cadre ne pourrait être plus grandiose. La Coca-Cola Arena de Dubaï, temple de l'entertainment au Moyen-Orient, sera le théâtre de ce quart de finale des poids légers. Face à lui se dressera <strong>Salah Eddine Hamli</strong>, un adversaire de taille pour un combat qui s'annonce explosif.
+          <p>
+            L'adversaire ne sera pas de tout repos. Salah Eddine "Supersalah" Hamli est le champion en titre du PFL MENA dans la catégorie poids légers, titre qu'il a décroché en décembre 2025 à Al Khobar, en Arabie saoudite, devenant au passage le premier Marocain à remporter ce titre dans le circuit. Sa finale de championnat contre l'Irakien Mohammad Fahmi s'est conclue par une soumission au D'arce choke au deuxième round — propre, dominante, sans discussion possible.
           </p>
-          <p className="mb-12">
-            "Le PFL MENA est la plateforme idéale pour montrer que Marseille est une terre de guerriers", confie Ylies. "On a travaillé dur au club, l'objectif est clair : la victoire et rien d'autre."
+          <p>
+            Hamli s'entraîne au Climent Club à Alicante, en Espagne, aux côtés de la star des poids plumes Ilia Topuria. Ce détail n'est pas anodin : le niveau de sparring et les méthodes de préparation auxquels il a accès chaque jour sont de premier plan. À 27 ans, il affiche un palmarès vierge de défaites et s'est imposé comme l'un des finisseurs les plus dangereux de la région, avec un arsenal de soumissions redoutable et une capacité à contrôler les combats.
+          </p>
+          <p>
+            Il a notamment soumis Mohsen Mohammadseifi — cinq fois champion du monde de Wushu Sanda — dès le premier round par étranglement arrière. Djiroun sait ce qui l'attend.
           </p>
 
-          <div className="relative w-full h-[400px] rounded-xl mb-12 overflow-hidden border border-white/10">
+          <h2 className="text-3xl font-oswald font-bold text-white uppercase mt-16 mb-8 tracking-wider">
+            Un contexte de soirée particulier
+          </h2>
+          <p>
+            C'est la première fois que le PFL MENA organise un événement hors d'Arabie saoudite. Dubaï représente un choix stratégique pour la ligue, et le poids symbolique de ce déplacement est réel. Comme l'a déclaré Jérôme Mazet, directeur général du PFL MENA : "Dubaï est un marché clé pour le PFL MENA et un hub mondial pour le sport et le entertainment, ce qui en fait le cadre idéal pour notre ouverture de saison 2026."
+          </p>
+
+          <div className="relative w-full aspect-video rounded-xl my-12 overflow-hidden border border-white/10">
             <Image 
               src="/images/blog/ylies-training.png" 
-              alt="Ylies Djiroun en préparation au Marseille Fight Club" 
+              alt="Ylies Djiroun à l'entraînement" 
               fill
               className="object-cover"
             />
           </div>
 
-          <h2 className="text-3xl font-oswald font-bold text-white uppercase mt-12 mb-6 tracking-widest flex items-center">
-            <span className="bg-mfc-red w-8 h-1 mr-4 block"></span>
-            Une Préparation Millimétrée au MFC
-          </h2>
-
           <p>
-            Sous l'œil attentif des coachs du Marseille Fight Club, Ylies a suivi un camp d'entraînement intensif. Sparring de haut niveau, séances de lutte acharnées et préparation physique spécifique au climat de Dubaï ont rythmé son quotidien ces dernières semaines.
+            La Coca-Cola Arena, située dans le quartier City Walk, peut accueillir jusqu'à 17 000 spectateurs — une infrastructure à la hauteur des ambitions de la soirée. L'événement sera diffusé en direct sur STARZPLAY dans la région MENA, à partir de 17h heure du Golfe.
+          </p>
+          <p>
+            La carte est dense : en plus du co-main event Hamli vs Djiroun, la soirée mettra en avant la toute première apparition de Zamzam Al Hammadi, 18 ans, prometteuse émirate auréolée de titres mondiaux en MMA et en jiu-jitsu brésilien. L'événement porte clairement une ambition : faire de Dubaï un rendez-vous incontournable sur la carte mondiale du MMA.
           </p>
 
-          <blockquote className="p-6 my-8 border-l-4 border-mfc-red bg-white/5 rounded-r-lg italic text-xl">
-            "Ylies est dans une forme olympique. Il a cette capacité rare à rester focalisé sous la pression. Dubaï va découvrir un athlète complet, prêt à tout pour décrocher sa place en demi-finale."
-            <footer className="text-sm text-mfc-red mt-2 font-oswald uppercase tracking-widest not-italic">— Staff Technique, Marseille Fight Club</footer>
-          </blockquote>
-
-          <h2 className="text-3xl font-oswald font-bold text-white uppercase mt-12 mb-6 tracking-widest flex items-center">
-            <span className="bg-mfc-red w-8 h-1 mr-4 block"></span>
-            Tous Derrière Ylies !
+          <h2 className="text-3xl font-oswald font-bold text-white uppercase mt-16 mb-8 tracking-wider">
+            Ce combat, vu d'ici
           </h2>
-
-          <p className="pb-8">
-            Le rendez-vous est pris. Le 24 mai 2026, Marseille sera derrière son champion. Que vous soyez à Dubaï ou devant vos écrans, ne manquez pas cette performance qui s'annonce épique. La tempête "Broly" arrive sur le PFL MENA, et rien ne semble pouvoir l'arrêter.
+          <p>
+            Sur le papier, Djiroun est l'outsider. Hamli est invaincu, champion en titre, en pleine ascension, et l'affrontement se joue sur son terrain géographique — le circuit MENA qu'il a dominé de bout en bout la saison dernière. Mais les palmarès ne font pas les combats.
           </p>
+          <p>
+            Ce que Djiroun apporte dans cette cage, c'est quelque chose qu'aucun bilan chiffré ne résume : une dizaine d'années de compétition internationale, des défaites digérées et transformées, une capacité à s'adapter qui ne s'achète pas. Il est décrit par les observateurs du circuit comme le test le plus sérieux qu'Hamli ait eu à affronter jusqu'ici — ce qui, au vu du niveau du champion, n'est pas une formule anodine.
+          </p>
+          <p>
+            Le MFC sera représenté au plus haut niveau ce soir-là. Pas dans un combat de remplissage, pas dans un préliminaire — en co-main event d'une soirée diffusée dans toute la région MENA, face à l'homme qui porte la ceinture. C'est là où on voulait être.
+          </p>
+          <p className="font-bold text-white mt-8">
+            Le reste appartient au 24 mai.
+          </p>
+
+          <div className="mt-16 p-6 bg-white/5 border-t border-white/10 text-[10px] text-gray-500 font-inter italic">
+            Données issues des sources officielles PFL, Arab News, Sherdog et Tapology. Le combat est prévu le 24 mai 2026 à la Coca-Cola Arena, Dubaï.
+          </div>
 
         </article>
+
+        <footer className="mt-16 pt-8 border-t border-white/10 flex justify-between items-center">
+          <div className="text-gray-500 text-[10px] font-inter uppercase tracking-widest">
+            © 2026 Marseille Fight Club
+          </div>
+        </footer>
       </div>
     </main>
   );

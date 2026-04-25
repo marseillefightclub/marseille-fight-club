@@ -9,10 +9,10 @@ export default function BlogPage() {
   const articles = [
     {
       id: "ylies-djiroun-pride-of-arabia-dubai",
-      title: "Ylies Djiroun au PFL MENA : 'Broly' à la Conquête de Dubaï",
-      excerpt: "Découvrez le portrait d'Ylies Djiroun avant son combat historique au Pride of Arabia le 24 mai 2026 à la Coca-Cola Arena de Dubaï.",
-      category: "Événement",
-      date: "23 Avril 2026",
+      title: "Ylies \"Broly\" Djiroun Face au Champion en Titre à Dubaï — Le MFC en Co-Main Event du PFL MENA",
+      excerpt: "Le 24 mai 2026, la Coca-Cola Arena accueillera Ylies Djiroun face au champion Salah Eddine Hamli. Un choc de styles et d'expérience pour le co-main event du PFL MENA.",
+      category: "PFL MENA",
+      date: "25 Avril 2026",
       image: "/images/blog/ylies-victory.jpg"
     },
     {
