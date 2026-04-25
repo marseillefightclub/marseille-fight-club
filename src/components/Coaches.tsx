@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { openInstagramStory } from "@/utils/instagram";
 
 const coaches = [
   {
@@ -9,21 +10,21 @@ const coaches = [
     role: "Head Coach MMA",
     image: "/images/coaches/papy.png",
     bio: "Fondateur du Marseille fight Club.",
-    instagram: "https://instagram.com/stories/foissardjm/?utm_source=ig_story_item_share",
+    username: "foissardjm",
   },
   {
     name: "Hassou",
     role: "Coach Boxe Anglaise",
     image: "/images/coaches/hassou.png",
     bio: "Ex-combattant, transmet rigueur et technique.",
-    instagram: "https://instagram.com/stories/hassou_captaincrochet/?utm_source=ig_story_item_share",
+    username: "hassou_captaincrochet",
   },
   {
     name: "Souhil Taïri",
     role: "Coach Grappling",
     image: "/images/coaches/souhil.png",
     bio: "Combattant pro MMA PFL MENA, ceinture Marron Luta Livre.",
-    instagram: "https://instagram.com/stories/souhil.t/?utm_source=ig_story_item_share",
+    username: "souhil.t",
   }
 ];
 
@@ -53,10 +54,8 @@ export default function Coaches() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="group relative overflow-hidden rounded-xl bg-mfc-dark h-[400px] md:h-[500px] shadow-2xl cursor-pointer"
             >
-              <a 
-                href={coach.instagram} 
-                target="_blank" 
-                rel="noopener noreferrer"
+              <div 
+                onClick={() => openInstagramStory(coach.username)}
                 className="absolute inset-0 z-20"
               />
               <Image 
