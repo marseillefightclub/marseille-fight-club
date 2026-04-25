@@ -137,9 +137,7 @@ export default function ArticlePage() {
             Le reste appartient au 24 mai.
           </p>
 
-          <div className="mt-16 p-6 bg-white/5 border-t border-white/10 text-[10px] text-gray-500 font-inter italic">
-            Données issues des sources officielles PFL, Arab News, Sherdog et Tapology. Le combat est prévu le 24 mai 2026 à la Coca-Cola Arena, Dubaï.
-          </div>
+
 
         </article>
 
