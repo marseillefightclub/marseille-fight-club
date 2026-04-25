@@ -53,7 +53,7 @@ export default function Hero() {
           className="mt-12 flex justify-center w-full"
         >
           <a 
-            href="https://www.instagram.com/marseillefightclub/" 
+            href="https://www.instagram.com/stories/marseillefightclub/" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="group flex flex-col items-center gap-3 text-white/60 hover:text-white transition-colors duration-300"
