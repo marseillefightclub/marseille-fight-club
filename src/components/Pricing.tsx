@@ -82,11 +82,12 @@ const sections: Section[] = [
       },
       {
         name: "BOXE",
-        price: "300 €",
+        price: "420 €",
         schedule: [
           "Lundi : 17h30 – 18h30",
+          "Mardi : 16h30 - 17h30",
           "Mercredi : 19h30 – 21h00",
-          "Vendredi : 18h30 – 19h30"
+          "Vendredi : 18h – 19h30"
         ],
         tel: "07 83 67 54 75"
       },
@@ -190,17 +191,17 @@ const sections: Section[] = [
       },
       {
         name: "BOXE KIDS",
-        price: "290 €",
+        price: "300 €",
         groups: [
           {
-            age: "6–9 ans",
+            age: "5–8 ans",
             schedule: [
               "Mercredi : 14h00 – 15h00",
               "Samedi : 11h00 – 12h00"
             ]
           },
           {
-            age: "10–13 ans",
+            age: "9–12 ans",
             schedule: [
               "Mercredi : 15h00 – 16h00",
               "Samedi : 12h00 – 13h00"

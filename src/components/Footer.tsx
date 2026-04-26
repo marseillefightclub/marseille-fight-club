@@ -12,7 +12,7 @@ export default function Footer() {
               Marseille <span className="text-mfc-red">Fight Club</span>
             </h3>
             <p className="text-gray-400 font-light max-w-sm">
-              Rejoignez notre communauté de combattants. Marseille dans l'âme, bienveillance dans le vestiaire, fierté sur la cage..
+              Rejoignez notre communauté de combattants. Marseille dans l'âme, bienveillance dans le vestiaire, fierté dans la cage..
             </p>
           </div>
           
@@ -44,7 +44,7 @@ export default function Footer() {
             </p>
             <span className="hidden md:inline text-gray-700">|</span>
             <p className="text-gray-500 text-sm">
-              Développé par <a href="https://mickaelcode.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors hover:underline">Mickael</a>
+              Développé par <a href="https://mickaelcode.com" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-white transition-colors hover:underline">Mickael</a>
             </p>
           </div>
           <div className="flex gap-4">
