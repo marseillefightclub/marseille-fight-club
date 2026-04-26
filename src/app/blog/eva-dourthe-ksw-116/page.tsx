@@ -58,7 +58,7 @@ export default function ArticlePage() {
             Surnommée "La Soldat", Eva Dourthe n'est plus à présenter aux amateurs de MMA européen. Ceinture noire de Judo, elle a su transposer les codes de la voie de la souplesse vers l'octogone avec une efficacité redoutable.
           </p>
           <p className="mb-8">
-            Passée par des organisations prestigieuses comme l'Oktagon MMA, le Cage Warriors ou encore l'Hexagone MMA, Dourthe est arrivée à la KSW avec un bagage technique immense et une détermination sans faille. Son style, mêlant un grappling d'élite et une gestion de la distance millimétrée, fait d'elle une adversaire crainte de toutes.
+            Passée par des organisations prestigieuses comme l'Oktagon MMA, le Cage Warriors ou encore l'Hexagone MMA, Dourthe est arrivée au KSW avec un bagage technique immense et une détermination sans faille. Son style, mêlant un grappling d'élite et une gestion de la distance millimétrée, fait d'elle une adversaire crainte de toutes.
           </p>
 
           <div className="relative w-full h-[400px] rounded-xl mb-12 overflow-hidden border border-white/10">
@@ -108,11 +108,11 @@ export default function ArticlePage() {
 
           <h2 className="text-3xl font-oswald font-bold text-white uppercase mt-12 mb-6 tracking-widest flex items-center">
             <span className="bg-mfc-red w-8 h-1 mr-4 block"></span>
-            Un Futur Radieux à la KSW
+            Un Futur Radieux au KSW
           </h2>
 
           <p className="pb-8">
-            Avec cette victoire monumentale, Eva Dourthe se propulse directement dans les discussions pour le titre de la catégorie Strawweight de la KSW. Le Marseille Fight Club peut être fier de sa championne, qui continue de porter haut les couleurs du MMA français sur la scène internationale. La suite s'annonce explosive pour "La Soldat".
+            Avec cette victoire monumentale, Eva Dourthe se propulse directement dans les discussions pour le titre de la catégorie Strawweight du KSW. Le Marseille Fight Club peut être fier de sa championne, qui continue de porter haut les couleurs du MMA français sur la scène internationale. La suite s'annonce explosive pour "La Soldat".
           </p>
 
         </article>

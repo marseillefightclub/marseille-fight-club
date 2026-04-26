@@ -8,22 +8,29 @@ const coaches = [
     name: "Jean Michel Foissard 'Papy'",
     role: "Head Coach MMA",
     image: "/images/coaches/papy.png",
-    bio: "Fondateur du Marseille fight Club.",
+    bio: "Fondateur du Marseille fight Club",
     instagram: "https://www.instagram.com/foissardjm/",
   },
   {
     name: "Hassou",
     role: "Coach Boxe Anglaise",
     image: "/images/coaches/hassou.png",
-    bio: "Ex-combattant, transmet rigueur et technique.",
+    bio: "Ex-combattant, transmet rigueur et technique",
     instagram: "https://www.instagram.com/hassou_captaincrochet/",
   },
   {
     name: "Souhil Taïri",
     role: "Coach Grappling",
     image: "/images/coaches/souhil.png",
-    bio: "Combattant pro MMA PFL MENA, ceinture Marron Luta Livre.",
+    bio: "Combattant pro MMA PFL MENA, ceinture Marron Luta Livre",
     instagram: "https://www.instagram.com/souhil.t/",
+  },
+  {
+    name: "Mahfoud",
+    role: "Coach striking MMA",
+    image: "/images/coaches/mahfoud.png",
+    bio: "Combattant kickboxing",
+    instagram: "https://www.instagram.com/boxing_camp13/",
   }
 ];
 
