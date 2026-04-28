@@ -23,7 +23,7 @@ export default function Navbar() {
     { name: "Le Club", href: "/club" },
     { name: "Coachs", href: "/coachs" },
     { name: "Tarifs", href: "/tarifs" },
-    { name: "Blog", href: "/blog" },
+    { name: "Press", href: "/blog" },
   ];
 
   return (

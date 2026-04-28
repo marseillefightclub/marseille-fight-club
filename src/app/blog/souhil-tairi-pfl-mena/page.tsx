@@ -23,9 +23,9 @@ export default function ArticlePage() {
 
         {/* Header Image */}
         <div className="relative w-full aspect-video md:aspect-21/9 rounded-xl overflow-hidden mb-12 border border-white/5 bg-mfc-gray/50 group">
-          <a href="/images/blog/pfl-mena.png" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+          <a href="/images/blog/souhilStriking.png" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
             <Image 
-              src="/images/blog/pfl-mena.png" 
+              src="/images/blog/souhilStriking.png" 
               alt="Souhil Tairi au PFL MENA" 
               fill
               className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -70,7 +70,7 @@ export default function ArticlePage() {
           <h2 className="text-3xl font-oswald font-bold text-white uppercase mt-16 mb-8 tracking-wider">
             Un premier round difficile, géré avec caractère
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 my-12">
+          <div className="grid grid-cols-1 gap-12 my-12">
             <div>
               <p>
                 Le premier round a été compliqué pour Tairi. Saleem a réussi à l'amener au sol, à prendre son dos et à s'y installer durablement. Pendant de longues secondes, la situation était inconfortable : Saleem dans le dos, cherchant à verrouiller un étranglement, Tairi obligé de gérer position après position sans jamais vraiment pouvoir se relever proprement.
@@ -79,16 +79,7 @@ export default function ArticlePage() {
                 Tairi a répondu avec quelques coudes depuis le bas et un upkick bien senti, mais la reprise a globalement appartenu à Saleem. Un point a également été déduit à Tairi pour un coup illégal accidentel avant la fin du round. La situation était claire : il fallait aller chercher la victoire par finition.
               </p>
             </div>
-            <div className="relative aspect-4/5 rounded-xl overflow-hidden border border-white/10 group">
-              <a href="/images/blog/souhil-portrait.png" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                <Image 
-                  src="/images/blog/souhil-portrait.png" 
-                  alt="Portrait de Souhil Tairi" 
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-              </a>
-            </div>
+            
           </div>
 
           <h2 className="text-3xl font-oswald font-bold text-white uppercase mt-16 mb-8 tracking-wider">

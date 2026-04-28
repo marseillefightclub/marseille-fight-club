@@ -29,7 +29,7 @@ export default function BlogPage() {
       excerpt: "Face à Abdullah Saleem, combattant koweïtien invaincu, notre pensionnaire Souhil Tairi a montré l'étendue de son talent : encaisser, rester lucide, et finir le travail avec un TKO magistral.",
       category: "PFL MENA",
       date: "9 Mai 2025",
-      image: "/images/blog/pfl-mena.png"
+      image: "/images/blog/souhil-portrait.png"
     },
     {
       id: "eva-dourthe-ksw-116",

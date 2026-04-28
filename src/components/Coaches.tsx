@@ -26,10 +26,10 @@ const coaches = [
     instagram: "https://www.instagram.com/souhil.t/",
   },
   {
-    name: "Mahfoud",
-    role: "Coach striking MMA",
+    name: "Mohamed Mahfoud",
+    role: "Coach Kickboxing",
     image: "/images/coaches/mahfoud.png",
-    bio: "Combattant kickboxing",
+    bio: "Combattant pro kickboxing",
     instagram: "https://www.instagram.com/boxing_camp13/",
   }
 ];
