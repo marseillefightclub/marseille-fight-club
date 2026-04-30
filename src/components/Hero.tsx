@@ -12,7 +12,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-[url('/images/hero-bg-nobricks.png')] bg-cover bg-center" />
       </div>
 
-      <div className="relative z-20 flex flex-col items-center text-center px-4 max-w-5xl mx-auto">
+      <div className="relative z-20 flex flex-col items-center text-center px-4 max-w-5xl mx-auto pt-8 md:pt-16">
         <motion.h1 
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
