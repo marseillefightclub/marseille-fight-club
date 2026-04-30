@@ -47,6 +47,9 @@ export const metadata: Metadata = {
   icons: {
     icon: "/LogoGorill.jpg",
   },
+  verification: {
+    google: "67z8ufL0MJCs-2ow4QuljioLA-xfu26592OPrPJ5q3U",
+  },
 };
 
 export const viewport: Viewport = {
