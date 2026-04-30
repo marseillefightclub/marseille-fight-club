@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
@@ -9,6 +9,7 @@ import Image from "next/image";
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isPlanningOpen, setIsPlanningOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -58,9 +59,12 @@ export default function Navbar() {
                 {link.name}
               </Link>
             ))}
-            <a href="#contact" className="px-6 py-2 bg-mfc-red text-white uppercase font-oswald tracking-widest text-sm hover:bg-white hover:text-mfc-dark transition-colors duration-300 shadow-lg shadow-red-900/20">
-              Essai Gratuit
-            </a>
+            <button 
+              onClick={() => setIsPlanningOpen(true)}
+              className="px-6 py-2 bg-mfc-red text-white uppercase font-oswald tracking-widest text-sm hover:bg-white hover:text-mfc-dark transition-colors duration-300 shadow-lg shadow-red-900/20"
+            >
+              Planning
+            </button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -92,16 +96,52 @@ export default function Navbar() {
                 {link.name}
               </Link>
             ))}
-            <a 
-              href="#contact" 
-              onClick={() => setIsMobileMenuOpen(false)}
+            <button 
+              onClick={() => {
+                setIsMobileMenuOpen(false);
+                setIsPlanningOpen(true);
+              }}
               className="mt-8 w-full block text-center px-6 py-5 bg-mfc-red text-white uppercase font-oswald tracking-widest text-xl hover:bg-white hover:text-mfc-dark transition-colors duration-300"
             >
-              Essai Gratuit
-            </a>
+              Planning
+            </button>
           </div>
         </motion.div>
       )}
+      {/* Planning Modal */}
+      <AnimatePresence>
+        {isPlanningOpen && (
+          <motion.div 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 backdrop-blur-md p-4 md:p-8"
+            onClick={() => setIsPlanningOpen(false)}
+          >
+            <div 
+              className="relative w-full max-w-6xl max-h-[90vh] h-full flex flex-col"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button 
+                onClick={() => setIsPlanningOpen(false)}
+                className="absolute -top-12 right-0 md:-right-10 text-white/70 hover:text-white transition-colors p-2 z-50 flex items-center justify-center"
+              >
+                <X size={40} />
+              </button>
+              <div className="relative w-full h-full flex items-center justify-center">
+                <Image 
+                  src="/images/planning.jpg" 
+                  alt="Planning Marseille Fight Club" 
+                  fill
+                  className="object-contain"
+                  sizes="100vw"
+                  priority
+                />
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   );
 }
