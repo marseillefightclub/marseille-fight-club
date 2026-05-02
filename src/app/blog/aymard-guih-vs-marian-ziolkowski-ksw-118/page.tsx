@@ -210,7 +210,7 @@ export default function ArticlePage() {
             En main event : Kuberski vs Michalski pour le titre intérimaire des middleweights. En co-main : le titre féminin bantamweight entre Czyżewska et Luzar-Smajić. Guih-Ziółkowski est sur la main card — le KSW sait ce que ce combat vaut.
           </p>
           <p className="pb-8 text-white font-medium">
-            Tout le MFC sera là. Suivez-nous sur les réseaux — on couvre la nuit en direct.
+            Tout le MFC sera là. Le combat d'Aymard sera retransmis sur RMC Sport 1 (début de la soirée KSW à 20h30, heure française).
           </p>
 
         </article>
