@@ -31,6 +31,13 @@ const coaches = [
     image: "/images/coaches/mahfoud.png",
     bio: "Combattant pro kickboxing",
     instagram: "https://www.instagram.com/boxing_camp13/",
+  },
+  {
+    name: "Eva Dourthe",
+    role: "Coach Lutte Ado & Coach MMA Combattante Féminine",
+    image: "/images/coaches/eva.png",
+    bio: "Combattante pro KSW",
+    instagram: "https://www.instagram.com/evadourthe/",
   }
 ];
 

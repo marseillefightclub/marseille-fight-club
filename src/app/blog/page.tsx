@@ -8,6 +8,14 @@ import { useRef } from "react";
 export default function BlogPage() {
   const articles = [
     {
+      id: "aymard-guih-vs-marian-ziolkowski-ksw-118",
+      title: "Aymard Guih vs Marian Ziółkowski : Le Choc des Poids Légers au KSW 118",
+      excerpt: "Le 16 mai 2026 à l'Arena Kalisz, Aymard Guih affronte l'ancien champion Marian Ziółkowski sur la main card du KSW 118. Analyse technique, enjeux et préparation MFC.",
+      category: "KSW 118",
+      date: "2 Mai 2026",
+      image: "/images/blog/aymard-guih-ksw118.png"
+    },
+    {
       id: "ylies-djiroun-pride-of-arabia-dubai",
       title: "Ylies \"Broly\" Djiroun Face au Champion en Titre à Dubaï — Le MFC en Co-Main Event du PFL MENA",
       excerpt: "Le 24 mai 2026, la Coca-Cola Arena accueillera Ylies Djiroun face au champion Salah Eddine Hamli. Un choc de styles et d'expérience pour le co-main event du PFL MENA.",
@@ -21,7 +29,7 @@ export default function BlogPage() {
       excerpt: "Le 29 mai 2026, l'Arkéa Arena accueillera Wilson Varela face au vétéran Davy Gallon. Le champion marseillais arrive dans la forme de sa vie pour ce choc au sommet.",
       category: "Hexagone MMA",
       date: "25 Avril 2026",
-      image: "/images/blog/varela-fight.jpg"
+      image: "/images/blog/varela-belt.png"
     },
     {
       id: "souhil-tairi-pfl-mena",
@@ -70,12 +78,12 @@ export default function BlogPage() {
       {/* Hero Article */}
       <section className="mb-24">
         <Link href={`/blog/${heroArticle.id}`} className="group block">
-          <div className="relative w-full aspect-video md:aspect-21/9 max-h-[500px] overflow-hidden mb-8">
+          <div className="relative w-full aspect-video md:aspect-21/9 max-h-[500px] overflow-hidden mb-8 bg-black">
             <Image 
               src={heroArticle.image} 
               alt={heroArticle.title}
               fill
-              className="object-cover group-hover:scale-105 transition-transform duration-1000"
+              className="object-contain group-hover:scale-105 transition-transform duration-1000"
               priority
             />
           </div>

@@ -118,7 +118,7 @@ export default function ArticlePage() {
             L'autre demi-finale de la soirée oppose Théo Ulrich, jeune talent invaincu en sept combats, à Nicolae Bivol — le même que Wilson a soumis à Poitiers en mars. La soirée s'annonce dense, l'Arkéa Arena en feu, plus de 8 000 spectateurs attendus.
           </p>
           <p className="font-bold text-white mt-8">
-            Le Marseille Fight Club sera dans le coin. Comme toujours. Et Wilson Varela sera prêt. Rendez-vous le 29 mai.
+            Le Marseille Fight Club sera dans le coin. Comme toujours. Et Wilson Varela sera prêt. Rendez-vous le 29 mai, en direct sur RMC Sport et DAZN.
           </p>
 
         </article>
