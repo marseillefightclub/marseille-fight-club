@@ -19,6 +19,17 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    if (isPlanningOpen || isMobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isPlanningOpen, isMobileMenuOpen]);
+
   const navLinks = [
     { name: "Accueil", href: "/" },
     { name: "Le Club", href: "/club" },
@@ -115,7 +126,7 @@ export default function Navbar() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 backdrop-blur-md p-4 md:p-8"
+            className="fixed inset-0 z-[100] flex items-center justify-center bg-black p-4 md:p-8"
             onClick={() => setIsPlanningOpen(false)}
           >
             <div 
