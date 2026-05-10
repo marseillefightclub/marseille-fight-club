@@ -62,6 +62,13 @@ export default function Footer() {
             </a>
           </div>
         </div>
+        
+        {/* Liens légaux discrets */}
+        <div className="mt-8 flex justify-center gap-4 text-xs font-light text-gray-600">
+          <a href="/legal" className="hover:text-gray-400 transition-colors">Mentions légales</a>
+          <span>|</span>
+          <a href="/privacy" className="hover:text-gray-400 transition-colors">Politique de confidentialité</a>
+        </div>
       </div>
       
       {/* Background logo text */}

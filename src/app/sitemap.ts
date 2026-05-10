@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/blog/souhil-tairi-pfl-mena",
     "/blog/wilson-varela-vs-davy-gallon-hexagone-mma-44",
     "/blog/ylies-djiroun-pride-of-arabia-dubai",
+    "/blog/aymard-guih-vs-marian-ziolkowski-ksw-118",
   ];
 
   return routes.map((route) => ({

@@ -65,7 +65,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr" className={`${inter.variable} ${oswald.variable} scroll-smooth`}>
+    <html lang="fr" className={`${inter.variable} ${oswald.variable} scroll-smooth`} suppressHydrationWarning>
       <head>
         <script
           type="application/ld+json"
@@ -91,7 +91,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="bg-mfc-dark text-mfc-light font-sans antialiased selection:bg-mfc-red selection:text-white flex flex-col min-h-screen">
+      <body className="bg-mfc-dark text-mfc-light font-sans antialiased selection:bg-mfc-red selection:text-white flex flex-col min-h-screen" suppressHydrationWarning>
         <Navbar />
         <div className="flex-grow">
           {children}
