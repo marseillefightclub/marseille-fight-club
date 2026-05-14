@@ -45,6 +45,7 @@ const coaches = [
       image: "/images/coaches/olivier.jpg",
       bio: "Coach expérimenté et bienveillant",
       instagram: "https://www.instagram.com/olive_.7/",
+      objectPosition: "center 30%",
     },
 ];
 
@@ -84,7 +85,8 @@ export default function Coaches() {
                 src={coach.image} 
                 alt={coach.name} 
                 fill
-                className="object-cover object-top transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100"
+                style={{ objectPosition: coach.objectPosition || 'top' }}
+                className="object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
               
