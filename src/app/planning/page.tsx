@@ -15,7 +15,7 @@ export default function PlanningPage() {
           {/* Mobile button */}
           <div className="md:hidden">
             <a 
-              href="/images/planning.jpg" 
+              href="/api/download-planning" 
               download="Planning_MFC.jpg" 
               className="flex items-center justify-center gap-3 bg-mfc-red text-white py-4 px-6 rounded font-oswald uppercase tracking-widest text-sm w-full active:scale-95 transition-transform shadow-xl"
             >
