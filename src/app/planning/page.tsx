@@ -12,15 +12,17 @@ export default function PlanningPage() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center">
         
         <div className="mb-12">
-          {/* Mobile button */}
+          {/* Mobile button & instruction */}
           <div className="md:hidden">
+            <p className="text-gray-400 text-sm mb-3">Astuce : Appuyez sur le bouton, puis maintenez votre doigt sur l'image pour « Ajouter aux photos ».</p>
             <a 
               href="/images/planning.jpg" 
-              download="Planning_MFC.jpg" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center justify-center gap-3 bg-mfc-red text-white py-4 px-6 rounded font-oswald uppercase tracking-widest text-sm w-full active:scale-95 transition-transform shadow-xl"
             >
                <Download size={20} />
-               Appuyez pour télécharger
+               Ouvrir le planning complet
             </a>
           </div>
 
