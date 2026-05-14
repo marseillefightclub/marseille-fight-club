@@ -67,8 +67,7 @@ export default function BlogPage() {
     <main className="min-h-screen bg-mfc-dark pt-32 pb-0 overflow-x-hidden">
       {/* Header */}
       <div className="max-w-7xl mx-auto px-4 mb-12">
-        <h1 className="text-5xl md:text-7xl font-oswald font-bold text-white uppercase tracking-tighter leading-none mb-4">
-          The <span className="text-mfc-red">Press</span>
+        <h1 className="text-5xl md:text-7xl font-oswald font-bold text-white uppercase tracking-tighter leading-none mb-4"> <span className="text-mfc-red">Press</span>
         </h1>
         <p className="text-gray-500 text-lg font-inter uppercase tracking-widest border-l-2 border-mfc-red pl-6">
           Actualités & Analyses du Marseille Fight Club
@@ -102,7 +101,7 @@ export default function BlogPage() {
                   {heroArticle.excerpt}
                 </p>
                 <div className="flex items-center gap-4 text-white font-oswald uppercase tracking-widest text-sm group-hover:translate-x-3 transition-transform duration-300">
-                  Read Article <ArrowRight size={20} className="text-mfc-red" />
+                  Lire l'article <ArrowRight size={20} className="text-mfc-red" />
                 </div>
               </div>
             </div>
