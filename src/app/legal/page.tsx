@@ -14,9 +14,12 @@ export default function LegalPage() {
         <section className="space-y-4">
           <h2 className="text-2xl font-oswald uppercase text-white">Éditeur du site</h2>
           <p className="text-gray-300">
-            <strong>Association :</strong> Marseille Fight Club<br />
-            <strong>Statut juridique :</strong> Association loi 1901<br />
-            <strong>Siège social :</strong> 268 Avenue de la Capelette, 13010 Marseille, France<br />
+            <strong>Dénomination :</strong> FOISSARD PROMOTION<br />
+            <strong>Forme juridique :</strong> Association déclarée<br />
+            <strong>Siège social :</strong> 14 TRAVERSE CHEVALIER 13010 MARSEILLE<br />
+            <strong>SIRET :</strong> 853 147 213 00013<br />
+            <strong>Code NAF/APE :</strong> 94.99Z<br />
+            <strong>Date de création :</strong> 17/05/2017<br />
             <strong>Directeur de la publication :</strong> Jean-Michel Foissard
           </p>
         </section>

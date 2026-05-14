@@ -38,7 +38,14 @@ const coaches = [
     image: "/images/coaches/eva.png",
     bio: "Combattante pro KSW",
     instagram: "https://www.instagram.com/evadourthe/",
-  }
+    },
+    {
+      name: "Olivier",
+      role: "Coach MMA Ado",
+      image: "/images/coaches/olivier.jpg",
+      bio: "Coach expérimenté et bienveillant",
+      instagram: "https://www.instagram.com/olive_.7/",
+    },
 ];
 
 export default function Coaches() {

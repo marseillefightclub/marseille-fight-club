@@ -87,20 +87,38 @@ Précurseur dans le monde du MMA, le Marseille Fight Club est fier d'accueillir 
             </div>
           </div>
           
-          <div className="w-full h-[400px] md:h-[450px] bg-mfc-gray/50 rounded-2xl border border-white/10 overflow-hidden relative group shadow-2xl">
-            <iframe 
-              src="https://maps.google.com/maps?width=100%25&amp;height=100%25&amp;hl=en&amp;q=EUROSTARTER,%20268%20Avenue%20de%20la%20Capelette,%2013010%20Marseille,%20France&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" 
-              width="100%" 
-              height="100%" 
-              style={{ border: 0 }} 
-              allowFullScreen 
-              loading="lazy" 
-              referrerPolicy="no-referrer-when-downgrade"
-              className="w-full h-full grayscale contrast-125 opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700 ease-in-out"
-            ></iframe>
-            
-            <div className="absolute top-0 left-0 w-16 h-16 border-t-2 border-l-2 border-mfc-red rounded-tl-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 m-4 pointer-events-none"></div>
-            <div className="absolute bottom-0 right-0 w-16 h-16 border-b-2 border-r-2 border-mfc-red rounded-br-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 m-4 pointer-events-none"></div>
+          <div className="flex flex-col gap-8 w-full">
+            {/* Google Maps Location */}
+            <div className="w-full h-[400px] md:h-[450px] bg-mfc-gray/50 rounded-2xl border border-white/10 overflow-hidden relative group shadow-2xl">
+              <iframe 
+                src="https://maps.google.com/maps?width=100%25&amp;height=100%25&amp;hl=en&amp;q=Marseille%20Fight%20Club,%20268%20Avenue%20de%20la%20Capelette,%2013010%20Marseille,%20France&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" 
+                width="100%" 
+                height="100%" 
+                style={{ border: 0 }} 
+                allowFullScreen 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                className="w-full h-full grayscale contrast-125 opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700 ease-in-out"
+              ></iframe>
+              <div className="absolute top-0 left-0 w-16 h-16 border-t-2 border-l-2 border-mfc-red rounded-tl-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 m-4 pointer-events-none"></div>
+              <div className="absolute bottom-0 right-0 w-16 h-16 border-b-2 border-r-2 border-mfc-red rounded-br-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 m-4 pointer-events-none"></div>
+            </div>
+
+            {/* Google Street View */}
+            <div className="w-full h-[400px] md:h-[450px] bg-mfc-gray/50 rounded-2xl border border-white/10 overflow-hidden relative group shadow-2xl">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!4v1778780240466!6m8!1m7!1sRF116UsZIv9Gn8hds2HqCg!2m2!1d43.27917226191679!2d5.413251237275746!3f165.0660490758729!4f11.14092756801189!5f0.7820865974627469" 
+                width="100%" 
+                height="100%" 
+                style={{ border: 0 }} 
+                allowFullScreen 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                className="w-full h-full grayscale contrast-125 opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700 ease-in-out"
+              ></iframe>
+              <div className="absolute top-0 left-0 w-16 h-16 border-t-2 border-l-2 border-mfc-red rounded-tl-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 m-4 pointer-events-none"></div>
+              <div className="absolute bottom-0 right-0 w-16 h-16 border-b-2 border-r-2 border-mfc-red rounded-br-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 m-4 pointer-events-none"></div>
+            </div>
           </div>
         </motion.div>
       </div>
