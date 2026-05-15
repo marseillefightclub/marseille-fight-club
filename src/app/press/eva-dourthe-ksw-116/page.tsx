@@ -15,7 +15,7 @@ export default function ArticlePage() {
         
         {/* Navigation */}
         <div className="mb-8">
-          <Link href="/blog" className="inline-flex items-center text-mfc-red hover:text-white transition-colors duration-300 font-oswald tracking-widest uppercase">
+          <Link href="/press" className="inline-flex items-center text-mfc-red hover:text-white transition-colors duration-300 font-oswald tracking-widest uppercase">
             <ArrowLeft className="mr-2" size={20} />
             Retour aux articles
           </Link>
@@ -24,7 +24,7 @@ export default function ArticlePage() {
         {/* Header Image */}
         <div className="relative w-full h-[400px] md:h-[500px] rounded-xl overflow-hidden mb-10 shadow-2xl shadow-mfc-red/10 border border-white/5">
           <Image 
-            src="/images/blog/eva-dourthe-victory-real.jpg" 
+            src="/images/press/eva-dourthe-victory-real.jpg" 
             alt="Eva Dourthe victorieuse avec sa ceinture" 
             fill
             className="object-cover"
@@ -63,7 +63,7 @@ export default function ArticlePage() {
 
           <div className="relative w-full h-[400px] rounded-xl mb-12 overflow-hidden border border-white/10">
             <Image 
-              src="/images/blog/eva-dourthe-action-real.jpg" 
+              src="/images/press/eva-dourthe-action-real.jpg" 
               alt="Eva Dourthe en combat" 
               fill
               className="object-cover"
@@ -84,7 +84,7 @@ export default function ArticlePage() {
 
           <div className="relative w-full h-[400px] rounded-xl mb-12 overflow-hidden border border-white/10">
             <Image 
-              src="/images/blog/eva-dourthe-finish-real.jpg" 
+              src="/images/press/eva-dourthe-finish-real.jpg" 
               alt="Fin du combat Eva Dourthe vs Ewelina Woźniak" 
               fill
               className="object-cover"

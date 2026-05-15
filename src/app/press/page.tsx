@@ -5,7 +5,7 @@ import Image from "next/image";
 import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import { useRef } from "react";
 
-export default function BlogPage() {
+export default function PressPage() {
   const articles = [
     {
       id: "aymard-guih-vs-marian-ziolkowski-ksw-118",
@@ -13,7 +13,7 @@ export default function BlogPage() {
       excerpt: "Le 16 mai 2026 à l'Arena Kalisz, Aymard Guih affronte l'ancien champion Marian Ziółkowski sur la main card du KSW 118. Analyse technique, enjeux et préparation MFC.",
       category: "KSW 118",
       date: "2 Mai 2026",
-      image: "/images/blog/aymard-guih-ksw118.png"
+      image: "/images/press/aymard-guih-ksw118.png"
     },
     {
       id: "ylies-djiroun-pride-of-arabia-dubai",
@@ -21,7 +21,7 @@ export default function BlogPage() {
       excerpt: "Le 24 mai 2026, la Coca-Cola Arena accueillera Ylies Djiroun face au champion Salah Eddine Hamli. Un choc de styles et d'expérience pour le co-main event du PFL MENA.",
       category: "PFL MENA",
       date: "25 Avril 2026",
-      image: "/images/blog/ylies-victory.jpg"
+      image: "/images/press/ylies-victory.jpg"
     },
     {
       id: "wilson-varela-vs-davy-gallon-hexagone-mma-44",
@@ -29,7 +29,7 @@ export default function BlogPage() {
       excerpt: "Le 29 mai 2026, l'Arkéa Arena accueillera Wilson Varela face au vétéran Davy Gallon. Le champion marseillais arrive dans la forme de sa vie pour ce choc au sommet.",
       category: "Hexagone MMA",
       date: "25 Avril 2026",
-      image: "/images/blog/varela-belt.png"
+      image: "/images/press/varela-belt.png"
     },
     {
       id: "souhil-tairi-pfl-mena",
@@ -37,7 +37,7 @@ export default function BlogPage() {
       excerpt: "Face à Abdullah Saleem, combattant koweïtien invaincu, notre pensionnaire Souhil Tairi a montré l'étendue de son talent : encaisser, rester lucide, et finir le travail avec un TKO magistral.",
       category: "PFL MENA",
       date: "9 Mai 2025",
-      image: "/images/blog/souhil-portrait.png"
+      image: "/images/press/souhil-portrait.png"
     },
     {
       id: "eva-dourthe-ksw-116",
@@ -45,7 +45,7 @@ export default function BlogPage() {
       excerpt: "Retour sur la performance magistrale d'Eva Dourthe face à Ewelina Woźniak. Une victoire par soumission qui marque un tournant pour 'La Soldat'.",
       category: "Événement",
       date: "15 Mars 2026",
-      image: "/images/blog/eva-dourthe-victory-real.jpg"
+      image: "/images/press/eva-dourthe-victory-real.jpg"
     }
   ];
 
@@ -76,7 +76,7 @@ export default function BlogPage() {
 
       {/* Hero Article */}
       <section className="mb-24">
-        <Link href={`/blog/${heroArticle.id}`} className="group block">
+        <Link href={`/press/${heroArticle.id}`} className="group block">
           <div className="relative w-full aspect-video md:aspect-21/9 max-h-[500px] overflow-hidden mb-8 bg-black">
             <Image 
               src={heroArticle.image} 
@@ -143,7 +143,7 @@ export default function BlogPage() {
         >
           {gridArticles.map((article) => (
             <Link 
-              href={`/blog/${article.id}`} 
+              href={`/press/${article.id}`} 
               key={article.id}
               className="shrink-0 w-[85vw] md:w-[380px] lg:w-[400px] snap-start group flex flex-col transition-all duration-500"
             >

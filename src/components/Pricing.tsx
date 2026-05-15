@@ -365,7 +365,7 @@ export default function Pricing() {
                             href={`tel:${plan.tel.split('/')[0].trim()}`} 
                             className="w-full block text-center py-3 bg-transparent border border-white/20 text-white text-xs font-oswald uppercase tracking-widest hover:bg-mfc-red hover:border-mfc-red transition-all duration-300 rounded-lg group-hover:border-mfc-red/50"
                           >
-                            S'inscrire
+                            Appeler
                           </a>
                         </div>
                       </div>

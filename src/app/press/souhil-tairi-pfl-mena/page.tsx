@@ -15,7 +15,7 @@ export default function ArticlePage() {
         
         {/* Navigation */}
         <div className="mb-8">
-          <Link href="/blog" className="inline-flex items-center text-mfc-red hover:text-white transition-colors duration-300 font-oswald tracking-widest uppercase text-sm">
+          <Link href="/press" className="inline-flex items-center text-mfc-red hover:text-white transition-colors duration-300 font-oswald tracking-widest uppercase text-sm">
             <ArrowLeft className="mr-2" size={18} />
             Retour aux articles
           </Link>
@@ -23,9 +23,9 @@ export default function ArticlePage() {
 
         {/* Header Image */}
         <div className="relative w-full aspect-video md:aspect-21/9 rounded-xl overflow-hidden mb-12 border border-white/5 bg-mfc-gray/50 group">
-          <a href="/images/blog/souhilStriking.png" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+          <a href="/images/press/souhilStriking.png" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
             <Image 
-              src="/images/blog/souhilStriking.png" 
+              src="/images/press/souhilStriking.png" 
               alt="Souhil Tairi au PFL MENA" 
               fill
               className="object-cover transition-transform duration-500 group-hover:scale-105"

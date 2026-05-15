@@ -15,7 +15,7 @@ export default function ArticlePage() {
         
         {/* Navigation */}
         <div className="mb-8">
-          <Link href="/blog" className="inline-flex items-center text-mfc-red hover:text-white transition-colors duration-300 font-oswald tracking-widest uppercase">
+          <Link href="/press" className="inline-flex items-center text-mfc-red hover:text-white transition-colors duration-300 font-oswald tracking-widest uppercase">
             <ArrowLeft className="mr-2" size={20} />
             Retour aux articles
           </Link>
@@ -24,7 +24,7 @@ export default function ArticlePage() {
         {/* Header Image */}
         <div className="relative w-full h-[500px] md:h-[650px] rounded-xl overflow-hidden mb-10 shadow-2xl shadow-mfc-red/10 border border-white/5 bg-black">
           <Image 
-            src="/images/blog/aymard-guih-ksw118.png" 
+            src="/images/press/aymard-guih-ksw118.png" 
             alt="Affiche Aymard Guih vs Marian Ziółkowski — KSW 118, Arena Kalisz" 
             fill
             className="object-contain"

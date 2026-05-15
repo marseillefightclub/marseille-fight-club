@@ -15,7 +15,7 @@ export default function ArticlePage() {
         
         {/* Navigation */}
         <div className="mb-4">
-          <Link href="/blog" className="inline-flex items-center text-mfc-red hover:text-white transition-colors duration-300 font-oswald tracking-widest uppercase text-sm">
+          <Link href="/press" className="inline-flex items-center text-mfc-red hover:text-white transition-colors duration-300 font-oswald tracking-widest uppercase text-sm">
             <ArrowLeft className="mr-2" size={18} />
             Retour aux articles
           </Link>
@@ -23,9 +23,9 @@ export default function ArticlePage() {
 
         {/* Header Image */}
         <div className="relative w-full aspect-video md:aspect-21/9 rounded-xl overflow-hidden mb-12 border border-white/5 bg-mfc-gray/50 group">
-          <a href="/images/blog/ylies-victory.jpg" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+          <a href="/images/press/ylies-victory.jpg" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
             <Image 
-              src="/images/blog/ylies-victory.jpg" 
+              src="/images/press/ylies-victory.jpg" 
               alt="Ylies Djiroun" 
               fill
               className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -66,9 +66,9 @@ export default function ArticlePage() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 my-12 items-center">
             <div className="relative aspect-square rounded-xl overflow-hidden border border-white/10 group">
-              <a href="/images/blog/ylies-portrait.jpg" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+              <a href="/images/press/ylies-portrait.jpg" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
                 <Image 
-                  src="/images/blog/ylies-portrait.jpg" 
+                  src="/images/press/ylies-portrait.jpg" 
                   alt="Portrait d'Ylies Djiroun" 
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -110,9 +110,9 @@ export default function ArticlePage() {
           </p>
 
           <div className="relative w-full aspect-video rounded-xl my-12 overflow-hidden border border-white/10 group">
-            <a href="/images/blog/ylies-training.png" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+            <a href="/images/press/ylies-training.png" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
               <Image 
-                src="/images/blog/ylies-training.png" 
+                src="/images/press/ylies-training.png" 
                 alt="Ylies Djiroun à l'entraînement" 
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-105"

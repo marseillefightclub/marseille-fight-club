@@ -15,7 +15,7 @@ export default function ArticlePage() {
         
         {/* Navigation */}
         <div className="mb-4">
-          <Link href="/blog" className="inline-flex items-center text-mfc-red hover:text-white transition-colors duration-300 font-oswald tracking-widest uppercase text-sm">
+          <Link href="/press" className="inline-flex items-center text-mfc-red hover:text-white transition-colors duration-300 font-oswald tracking-widest uppercase text-sm">
             <ArrowLeft className="mr-2" size={18} />
             Retour aux articles
           </Link>
@@ -23,9 +23,9 @@ export default function ArticlePage() {
 
         {/* Header Image */}
         <div className="relative w-full aspect-video md:aspect-21/9 rounded-xl overflow-hidden mb-12 border border-white/5 bg-mfc-gray/50 group">
-          <a href="/images/blog/varela-fight.jpg" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+          <a href="/images/press/varela-fight.jpg" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
             <Image 
-              src="/images/blog/varela-fight.jpg" 
+              src="/images/press/varela-fight.jpg" 
               alt="Wilson Varela" 
               fill
               className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -74,9 +74,9 @@ export default function ArticlePage() {
               </p>
             </div>
             <div className="relative aspect-4/5 rounded-xl overflow-hidden border border-white/10 group">
-              <a href="/images/blog/varela-belt.png" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+              <a href="/images/press/varela-belt.png" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
                 <Image 
-                  src="/images/blog/varela-belt.png" 
+                  src="/images/press/varela-belt.png" 
                   alt="Wilson Varela avec sa ceinture" 
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"

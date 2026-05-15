@@ -22,7 +22,7 @@ export default function Footer() {
               <li><a href="club" className="text-gray-400 hover:text-mfc-red transition-colors">Le Club</a></li>
               <li><a href="coachs" className="text-gray-400 hover:text-mfc-red transition-colors">Nos Coachs</a></li>
               <li><a href="tarifs" className="text-gray-400 hover:text-mfc-red transition-colors">Tarifs & Inscription</a></li>
-              <li><a href="blog" className="text-gray-400 hover:text-mfc-red transition-colors">Blog & Actualités</a></li>
+              <li><a href="/press" className="text-gray-400 hover:text-mfc-red transition-colors">Press & Actualités</a></li>
             </ul>
           </div>
           
