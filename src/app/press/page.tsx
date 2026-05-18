@@ -8,14 +8,6 @@ import { useRef } from "react";
 export default function PressPage() {
   const articles = [
     {
-      id: "aymard-guih-vs-marian-ziolkowski-ksw-118",
-      title: "Aymard Guih vs Marian Ziółkowski : Le Choc des Poids Légers au KSW 118",
-      excerpt: "Le 16 mai 2026 à l'Arena Kalisz, Aymard Guih affronte l'ancien champion Marian Ziółkowski sur la main card du KSW 118. Analyse technique, enjeux et préparation MFC.",
-      category: "KSW 118",
-      date: "2 Mai 2026",
-      image: "/images/press/aymard-guih-ksw118.png"
-    },
-    {
       id: "ylies-djiroun-pride-of-arabia-dubai",
       title: "Ylies \"Broly\" Djiroun Face au Champion en Titre à Dubaï — Le MFC en Co-Main Event du PFL MENA",
       excerpt: "Le 24 mai 2026, la Coca-Cola Arena accueillera Ylies Djiroun face au champion Salah Eddine Hamli. Un choc de styles et d'expérience pour le co-main event du PFL MENA.",
@@ -30,6 +22,14 @@ export default function PressPage() {
       category: "Hexagone MMA",
       date: "25 Avril 2026",
       image: "/images/press/varela-belt.png"
+    },
+    {
+      id: "aymard-guih-vs-marian-ziolkowski-ksw-118",
+      title: "Aymard Guih vs Marian Ziółkowski : Le Choc des Poids Légers au KSW 118",
+      excerpt: "Le 16 mai 2026 à l'Arena Kalisz, Aymard Guih affronte l'ancien champion Marian Ziółkowski sur la main card du KSW 118. Analyse technique, enjeux et préparation MFC.",
+      category: "KSW 118",
+      date: "2 Mai 2026",
+      image: "/images/press/aymard-guih-ksw118.png"
     },
     {
       id: "souhil-tairi-pfl-mena",
