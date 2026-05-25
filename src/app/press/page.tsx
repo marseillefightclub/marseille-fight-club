@@ -78,8 +78,8 @@ export default function PressPage() {
       <section className="mb-24">
         <Link href={`/press/${heroArticle.id}`} className="group block">
           <div className="relative w-full aspect-video md:aspect-21/9 max-h-[500px] overflow-hidden mb-8 bg-black">
-            <Image 
-              src={heroArticle.image} 
+            <Image
+              src={heroArticle.image}
               alt={heroArticle.title}
               fill
               className="object-contain group-hover:scale-105 transition-transform duration-1000"
@@ -117,47 +117,81 @@ export default function PressPage() {
             <h2 className="text-2xl md:text-3xl font-oswald font-bold text-white uppercase tracking-widest shrink-0">Derniers Articles</h2>
             <div className="h-px grow bg-white/10"></div>
           </div>
-          <div className="flex justify-center md:justify-end gap-8 md:gap-4 items-center">
-            <button 
+          {/* Carousel arrows — desktop only */}
+          <div className="hidden md:flex justify-end gap-4 items-center">
+            <button
               onClick={() => scroll('left')}
-              className="p-3 md:p-2 border border-white/20 text-white hover:bg-mfc-red hover:border-mfc-red transition-all duration-300 rounded-full group/btn"
+              className="p-2 border border-white/20 text-white hover:bg-mfc-red hover:border-mfc-red transition-all duration-300 rounded-full group/btn"
               aria-label="Précédent"
             >
-              <ChevronLeft size={24} className="md:w-5 md:h-5" />
+              <ChevronLeft size={20} />
             </button>
-            <div className="h-px w-8 bg-white/10 md:hidden"></div>
-            <button 
+            <button
               onClick={() => scroll('right')}
-              className="p-3 md:p-2 border border-white/20 text-white hover:bg-mfc-red hover:border-mfc-red transition-all duration-300 rounded-full group/btn"
+              className="p-2 border border-white/20 text-white hover:bg-mfc-red hover:border-mfc-red transition-all duration-300 rounded-full group/btn"
               aria-label="Suivant"
             >
-              <ChevronRight size={24} className="md:w-5 md:h-5" />
+              <ChevronRight size={20} />
             </button>
           </div>
         </div>
 
-        <div 
+        {/* Mobile: vertical stack */}
+        <div className="flex flex-col gap-12 px-4 md:hidden">
+          {gridArticles.map((article) => (
+            <Link
+              href={`/press/${article.id}`}
+              key={article.id}
+              className="group flex flex-col transition-all duration-500"
+            >
+              <div className="relative aspect-4/5 overflow-hidden mb-6 rounded-lg">
+                <Image
+                  src={article.image}
+                  alt={article.title}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-all duration-700"
+                />
+                <div className="absolute top-4 left-4">
+                  <span className="px-3 py-1 bg-white text-black text-[10px] font-bold uppercase tracking-widest">
+                    {article.category}
+                  </span>
+                </div>
+              </div>
+              <div className="flex flex-col">
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="text-mfc-red text-xs font-bold font-oswald uppercase tracking-tighter">— {article.date}</span>
+                </div>
+                <h3 className="text-2xl font-oswald font-bold text-white uppercase leading-tight group-hover:text-mfc-red transition-colors duration-300">
+                  {article.title}
+                </h3>
+              </div>
+            </Link>
+          ))}
+        </div>
+
+        {/* Desktop: horizontal carousel */}
+        <div
           ref={carouselRef}
-          className="flex gap-x-12 overflow-x-auto snap-x snap-mandatory no-scrollbar pb-12 px-4 scroll-smooth"
+          className="hidden md:flex gap-x-12 overflow-x-auto snap-x snap-mandatory no-scrollbar pb-12 px-4 scroll-smooth"
           style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
         >
           {gridArticles.map((article) => (
-            <Link 
-              href={`/press/${article.id}`} 
+            <Link
+              href={`/press/${article.id}`}
               key={article.id}
-              className="shrink-0 w-[85vw] md:w-[380px] lg:w-[400px] snap-start group flex flex-col transition-all duration-500"
+              className="shrink-0 md:w-[380px] lg:w-[400px] snap-start group flex flex-col transition-all duration-500"
             >
               <div className="relative aspect-4/5 overflow-hidden mb-8">
-                <Image 
-                  src={article.image} 
+                <Image
+                  src={article.image}
                   alt={article.title}
                   fill
                   className="object-cover group-hover:scale-105 transition-all duration-700"
                 />
                 <div className="absolute top-6 left-6">
-                   <span className="px-3 py-1 bg-white text-black text-[10px] font-bold uppercase tracking-widest">
-                     {article.category}
-                   </span>
+                  <span className="px-3 py-1 bg-white text-black text-[10px] font-bold uppercase tracking-widest">
+                    {article.category}
+                  </span>
                 </div>
               </div>
               <div className="flex flex-col">
