@@ -3,9 +3,9 @@ import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
 export const metadata = {
-  title: "Ylies \"Broly\" Djiroun Face au Champion en Titre à Dubaï — Le MFC au PFL MENA",
-  description: "Ylies Djiroun affronte le champion Salah Eddine Hamli au PFL MENA à Dubaï. Analyse du combat, portrait de Broly et contexte de l'événement.",
-  keywords: "Ylies Djiroun, Broly, PFL MENA, Salah Eddine Hamli, MMA Dubaï, Coca-Cola Arena, Marseille Fight Club",
+  title: "Exploit à Dubaï : Ylies 'Broly' Djiroun Terrasse le Champion Invaincu au Premier Round ! | Marseille Fight Club",
+  description: "Retour sur la victoire historique d'Ylies 'Broly' Djiroun par TKO au premier round face au champion invaincu Salah Eddine Hamli lors du PFL MENA à la Coca-Cola Arena de Dubaï.",
+  keywords: "Ylies Djiroun, Broly, PFL MENA, Victoire, TKO, Premier Round, MMA Dubaï, Coca-Cola Arena, Marseille Fight Club, Jean-Michel Foissard",
 };
 
 export default function ArticlePage() {
@@ -22,16 +22,17 @@ export default function ArticlePage() {
         </div>
 
         {/* Header Image */}
-        <div className="relative w-full aspect-video md:aspect-21/9 rounded-xl overflow-hidden mb-12 border border-white/5 bg-mfc-gray/50 group">
-          <a href="/images/press/ylies-victory.jpg" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-            <Image 
-              src="/images/press/ylies-victory.jpg" 
-              alt="Ylies Djiroun" 
-              fill
-              className="object-cover transition-transform duration-500 group-hover:scale-105"
-            />
-          </a>
-          <div className="absolute inset-0 bg-linear-to-t from-mfc-dark via-transparent to-transparent pointer-events-none"></div>
+        <div className="flex justify-center mb-12">
+          <div className="relative w-full max-w-sm aspect-[3/4] rounded-xl overflow-hidden border border-white/5 bg-mfc-gray/50 group shadow-2xl">
+            <a href="/images/press/ylies-victoire-pfl.jpg" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+              <Image 
+                src="/images/press/ylies-victoire-pfl.jpg" 
+                alt="Ylies Djiroun Victoire PFL MENA 24 Mai 2026" 
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+            </a>
+          </div>
         </div>
 
         {/* Article Header */}
@@ -41,12 +42,12 @@ export default function ArticlePage() {
             <span className="px-3 py-1 bg-white/10 text-white text-[10px] font-bold uppercase tracking-widest rounded-sm backdrop-blur-sm">Co-Main Event</span>
           </div>
           <h1 className="text-4xl md:text-6xl font-oswald font-bold text-white uppercase tracking-tight leading-tight mb-6">
-            Ylies "Broly" Djiroun Face au Champion en Titre à Dubaï — Le MFC en Co-Main Event du PFL MENA
+            Exploit à Dubaï : Ylies "Broly" Djiroun Terrasse le Champion Invaincu au Premier Round !
           </h1>
           <div className="flex items-center gap-4 text-gray-500 font-inter text-sm uppercase tracking-widest">
-            <span>25 Avril 2026</span>
+            <span>25 Mai 2026</span>
             <span className="w-4 h-px bg-white/20"></span>
-            <span>Par la rédaction MFC</span>
+            <span>Par la rédaction Marseille Fight Club</span>
           </div>
         </header>
 
@@ -54,16 +55,19 @@ export default function ArticlePage() {
         <article className="prose prose-invert prose-lg max-w-none font-inter text-gray-300 leading-relaxed">
           
           <p className="lead text-xl text-white font-medium mb-12 border-l-4 border-mfc-red pl-6">
-            Le 24 mai 2026, la Coca-Cola Arena de Dubaï accueillera le coup d'envoi de la saison 2026 du PFL MENA, sous le titre "Pride of Arabia". Dans le co-main event de la soirée, Ylies "Broly" Djiroun, 24 victoires et 9 défaites au compteur, affrontera Salah Eddine "Supersalah" Hamli, invaincu en 11 combats, dans un quart de finale des poids légers. Un choc de génération, un choc de styles, et une affiche qui positionne Marseille au cœur d'un des tournois régionaux les plus suivis du MMA mondial.
+            Le MMA marseillais vient d'inscrire l'une de ses plus belles pages d'histoire. Ce dimanche 24 mai, sous les projecteurs de la Coca-Cola Arena de Dubaï, Ylies "Broly" Djiroun a réalisé un exploit retentissant en co-main event du PFL MENA : Pride of Arabia. Donné outsider face au champion en titre invaincu, le redoutable Marocain Salah Eddine "Supersalah" Hamli, le guerrier marseillais a pulvérisé tous les pronostics en s'imposant de manière spectaculaire dès le premier round. Une victoire éclair par TKO qui a fait vibrer les 17 000 spectateurs présents.
           </p>
 
           <h2 className="text-3xl font-oswald font-bold text-white uppercase mt-16 mb-8 tracking-wider">
-            Qui est Ylies Djiroun ?
+            Un choc attendu à Dubaï
           </h2>
           <p>
-            Issu des quartiers nord de Marseille, Ylies Djiroun a construit sa carrière dans la discrétion avant de s'imposer progressivement sur la scène internationale. Il a commencé le sport de combat en 2009 dans un club de sambo à Marseille, et depuis, il n'a jamais vraiment arrêté d'apprendre. Judo, karaté, Muay Thai, taekwondo, kickboxing — il a traversé de nombreuses disciplines avant de les fondre dans une pratique du MMA à la fois complète et personnelle.
+            L'enjeu de cette soirée baptisée "Pride of Arabia" était colossal. Pour la première fois depuis le début du conflit régional, la prestigieuse ligue PFL (Professional Fighters League) organisait son événement MENA à Dubaï plutôt qu'en Arabie Saoudite. Dans une salle comble survoltée, le champion invaincu des poids légers Salah Eddine Hamli (11 victoires, 0 défaite) défendait son statut dans ce quart de finale du tournoi. S'entraînant en Espagne aux côtés du champion UFC Ilia Topuria, Hamli était le grand favori : jeune (27 ans), explosif, et auréolé de sa couronne PFL MENA 2025 conquise en décembre dernier.
           </p>
-          
+          <p>
+            Face à lui, Ylies "Broly" Djiroun, fierté des quartiers nord de Marseille, arrivait dans la cage avec un bilan de 24 victoires pour 9 défaites et une expérience incomparable : PFL en 2019, BRAVE CF, ARES FC, et tant d'autres organisations depuis 2011. À 34 ans, il représentait l'expérience face à la fougue du champion invaincu.
+          </p>
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 my-12 items-center">
             <div className="relative aspect-square rounded-xl overflow-hidden border border-white/10 group">
               <a href="/images/press/ylies-portrait.jpg" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
@@ -76,37 +80,48 @@ export default function ArticlePage() {
               </a>
             </div>
             <div>
+              <h2 className="text-3xl font-oswald font-bold text-white uppercase mb-8 tracking-wider">
+                La force tranquille
+              </h2>
               <p>
-                Jean-Michel Foissard, fondateur du Marseille Fight Club, lui a tout apporté, autant sur le plan de l'entraînement physique que sur le plan mental — c'est Djiroun lui-même qui le dit. Ce lien avec le MFC est solide, ancré dans les années, et il dit beaucoup sur la manière dont le club forme ses combattants : pas dans la précipitation, pas dans la mise en scène, mais dans la durée et l'honnêteté du travail quotidien.
-              </p>
-              <p className="mt-4">
-                Son surnom, "Broly" ? Il vient de sa passion pour les mangas, Dragon Ball en tête. Pas de mystère, pas de construction marketing — juste un combattant qui assume ses influences et qui s'est construit comme ça.
+                Surnommé "Broly" en référence à sa passion pour Dragon Ball, Ylies incarne les valeurs du Marseille Fight Club : respect, travail et persévérance. Préparé dans la discrétion par son coach de longue date Jean-Michel Foissard, loin du buzz et des provocations, le combattant marseillais avait un plan précis.
               </p>
             </div>
           </div>
 
+          <h2 className="text-3xl font-oswald font-bold text-white uppercase mt-16 mb-8 tracking-wider">
+            Le film du combat
+          </h2>
           <p>
-            Au fil de sa carrière, il a remporté deux titres de champion d'Europe et accumulé une expérience rare pour un combattant français de sa génération, en évoluant dans plusieurs organisations à travers le monde — dont le PFL, Brave CF, et ARES FC. Avec 24 victoires et 9 défaites, il entre dans ce quart de finale avec davantage d'expérience en cage que la quasi-totalité des combattants présents sur cette carte.
+            Dès les premières secondes, Hamli tente d'imposer son rythme physique en avançant au centre de la cage. Il envoie de lourdes frappes pour intimider le Marseillais. Mais Djiroun reste d'un calme olympien, très mobile sur ses appuis, esquivant les attaques avec fluidité et répliquant par des coups précis qui freinent l'ardeur du champion.
+          </p>
+          <p>
+            Sentant qu'il ne parvient pas à toucher Ylies debout, Hamli commet l'erreur tactique du combat. Il plonge brusquement pour tenter une projection au sol. Anticipant parfaitement le mouvement avec un sprawl impérial, Djiroun bloque la tentative, pivote avec une rapidité déconcertante et passe dans le dos d'un Hamli complètement dépassé.
+          </p>
+          <p>
+            Le Marseillais le plaque instantanément au sol et déclenche une avalanche de frappes lourdes et précises en ground-and-pound. Hamli, incapable de se défendre, subit une pluie de coups chirurgicaux. L'arbitre intervient pour arrêter le combat.
+          </p>
+          <p className="text-xl text-white font-bold text-center bg-mfc-red/10 border border-mfc-red/30 py-4 my-8 rounded-lg">
+            Victoire par TKO en 4 minutes et 20 secondes du premier round.
+          </p>
+          <p>
+            La Coca-Cola Arena explose. Marseille vient de faire tomber le roi invaincu de la catégorie.
           </p>
 
           <h2 className="text-3xl font-oswald font-bold text-white uppercase mt-16 mb-8 tracking-wider">
-            En face : le champion en titre
+            Pourquoi cette victoire compte
           </h2>
           <p>
-            L'adversaire ne sera pas de tout repos. Salah Eddine "Supersalah" Hamli est le champion en titre du PFL MENA dans la catégorie poids légers, titre qu'il a décroché en décembre 2025 à Al Khobar, en Arabie saoudite, devenant au passage le premier Marocain à remporter ce titre dans le circuit. Sa finale de championnat contre l'Irakien Mohammad Fahmi s'est conclue par une soumission au D'arce choke au deuxième round — propre, dominante, sans discussion possible.
+            <strong className="text-white">L'expérience a parlé :</strong> Face à un champion de 27 ans, les 34 ans d'Ylies et ses 33 combats professionnels ont fait la différence. Il a su rester patient et forcer le TKO au moment idéal.
           </p>
           <p>
-            Hamli s'entraîne au Climent Club à Alicante, en Espagne, aux côtés de la star des poids plumes Ilia Topuria. Ce détail n'est pas anodin : le niveau de sparring et les méthodes de préparation auxquels il a accès chaque jour sont de premier plan. À 27 ans, il affiche un palmarès vierge de défaites et s'est imposé comme l'un des finisseurs les plus dangereux de la région, avec un arsenal de soumissions redoutable et une capacité à contrôler les combats.
+            <strong className="text-white">Une tactique parfaite :</strong> En étudiant la tendance de Hamli à chercher le takedown quand son striking ne fonctionne pas, le staff marseillais a permis à Ylies d'anticiper l'action décisive.
           </p>
           <p>
-            Il a notamment soumis Mohsen Mohammadseifi — cinq fois champion du monde de Wushu Sanda — dès le premier round par étranglement arrière. Djiroun sait ce qui l'attend.
+            <strong className="text-white">Un symbole pour le club :</strong> Cette victoire propulse le Marseille Fight Club sur la scène internationale. Fondé il y a près de dix ans dans le 10ème arrondissement, le club prouve qu'il forme des combattants capables de briller au plus haut niveau.
           </p>
-
-          <h2 className="text-3xl font-oswald font-bold text-white uppercase mt-16 mb-8 tracking-wider">
-            Un contexte de soirée particulier
-          </h2>
           <p>
-            C'est la première fois que le PFL MENA organise un événement hors d'Arabie saoudite. Dubaï représente un choix stratégique pour la ligue, et le poids symbolique de ce déplacement est réel. Comme l'a déclaré Jérôme Mazet, directeur général du PFL MENA : "Dubaï est un marché clé pour le PFL MENA et un hub mondial pour le sport et le entertainment, ce qui en fait le cadre idéal pour notre ouverture de saison 2026."
+            <strong className="text-white">Un représentant de Marseille :</strong> Issu des quartiers nord, Djiroun incarne cette génération de combattants marseillais qui s'imposent mondialement. Son exploit résonne au-delà du sport : c'est la victoire du travail et de la persévérance.
           </p>
 
           <div className="relative w-full aspect-video rounded-xl my-12 overflow-hidden border border-white/10 group">
@@ -120,30 +135,18 @@ export default function ArticlePage() {
             </a>
           </div>
 
-          <p>
-            La Coca-Cola Arena, située dans le quartier City Walk, peut accueillir jusqu'à 17 000 spectateurs — une infrastructure à la hauteur des ambitions de la soirée. L'événement sera diffusé en direct sur STARZPLAY dans la région MENA, à partir de 17h heure du Golfe.
-          </p>
-          <p>
-            La carte est dense : en plus du co-main event Hamli vs Djiroun, la soirée mettra en avant la toute première apparition de Zamzam Al Hammadi, 18 ans, prometteuse émirate auréolée de titres mondiaux en MMA et en jiu-jitsu brésilien. L'événement porte clairement une ambition : faire de Dubaï un rendez-vous incontournable sur la carte mondiale du MMA.
-          </p>
-
           <h2 className="text-3xl font-oswald font-bold text-white uppercase mt-16 mb-8 tracking-wider">
-            Ce combat, vu d'ici
+            La suite : cap sur la demi-finale
           </h2>
           <p>
-            Sur le papier, Djiroun est l'outsider. Hamli est invaincu, champion en titre, en pleine ascension, et l'affrontement se joue sur son terrain géographique — le circuit MENA qu'il a dominé de bout en bout la saison dernière. Mais les palmarès ne font pas les combats.
+            Ylies Djiroun est officiellement qualifié pour les demi-finales du tournoi PFL MENA des poids légers. Après avoir stoppé l'invincibilité du champion en titre, il devient un sérieux prétendant au titre et aux 100 000 dollars promis au vainqueur.
           </p>
           <p>
-            Ce que Djiroun apporte dans cette cage, c'est quelque chose qu'aucun bilan chiffré ne résume : une dizaine d'années de compétition internationale, des défaites digérées et transformées, une capacité à s'adapter qui ne s'achète pas. Il est décrit par les observateurs du circuit comme le test le plus sérieux qu'Hamli ait eu à affronter jusqu'ici — ce qui, au vu du niveau du champion, n'est pas une formule anodine.
-          </p>
-          <p>
-            Le MFC sera représenté au plus haut niveau ce soir-là. Pas dans un combat de remplissage, pas dans un préliminaire — en co-main event d'une soirée diffusée dans toute la région MENA, face à l'homme qui porte la ceinture. C'est là où on voulait être.
+            De retour à Marseille dès cette semaine, il reprendra l'entraînement au club avec la même humilité, prêt pour la suite de l'aventure. Son bilan professionnel s'établit désormais à 25 victoires pour 9 défaites.
           </p>
           <p className="font-bold text-white mt-8">
-            Le reste appartient au 24 mai.
+            En faisant tomber le champion invaincu au premier round, Ylies Djiroun a écrit l'une des plus belles pages de son histoire et celle du Marseille Fight Club. Tout Marseille est fier de toi, champion ! Le rendez-vous est pris pour les demi-finales, et l'aventure ne fait que commencer.
           </p>
-
-
 
         </article>
 

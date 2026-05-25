@@ -8,20 +8,20 @@ import { useRef } from "react";
 export default function PressPage() {
   const articles = [
     {
-      id: "ylies-djiroun-pride-of-arabia-dubai",
-      title: "Ylies \"Broly\" Djiroun Face au Champion en Titre à Dubaï — Le MFC en Co-Main Event du PFL MENA",
-      excerpt: "Le 24 mai 2026, la Coca-Cola Arena accueillera Ylies Djiroun face au champion Salah Eddine Hamli. Un choc de styles et d'expérience pour le co-main event du PFL MENA.",
-      category: "PFL MENA",
-      date: "25 Avril 2026",
-      image: "/images/press/ylies-victory.jpg"
-    },
-    {
       id: "wilson-varela-vs-davy-gallon-hexagone-mma-44",
       title: "Wilson \"The Prototype\" Varela en Demi-Finale de l'Hexagone MMA 44 à Bordeaux",
       excerpt: "Le 29 mai 2026, l'Arkéa Arena accueillera Wilson Varela face au vétéran Davy Gallon. Le champion marseillais arrive dans la forme de sa vie pour ce choc au sommet.",
       category: "Hexagone MMA",
       date: "25 Avril 2026",
       image: "/images/press/varela-belt.png"
+    },
+    {
+      id: "ylies-djiroun-pride-of-arabia-dubai",
+      title: "Exploit à Dubaï : Ylies 'Broly' Djiroun Terrasse le Champion Invaincu au Premier Round !",
+      excerpt: "Victoire historique par TKO en 4 minutes et 20 secondes ! Ylies Djiroun a fait tomber le champion invaincu Salah Eddine Hamli dès le premier round du PFL MENA à la Coca-Cola Arena.",
+      category: "PFL MENA",
+      date: "25 Mai 2026",
+      image: "/images/press/ylies-victoire-pfl.jpg"
     },
     {
       id: "aymard-guih-vs-marian-ziolkowski-ksw-118",
