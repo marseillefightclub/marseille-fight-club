@@ -8,6 +8,14 @@ import { useRef } from "react";
 export default function PressPage() {
   const articles = [
     {
+      id: "nika-kobakhidze-hexagone-mma-44",
+      title: "Nika Kobakhidze conquiert l'Hexagone MMA : une ceinture qui prend la route de Marseille",
+      excerpt: "Nika Kobakhidze remporte la ceinture des poids plumes à l'Hexagone MMA 44. Revivez la victoire épique par soumission du combattant marseillais.",
+      category: "Hexagone MMA",
+      date: "2 Juin 2026",
+      image: "/images/press/nika-kobakhidze-belt.png"
+    },
+    {
       id: "wilson-varela-vs-davy-gallon-hexagone-mma-44",
       title: "Wilson \"The Prototype\" Varela en Demi-Finale de l'Hexagone MMA 44 à Bordeaux",
       excerpt: "Le 29 mai 2026, l'Arkéa Arena accueillera Wilson Varela face au vétéran Davy Gallon. Le champion marseillais arrive dans la forme de sa vie pour ce choc au sommet.",
