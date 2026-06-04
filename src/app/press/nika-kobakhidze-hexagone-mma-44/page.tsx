@@ -35,16 +35,20 @@ export default function ArticlePage() {
               <span className="px-3 py-1 bg-mfc-red text-white text-xs font-bold uppercase tracking-widest rounded-sm">Événement</span>
               <span className="px-3 py-1 bg-white/10 text-white text-xs font-bold uppercase tracking-widest rounded-sm backdrop-blur-md">Hexagone MMA 44</span>
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-oswald font-bold text-white uppercase tracking-wider leading-tight mb-4">
-              Nika Kobakhidze conquiert l'Hexagone MMA : une ceinture qui prend la route de Marseille
-            </h1>
-            <p className="text-gray-400 font-inter text-lg">Publié le 1 juin 2026 • Par La Rédaction MFC</p>
           </div>
         </div>
 
         {/* Article Content */}
         <article className="prose prose-invert prose-lg max-w-none font-inter text-gray-300">
           
+          {/* Title Block */}
+          <div className="mb-12">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-oswald font-bold text-white uppercase tracking-wider leading-tight mb-4">
+              Nika Kobakhidze conquiert l'Hexagone MMA : une ceinture qui prend la route de Marseille
+            </h1>
+            <p className="text-gray-400 font-inter text-lg">Publié le 1 juin 2026 • Par La Rédaction MFC</p>
+          </div>
+
           <p className="lead text-xl text-white font-medium mb-6 border-l-4 border-mfc-red pl-6">
             L'Arkéa Arena de Bordeaux a tremblé. Nika Kobakhidze, le joyau géorgien, a écrit l'une des pages les plus glorieuses de sa jeune carrière lors de l'Hexagone MMA 44. Face à un adversaire réputé infranchissable, il a fait parler la foudre, la résilience et une intelligence martiale affûtée pour s'emparer de l'or.
           </p>

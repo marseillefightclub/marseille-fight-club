@@ -34,15 +34,19 @@ export default function ArticlePage() {
               <span className="px-3 py-1 bg-mfc-red text-white text-xs font-bold uppercase tracking-widest rounded-sm">Événement</span>
               <span className="px-3 py-1 bg-white/10 text-white text-xs font-bold uppercase tracking-widest rounded-sm backdrop-blur-md">Cage Warriors Academy SE 41</span>
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-oswald font-bold text-white uppercase tracking-wider leading-tight mb-4">
-              Lorenzo Navarro s'empare de la ceinture Cage Warriors
-            </h1>
-            <p className="text-gray-400 font-inter text-lg">Publié le 20 avril 2026 • Par La rédaction MFC</p>
           </div>
         </div>
 
         {/* Article Content */}
         <article className="prose prose-invert prose-lg max-w-none font-inter text-gray-300">
+          {/* Title Block */}
+          <div className="mb-12">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-oswald font-bold text-white uppercase tracking-wider leading-tight mb-4">
+              Lorenzo Navarro s'empare de la ceinture Cage Warriors
+            </h1>
+            <p className="text-gray-400 font-inter text-lg">Publié le 20 avril 2026 • Par La rédaction MFC</p>
+          </div>
+
           {/* Lead */}
           <p className="lead text-xl text-white font-medium mb-6 border-l-4 border-mfc-red pl-6">
             Le 18 avril 2026, sous les lumières du Charter Hall à Colchester, Lorenzo Navarro, le « faucon marseillais », a gravé son nom dans l’histoire du MMA en s’emparant de la ceinture des poids mouches de Cage Warriors.
