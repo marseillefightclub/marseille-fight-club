@@ -32,6 +32,14 @@ export default function PressPage() {
       image: "/images/press/ylies-victoire-pfl.jpg"
     },
     {
+      id: "lorenzo-navarro-cage-warriors-title",
+      title: "Lorenzo Navarro s'empare de la ceinture Cage Warriors",
+      excerpt: "Lorenzo Navarro remporte la ceinture des poids mouches à Cage Warriors Academy South East 41, une victoire décisive pour le Marseille Fight Club.",
+      category: "Cage Warriors",
+      date: "20 Avril 2026",
+      image: "/images/press/navarro_cage_warriors_title2.png"
+    },
+    {
       id: "aymard-guih-vs-marian-ziolkowski-ksw-118",
       title: "Aymard Guih vs Marian Ziółkowski : Le Choc des Poids Légers au KSW 118",
       excerpt: "Le 16 mai 2026 à l'Arena Kalisz, Aymard Guih affronte l'ancien champion Marian Ziółkowski sur la main card du KSW 118. Analyse technique, enjeux et préparation MFC.",
@@ -54,7 +62,8 @@ export default function PressPage() {
       category: "Événement",
       date: "15 Mars 2026",
       image: "/images/press/eva-dourthe-victory-real.jpg"
-    }
+    },
+
   ];
 
   const heroArticle = articles[0];
