@@ -151,7 +151,7 @@ export default function ArticlePage() {
           </h2>
 
           <p className="pb-8">
-            La joie est immense. Cependant, l'histoire ne fait que commencer. Cette ceinture d'Hexagone MMA n'est pas une ligne d'arrivée, mais une nouvelle étape. Nika Kobakhidze a maintenant une cible dans le dos, et les défis futurs seront encore plus grands. Mais avec l'encadrement exceptionnel de Jean-Michel Foissard et la force de tout son entourage derrière lui, le nouveau roi des poids plumes est prêt à régner. Le train est en marche, et rien ne semble pouvoir l'arrêter. L'équipe continue d'avancer.
+            La joie est immense. Cependant, l'histoire ne fait que commencer. Cette ceinture d'Hexagone MMA n'est pas une ligne d'arrivée, mais une nouvelle étape. Nika Kobakhidze a maintenant une cible dans le dos, et les défis futurs seront encore plus grands. Mais avec l'encadrement de Jean-Michel Foissard et la force de tout son entourage derrière lui, le nouveau roi des poids plumes est prêt à régner. Le train est en marche, et rien ne semble pouvoir l'arrêter. L'équipe continue d'avancer.
           </p>
 
         </article>

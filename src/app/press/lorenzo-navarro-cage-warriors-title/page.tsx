@@ -94,7 +94,7 @@ export default function ArticlePage() {
             <strong>Technique :</strong> le sparring a été orienté vers le style de Davlatov – foot‑to‑foot, jeu de jambes et coups bas – afin d’anticiper les schémas de l’adversaire. Le travail au sol a été axé sur le contrôle latéral et les transitions rapides vers les positions de finition.
           </p>
           <p className="mb-4">
-            <strong>Mentaux :</strong> des sessions de visualisation, guidées par Jean-Michel, ont aidé Navarro à se projeter dans les moments critiques, renforçant la résilience qui s'est révélée décisive dans le ring.
+            <strong>Mentaux :</strong> des sessions de visualisation ont aidé Navarro à se projeter dans les moments critiques, renforçant la résilience qui s'est révélée décisive dans le ring.
           </p>
 
           {/* Section 4 – Impact pour le club */}
@@ -103,7 +103,7 @@ export default function ArticlePage() {
             Un nouveau flambeau pour le Marseille Fight Club
           </h2>
           <p className="mb-4">
-            La ceinture, désormais accrochée au mur du training‑room, symbolise la capacité du club à produire des champions de niveau international. Elle renforce le rayonnement du MFC, attire de nouveaux talents et confirme la pertinence de la philosophie de travail instaurée par Foissard.
+            La ceinture, désormais accrochée au mur du training‑room, symbolise la capacité du club à produire des champions de niveau international. Elle renforce le rayonnement du MFC, attire de nouveaux talents et confirme la pertinence de la philosophie de travail instaurée par Jean-Michel.
           </p>
           <p className="mb-4">
             Au niveau médiatique, le titre ouvre des portes : invitations à des talk‑shows, interviews sur les grands médias sportifs et une visibilité accrue sur les réseaux sociaux du club. Tout cela alimente le cycle vertueux d’attraction et de performance.
@@ -126,7 +126,7 @@ export default function ArticlePage() {
           <p className="pb-8">
             La victoire de Lorenzo Navarro marque une étape majeure dans l’histoire du MMA français. Elle témoigne du travail acharné du club, de la vision de Jean‑Michel Foissard, et d’un talent qui n’en a pas fini de briller. Le futur s’annonce prometteur, et les fans du MFC attendent avec impatience le prochain défi du faucon marseillais.
           </p>
-          <p className="mt-6 mb-4">Découvrez la préparation de Lorenzo Navarro et l'équipe encadrante — Papy, Nathan Verpillot (jeune formé au club) et Baptiste Lambot — dans la vidéo officielle de sa chaîne privée :</p>
+          <p className="mt-6 mb-4">Découvrez la préparation de Lorenzo Navarro et l’encadrement mis en place autour du combattant : Papy, Nathan Verpillot et Baptiste Lambot, dans la vidéo de sa chaîne YouTube privée.</p>
           <div className="w-full h-[500px] md:h-[800px] max-w-5xl mx-auto mb-8">
             <iframe src="https://www.youtube.com/embed/NV_akv6H598" title="Lorenzo Navarro préparation" allowFullScreen className="w-full h-full"></iframe>
           </div>
