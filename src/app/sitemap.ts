@@ -8,18 +8,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/club",
     "/coachs",
     "/tarifs",
-    "/press",
-    "/press/eva-dourthe-ksw-116",
-    "/press/souhil-tairi-pfl-mena",
-    "/press/wilson-varela-vs-davy-gallon-hexagone-mma-44",
-    "/press/ylies-djiroun-pride-of-arabia-dubai",
-    "/press/aymard-guih-vs-marian-ziolkowski-ksw-118",
+    "/actualite",
+    "/actualite/ylies-djiroun-pfl-mena-11",
+    "/actualite/eva-dourthe-ksw-116",
+    "/actualite/souhil-tairi-pfl-mena",
+    "/actualite/wilson-varela-vs-davy-gallon-hexagone-mma-44",
+    "/actualite/ylies-djiroun-pride-of-arabia-dubai",
+    "/actualite/aymard-guih-vs-marian-ziolkowski-ksw-118",
+    "/actualite/nika-kobakhidze-hexagone-mma-44",
+    "/actualite/lorenzo-navarro-cage-warriors-title",
   ];
 
   return routes.map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
-    changeFrequency: route === "" || route === "/press" ? "weekly" : "monthly",
-    priority: route === "" ? 1 : route === "/press" ? 0.9 : route.startsWith("/press/") ? 0.7 : 0.8,
+    changeFrequency: route === "" || route === "/actualite" ? "weekly" : "monthly",
+    priority: route === "" ? 1 : route === "/actualite" ? 0.9 : route.startsWith("/actualite/") ? 0.7 : 0.8,
   }));
 }

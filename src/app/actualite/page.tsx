@@ -8,6 +8,14 @@ import { useRef } from "react";
 export default function PressPage() {
   const articles = [
     {
+      id: "ylies-djiroun-pfl-mena-11",
+      title: "Ylies Djiroun à Riyad : celui qui a fait tomber le champion invaincu joue sa place en finale du PFL MENA",
+      excerpt: "Après avoir stoppé le champion invaincu Hamli par TKO au premier round à Dubaï, Ylies 'Broly' Djiroun dispute la demi-finale du tournoi lightweight PFL MENA 11 face à Basel Shalaan le 2 octobre 2026 à Riyad.",
+      category: "PFL MENA 11",
+      date: "13 Août 2026",
+      image: "/images/press/YliesPFL11.png"
+    },
+    {
       id: "nika-kobakhidze-hexagone-mma-44",
       title: "Nika Kobakhidze conquiert l'Hexagone MMA : une ceinture qui prend la route de Marseille",
       excerpt: "Nika Kobakhidze remporte la ceinture des poids plumes à l'Hexagone MMA 44. Revivez la victoire épique par soumission du combattant marseillais.",
@@ -93,7 +101,7 @@ export default function PressPage() {
 
       {/* Hero Article */}
       <section className="mb-24">
-        <Link href={`/press/${heroArticle.id}`} className="group block">
+        <Link href={`/actualite/${heroArticle.id}`} className="group block">
           <div className="relative w-full aspect-video md:aspect-21/9 max-h-[500px] overflow-hidden mb-8 bg-black">
             <Image
               src={heroArticle.image}
@@ -157,7 +165,7 @@ export default function PressPage() {
         <div className="flex flex-col gap-12 px-4 md:hidden">
           {gridArticles.map((article) => (
             <Link
-              href={`/press/${article.id}`}
+              href={`/actualite/${article.id}`}
               key={article.id}
               className="group flex flex-col transition-all duration-500"
             >
@@ -194,7 +202,7 @@ export default function PressPage() {
         >
           {gridArticles.map((article) => (
             <Link
-              href={`/press/${article.id}`}
+              href={`/actualite/${article.id}`}
               key={article.id}
               className="shrink-0 md:w-[380px] lg:w-[400px] snap-start group flex flex-col transition-all duration-500"
             >

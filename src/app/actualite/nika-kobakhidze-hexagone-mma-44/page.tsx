@@ -15,7 +15,7 @@ export default function ArticlePage() {
         
         {/* Navigation */}
         <div className="mb-8">
-          <Link href="/press" className="inline-flex items-center text-mfc-red hover:text-white transition-colors duration-300 font-oswald tracking-widest uppercase">
+          <Link href="/actualite" className="inline-flex items-center text-mfc-red hover:text-white transition-colors duration-300 font-oswald tracking-widest uppercase">
             <ArrowLeft className="mr-2" size={20} />
             Retour aux articles
           </Link>
