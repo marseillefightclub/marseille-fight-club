@@ -23,7 +23,7 @@ interface Plan {
   name: string;
   price?: string;
   subtitle?: string;
-  tel: string;
+  tel?: string;
   schedule?: string[];
   groups?: Group[];
   options?: PlanOption[];
@@ -58,7 +58,7 @@ const sections: Section[] = [
             ]
           }
         ],
-        tel: "06 43 40 76 45 / 06 31 01 62 80"
+        tel: "06 43 40 76 45"
       },
       {
         name: "MMA LOISIR – 4 jours par semaine",
@@ -69,7 +69,7 @@ const sections: Section[] = [
           "Mercredi : 18h00 – 19h30",
           "Vendredi : 19h30 – 21h00"
         ],
-        tel: "06 43 40 76 45 / 06 31 01 62 80"
+        tel: "06 43 40 76 45"
       },
       {
         name: "100% FILLES",
@@ -78,8 +78,7 @@ const sections: Section[] = [
           "Mardi : 18h00 – 19h00",
           "Mercredi : 18h30 – 19h30",
           "Samedi : 10h30 – 12h00"
-        ],
-        tel: "06 67 71 68 57"
+        ]
       },
       {
         name: "BOXE",
@@ -111,8 +110,7 @@ const sections: Section[] = [
           "Mardi : 19h00 – 20h00",
           "Mercredi : 12h30 – 13h30",
           "Samedi : 9h00 – 10h30"
-        ],
-        tel: "06 67 71 68 57"
+        ]
       }
     ]
   },
@@ -131,7 +129,7 @@ const sections: Section[] = [
             ]
           }
         ],
-        tel: "06 43 40 76 45 / 06 31 01 62 80"
+        tel: "06 43 40 76 45"
       },
       {
         name: "MMA ADOS COMPÉTITEURS",
@@ -142,7 +140,7 @@ const sections: Section[] = [
           "Mercredi : 17h00 – 18h00",
           "Vendredi : 20h00 – 21h00"
         ],
-        tel: "06 43 40 76 45 / 06 31 01 62 80"
+        tel: "06 43 40 76 45"
       },
       {
         name: "KICK ADOS",
@@ -357,16 +355,20 @@ export default function Pricing() {
                         )}
                         
                         <div className="space-y-3">
-                          <div className="flex items-center justify-center text-gray-400 text-xs text-center flex-wrap gap-2">
-                            <Phone size={14} className="text-mfc-red" />
-                            <span className="font-light">{plan.tel}</span>
-                          </div>
-                          <a 
-                            href={`tel:${plan.tel.split('/')[0].trim()}`} 
-                            className="w-full block text-center py-3 bg-transparent border border-white/20 text-white text-xs font-oswald uppercase tracking-widest hover:bg-mfc-red hover:border-mfc-red transition-all duration-300 rounded-lg group-hover:border-mfc-red/50"
-                          >
-                            Appeler
-                          </a>
+                          {plan.tel && (
+                            <>
+                              <div className="flex items-center justify-center text-gray-400 text-xs text-center flex-wrap gap-2">
+                                <Phone size={14} className="text-mfc-red" />
+                                <span className="font-light">{plan.tel}</span>
+                              </div>
+                              <a 
+                                href={`tel:${plan.tel.split('/')[0].trim()}`} 
+                                className="w-full block text-center py-3 bg-transparent border border-white/20 text-white text-xs font-oswald uppercase tracking-widest hover:bg-mfc-red hover:border-mfc-red transition-all duration-300 rounded-lg group-hover:border-mfc-red/50"
+                              >
+                                Appeler
+                              </a>
+                            </>
+                          )}
                         </div>
                       </div>
                     </motion.div>

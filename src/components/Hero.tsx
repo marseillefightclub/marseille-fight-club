@@ -37,11 +37,11 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.6 }}
           className="mt-10 flex flex-col sm:flex-row gap-4 w-full sm:w-auto px-4 sm:px-0"
         >
-          <a href="tarifs" className="w-full sm:w-auto text-center px-6 py-5 sm:px-8 sm:py-4 bg-mfc-red text-white font-oswald text-xl uppercase tracking-widest hover:bg-red-700 transition-colors duration-300 transform hover:scale-105 active:scale-95 shadow-lg shadow-red-900/50">
+          <a href="tarifs" className="w-full sm:w-auto text-center px-6 py-5 sm:px-8 sm:py-4 bg-mfc-red text-white font-oswald text-xl uppercase tracking-widest rounded-xl hover:bg-red-700 transition-colors duration-300 transform hover:scale-105 active:scale-95 shadow-lg shadow-red-900/50">
             Rejoignez Nous
           </a>
-          <a href="club" className="w-full sm:w-auto text-center px-6 py-5 sm:px-8 sm:py-4 bg-transparent border border-white/30 text-white font-oswald text-xl uppercase tracking-widest hover:bg-white/10 transition-colors duration-300">
-            Découvrir le club
+          <a href="https://www.helloasso.com/associations/foissard-promotion/evenements/cours-2025" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto text-center px-6 py-5 sm:px-8 sm:py-4 bg-transparent border border-white/30 text-white font-oswald text-xl uppercase tracking-widest rounded-xl hover:bg-white/10 transition-colors duration-300">
+            Essai MMA gratuit
           </a>
         </motion.div>
 

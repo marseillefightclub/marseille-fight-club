@@ -43,8 +43,8 @@ export default function About() {
             className="mt-6 text-xl text-gray-400 font-light"
           >
            Au cœur de la cité phocéenne, le Marseille Fight Club est une salle de référence dédiée aux sports de combat et au MMA. Fondé par Jean-Michel Foissard, véritable passionné d'arts martiaux, le club allie exigence sportive et bienveillance humaine.
-Le club propose un programme complet avec le MMA, la boxe anglaise, le kickboxing et le grappling — incluant la luta livre et des passages de grade. Chaque élève — débutant ou compétiteur — y trouve un cadre sérieux, des coachs expérimentés et une progression concrète. L'ambiance est familiale, mais le travail reste au cœur de tout : discipline, respect et dépassement de soi guident chaque séance.
-Précurseur dans le monde du MMA, le Marseille Fight Club est fier d'accueillir la plus grande section 100% filles de MMA en France. Un espace pensé pour et par les femmes, où ambition et combativité n'ont aucune limite.
+Le club propose un programme complet avec le MMA, la boxe anglaise, le kickboxing et le grappling. Chaque élève — débutant ou compétiteur — y trouve un cadre sérieux, des coachs expérimentés et une progression concrète. L'ambiance est familiale, mais le travail reste au cœur de tout : discipline, respect et dépassement de soi guident chaque séance.
+Le Marseille Fight Club a également l'honneur d'accueillir une section 100% féminine dédiée au MMA. Un espace pensé pour et par les femmes, où ambition et combativité n'ont aucune limite.
           </motion.p>
         </div>
 

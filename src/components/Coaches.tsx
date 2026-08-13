@@ -19,13 +19,6 @@ const coaches = [
     instagram: "https://www.instagram.com/hassou_captaincrochet/",
   },
   {
-    name: "Souhil Taïri",
-    role: "Coach Grappling",
-    image: "/images/coaches/souhil.png",
-    bio: "Combattant pro MMA PFL MENA, ceinture Marron Luta Livre",
-    instagram: "https://www.instagram.com/souhil.t/",
-  },
-  {
     name: "Mohamed Mahfoud",
     role: "Coach Kickboxing",
     image: "/images/coaches/mahfoud.png",
