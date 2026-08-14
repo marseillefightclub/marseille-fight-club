@@ -17,7 +17,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="text-5xl sm:text-7xl lg:text-9xl font-oswald font-bold uppercase tracking-tighter text-white drop-shadow-2xl leading-[1.1]"
+          className="text-7xl sm:text-7xl lg:text-9xl font-oswald font-bold uppercase tracking-tighter text-white drop-shadow-2xl leading-[1.1]"
         >
           Marseille <br className="sm:hidden" /><span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-800">Fight Club</span>
         </motion.h1>
@@ -41,7 +41,7 @@ export default function Hero() {
             Rejoignez Nous
           </a>
           <a href="https://www.helloasso.com/associations/foissard-promotion/evenements/cours-2025" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto text-center px-6 py-5 sm:px-8 sm:py-4 bg-transparent border border-white/30 text-white font-oswald text-xl uppercase tracking-widest rounded-xl hover:bg-white/10 transition-colors duration-300">
-            Réserver votre cours d'essai
+            Réserver cours d'essai
           </a>
         </motion.div>
 
