@@ -41,7 +41,7 @@ export default function Hero() {
             Rejoignez Nous
           </a>
           <a href="https://www.helloasso.com/associations/foissard-promotion/evenements/cours-2025" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto text-center px-6 py-5 sm:px-8 sm:py-4 bg-transparent border border-white/30 text-white font-oswald text-xl uppercase tracking-widest rounded-xl hover:bg-white/10 transition-colors duration-300">
-            Essai MMA gratuit
+            Réserver votre cours d'essai
           </a>
         </motion.div>
 
