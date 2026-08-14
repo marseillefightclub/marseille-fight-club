@@ -42,20 +42,17 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 cursor-pointer group">
-            <div className="relative w-14 h-14 md:w-16 md:h-16 flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
+          <Link href="/" className="flex items-center cursor-pointer group">
+            <div className="relative w-20 h-20 md:w-24 md:h-24 flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
               <Image 
-                src="/LogoGorill.jpg" 
+                src="/LogoGorillDark.jpg" 
                 alt="Marseille Fight Club Logo Gorilla" 
                 fill
-                className="object-contain opacity-90 group-hover:opacity-100 transition-opacity"
-                sizes="(max-width: 768px) 56px, 64px"
+                className="object-contain opacity-95 group-hover:opacity-100 transition-opacity rounded-sm"
+                sizes="(max-width: 768px) 80px, 96px"
                 priority
               />
             </div>
-            <span className="font-oswald font-bold text-2xl tracking-widest text-white uppercase sm:block hidden">
-              Marseille <span className="text-mfc-red">Fight Club</span>
-            </span>
           </Link>
 
           {/* Desktop Nav */}
