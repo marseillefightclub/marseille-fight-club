@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Phone, Clock, User } from "lucide-react";
+import EnfantsAnnouncementPopup from "./EnfantsAnnouncementPopup";
 
 interface Group {
   age: string;
@@ -179,7 +180,7 @@ const sections: Section[] = [
             schedule: ["Jeudi : 17h30 – 18h30"]
           },
           {
-            age: "6–11 ans",
+            age: "6–13 ans",
             schedule: [
               "Lundi : 18h30 – 19h30",
               "Jeudi : 18h30 – 19h30"
@@ -215,9 +216,17 @@ const sections: Section[] = [
 
 export default function Pricing() {
   const [activeCategory, setActiveCategory] = useState("Adultes");
+  const [showEnfantsPopup, setShowEnfantsPopup] = useState(false);
 
   return (
     <section id="pricing" className="py-16 md:py-24 bg-mfc-dark relative overflow-hidden">
+      <EnfantsAnnouncementPopup 
+        isOpen={showEnfantsPopup} 
+        onClose={() => {
+          setShowEnfantsPopup(false);
+          sessionStorage.setItem("mfc-enfants-rentree-closed", "true");
+        }} 
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <motion.h2 
@@ -236,7 +245,15 @@ export default function Pricing() {
           {["Adultes", "Ados", "Enfants"].map((category) => (
             <button
               key={category}
-              onClick={() => setActiveCategory(category)}
+              onClick={() => {
+                setActiveCategory(category);
+                if (category === "Enfants") {
+                  const hasClosed = sessionStorage.getItem("mfc-enfants-rentree-closed");
+                  if (!hasClosed) {
+                    setShowEnfantsPopup(true);
+                  }
+                }
+              }}
               className={`px-8 py-3 rounded-full font-oswald uppercase tracking-wider text-sm transition-all duration-300 border-2 ${
                 activeCategory === category
                   ? "bg-mfc-red border-mfc-red text-white shadow-[0_0_20px_rgba(255,18,18,0.3)]"

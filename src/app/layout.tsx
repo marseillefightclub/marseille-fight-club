@@ -4,6 +4,7 @@ import "./globals.css";
 import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import AnnouncementPopup from "@/components/AnnouncementPopup";
 import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({
@@ -94,6 +95,7 @@ export default function RootLayout({
       </head>
       <body className="bg-mfc-dark text-mfc-light font-sans antialiased selection:bg-mfc-red selection:text-white flex flex-col min-h-screen" suppressHydrationWarning>
         <Navbar />
+        <AnnouncementPopup />
         <div className="flex-grow">
           {children}
         </div>
