@@ -34,7 +34,7 @@ export default function Navbar() {
     { name: "Le Club", href: "/club" },
     { name: "Coachs", href: "/coachs" },
     { name: "Tarifs", href: "/tarifs" },
-    { name: "Actualité", href: "/actualite" },
+    { name: "Actualités", href: "/actualite" },
   ];
 
   return (

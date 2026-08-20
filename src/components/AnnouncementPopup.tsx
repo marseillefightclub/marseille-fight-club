@@ -86,7 +86,7 @@ export default function AnnouncementPopup() {
               </h2>
               
               <div className="text-4xl sm:text-5xl lg:text-6xl font-oswald font-bold uppercase tracking-tighter text-white drop-shadow-xl mb-6 leading-none">
-                2 Septembre<br className="hidden sm:block my-2" />
+                1er Septembre<br className="hidden sm:block my-2" />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800">2026</span>
               </div>
               

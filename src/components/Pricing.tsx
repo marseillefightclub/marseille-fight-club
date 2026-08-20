@@ -2,8 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Phone, Clock, User } from "lucide-react";
-import EnfantsAnnouncementPopup from "./EnfantsAnnouncementPopup";
+import { Phone, Clock, User, Info, FileText, CheckCircle2 } from "lucide-react";
 
 interface Group {
   age: string;
@@ -155,7 +154,7 @@ const sections: Section[] = [
     plans: [
       {
         name: "JUDO",
-        price: "330 €",
+        price: "340 €",
         groups: [
           {
             age: "3–5 ans",
@@ -173,7 +172,7 @@ const sections: Section[] = [
       },
       {
         name: "MMA KIDS",
-        price: "330 €",
+        price: "340 €",
         groups: [
           {
             age: "– 6 ans",
@@ -208,7 +207,7 @@ const sections: Section[] = [
             ]
           }
         ],
-        tel: "07 83 67 54 75"
+        tel: "07 60 35 00 78"
       }
     ]
   }
@@ -216,17 +215,9 @@ const sections: Section[] = [
 
 export default function Pricing() {
   const [activeCategory, setActiveCategory] = useState("Adultes");
-  const [showEnfantsPopup, setShowEnfantsPopup] = useState(false);
 
   return (
     <section id="pricing" className="py-16 md:py-24 bg-mfc-dark relative overflow-hidden">
-      <EnfantsAnnouncementPopup 
-        isOpen={showEnfantsPopup} 
-        onClose={() => {
-          setShowEnfantsPopup(false);
-          sessionStorage.setItem("mfc-enfants-rentree-closed", "true");
-        }} 
-      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <motion.h2 
@@ -245,15 +236,7 @@ export default function Pricing() {
           {["Adultes", "Ados", "Enfants"].map((category) => (
             <button
               key={category}
-              onClick={() => {
-                setActiveCategory(category);
-                if (category === "Enfants") {
-                  const hasClosed = sessionStorage.getItem("mfc-enfants-rentree-closed");
-                  if (!hasClosed) {
-                    setShowEnfantsPopup(true);
-                  }
-                }
-              }}
+              onClick={() => setActiveCategory(category)}
               className={`px-8 py-3 rounded-full font-oswald uppercase tracking-wider text-sm transition-all duration-300 border-2 ${
                 activeCategory === category
                   ? "bg-mfc-red border-mfc-red text-white shadow-[0_0_20px_rgba(255,18,18,0.3)]"
@@ -277,6 +260,72 @@ export default function Pricing() {
               .filter((section) => section.title === activeCategory)
               .map((section, sidx) => (
                 <div key={sidx} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                  {activeCategory === "Enfants" && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 30 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.5 }}
+                      className="bg-mfc-gray p-8 rounded-xl border border-mfc-red shadow-[0_0_20px_rgba(218,41,28,0.15)] flex flex-col h-full group lg:col-span-1 md:col-span-2 col-span-1 relative overflow-hidden"
+                    >
+                      <div className="absolute top-0 right-0 p-4 opacity-10">
+                        <Info size={100} />
+                      </div>
+                      <div className="mb-6 relative z-10">
+                        <h4 className="text-2xl font-oswald uppercase font-bold text-white flex items-center">
+                          PRÉ-INSCRIPTIONS
+                        </h4>
+                        <p className="text-mfc-red text-sm font-oswald uppercase tracking-widest mt-1 italic">
+                          Rentrée & Séances d'essai
+                        </p>
+                      </div>
+
+                      <div className="grow space-y-5 relative z-10 text-gray-300 text-sm font-light">
+                        <div className="space-y-2 pb-3 border-b border-white/5">
+                          <p className="flex items-start">
+                            <Clock size={16} className="text-mfc-red mr-2 mt-0.5 shrink-0" />
+                            <span><span className="text-white font-medium">Jeudi 3 et lundi 7 septembre</span><br/>de 17h30 à 19h</span>
+                          </p>
+                          <p className="pl-6 italic text-xs text-gray-400">
+                            Pré-inscription afin de faire 2 séances gratuitement.
+                          </p>
+                        </div>
+                        
+                        <div className="space-y-2 pb-3 border-b border-white/5">
+                          <p className="flex items-start">
+                            <FileText size={16} className="text-mfc-red mr-2 mt-0.5 shrink-0" />
+                            <span className="text-white font-medium uppercase text-xs tracking-wider">Modalités</span>
+                          </p>
+                          <ul className="pl-6 space-y-1">
+                            <li>• Remplir une fiche de renseignements sur place</li>
+                            <li>• Régler 200€ par chèque ou 100€ en espèces minimum.</li>
+                          </ul>
+                        </div>
+
+                        <div className="space-y-2 pb-3 border-b border-white/5">
+                          <p className="flex items-start">
+                            <CheckCircle2 size={16} className="text-mfc-red mr-2 mt-0.5 shrink-0" />
+                            <span className="text-white font-medium uppercase text-xs tracking-wider">Tarifs & Équipements</span>
+                          </p>
+                          <ul className="pl-6 space-y-1">
+                            <li>• <span className="text-white">340€</span> pour 2 cours / semaine</li>
+                            <li>• <span className="text-white">290€</span> pour 1 cours / semaine</li>
+                            <li>• Pass'sport accepté</li>
+                            <li className="pt-1 text-xs text-gray-400">• Gants MMA du club : 30€</li>
+                            <li className="text-xs text-gray-400">• T-shirt club : 15€</li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div className="mt-6 pt-5 border-t border-white/10 relative z-10">
+                        <p className="text-xs uppercase tracking-widest text-gray-400 mb-2">Pour tous renseignements :</p>
+                        <a href="tel:0760350078" className="flex items-center text-white hover:text-mfc-red transition-colors group/tel">
+                          <Phone size={18} className="text-mfc-red mr-3 group-hover/tel:scale-110 transition-transform" />
+                          <span className="font-oswald tracking-wider">Par SMS de préférence au <br className="sm:hidden" />07 60 35 00 78</span>
+                        </a>
+                      </div>
+                    </motion.div>
+                  )}
                   {section.plans.map((plan: Plan, pidx: number) => (
                     <motion.div
                       key={pidx}
@@ -379,10 +428,10 @@ export default function Pricing() {
                                 <span className="font-light">{plan.tel}</span>
                               </div>
                               <a 
-                                href={`tel:${plan.tel.split('/')[0].trim()}`} 
+                                href={`${activeCategory === "Enfants" ? "sms" : "tel"}:${plan.tel.split('/')[0].trim()}`} 
                                 className="w-full block text-center py-3 bg-transparent border border-white/20 text-white text-xs font-oswald uppercase tracking-widest hover:bg-mfc-red hover:border-mfc-red transition-all duration-300 rounded-lg group-hover:border-mfc-red/50"
                               >
-                                Appeler
+                                {activeCategory === "Enfants" ? "SMS" : "Appeler"}
                               </a>
                             </>
                           )}
