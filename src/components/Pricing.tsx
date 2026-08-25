@@ -72,12 +72,22 @@ const sections: Section[] = [
         tel: "06 43 40 76 45"
       },
       {
-        name: "100% FILLES",
-        price: "300 €",
+        name: "JUJITSU BRÉSILIEN",
+        subtitle: "À partir de 14 ans - Kimono offert pour les 10 premiers inscrits",
+        price: "450 €",
         schedule: [
-          "Mardi : 18h00 – 19h00",
-          "Mercredi : 18h30 – 19h30",
-          "Samedi : 10h30 – 12h00"
+          "Mardi : 19h30 – 21h00",
+          "Jeudi : 19h30 – 21h00",
+          "Dimanche : 19h30 – 21h00"
+        ]
+      },
+      {
+        name: "100% FILLES",
+        subtitle: "À partir de 14 ans",
+        price: "280 €",
+        schedule: [
+          "Mercredi : 19h30 – 21h00",
+          "Samedi : 11h30 – 13h00"
         ]
       },
       {
@@ -101,15 +111,6 @@ const sections: Section[] = [
           { name: "Boxe Thaï", price: "290 €" },
           { name: "Pieds Poings", price: "290 €" },
           { name: "Striking Ados", price: "290 €" }
-        ]
-      },
-      {
-        name: "LUTA LIVRE",
-        price: "300 €",
-        schedule: [
-          "Mardi : 19h00 – 20h00",
-          "Mercredi : 12h30 – 13h30",
-          "Samedi : 9h00 – 10h30"
         ]
       }
     ]

@@ -19,6 +19,13 @@ const coaches = [
     instagram: "https://www.instagram.com/hassou_captaincrochet/",
   },
   {
+    name: "Venino Junior",
+    role: "Coach JJB",
+    image: "/images/coaches/venino.png",
+    bio: "Ceinture noire JJB | Champion d’Europe IBJJF No-Gi",
+    instagram: "https://www.instagram.com/veninjr/?hl=fr",
+  },
+  {
     name: "Mohamed Mahfoud",
     role: "Coach Kickboxing",
     image: "/images/coaches/mahfoud.png",
