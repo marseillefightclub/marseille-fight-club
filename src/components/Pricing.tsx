@@ -207,7 +207,7 @@ const sections: Section[] = [
             ]
           }
         ],
-        tel: "07 60 35 00 78"
+        tel: "07 83 67 54 75"
       }
     ]
   }
@@ -428,10 +428,10 @@ export default function Pricing() {
                                 <span className="font-light">{plan.tel}</span>
                               </div>
                               <a 
-                                href={`${activeCategory === "Enfants" ? "sms" : "tel"}:${plan.tel.split('/')[0].trim()}`} 
-                                className="w-full block text-center py-3 bg-transparent border border-white/20 text-white text-xs font-oswald uppercase tracking-widest hover:bg-mfc-red hover:border-mfc-red transition-all duration-300 rounded-lg group-hover:border-mfc-red/50"
+                                href={`${activeCategory === "Enfants" && plan.name !== "BOXE KIDS" ? "sms" : "tel"}:${plan.tel.split('/')[0].trim()}`} 
+                                className={`w-full block text-center ${activeCategory === "Enfants" ? "py-2 text-lg font-bold" : "py-3 text-xs"} bg-transparent border border-white/20 text-white font-oswald uppercase tracking-widest hover:bg-mfc-red hover:border-mfc-red transition-all duration-300 rounded-lg group-hover:border-mfc-red/50`}
                               >
-                                {activeCategory === "Enfants" ? "SMS" : "Appeler"}
+                                {activeCategory === "Enfants" && plan.name !== "BOXE KIDS" ? "SMS" : "Appeler"}
                               </a>
                             </>
                           )}
