@@ -14,7 +14,7 @@ export default function PlanningPage() {
     setDone(false);
 
     try {
-      const response = await fetch("/images/planning.jpg");
+      const response = await fetch("/images/planning.jpg?v=2");
       const blob = await response.blob();
       const url = URL.createObjectURL(blob);
       const link = document.createElement("a");
@@ -93,12 +93,12 @@ export default function PlanningPage() {
         <div className="relative w-full max-w-5xl mx-auto border-4 border-mfc-gray/50 rounded-2xl overflow-hidden shadow-2xl bg-black">
           {/* Desktop: click to download */}
           <a 
-            href="/images/planning.jpg" 
+            href="/images/planning.jpg?v=2" 
             download="Planning_MFC.jpg" 
             className="hidden md:block relative w-full cursor-pointer group"
           >
              <Image 
-                src="/images/planning.jpg" 
+                src="/images/planning.jpg?v=2" 
                 alt="Planning Marseille Fight Club" 
                 width={1200}
                 height={800}
@@ -111,7 +111,7 @@ export default function PlanningPage() {
           <div className="md:hidden relative w-full">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img 
-              src="/images/planning.jpg" 
+              src="/images/planning.jpg?v=2" 
               alt="Planning Marseille Fight Club" 
               className="w-full h-auto object-contain"
             />

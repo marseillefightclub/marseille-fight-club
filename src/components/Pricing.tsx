@@ -79,7 +79,8 @@ const sections: Section[] = [
           "Mardi : 19h30 – 21h00",
           "Jeudi : 19h30 – 21h00",
           "Dimanche : 19h30 – 21h00"
-        ]
+        ],
+        tel: "06 61 67 91 09"
       },
       {
         name: "100% FILLES",
@@ -88,7 +89,8 @@ const sections: Section[] = [
         schedule: [
           "Mercredi : 19h30 – 21h00",
           "Samedi : 11h30 – 13h00"
-        ]
+        ],
+        tel: "06 43 40 76 45"
       },
       {
         name: "BOXE",
@@ -102,16 +104,13 @@ const sections: Section[] = [
         tel: "07 83 67 54 75"
       },
       {
-        name: "STRIKING",
-        tel: "06 14 95 88 49",
-        strikingOptions: [
-          { name: "Striking MMA (2J/S)", price: "390 €" },
-          { name: "Striking MMA (4J/S)", price: "490 €" },
-          { name: "Lady Striking", price: "390 €" },
-          { name: "Boxe Thaï", price: "290 €" },
-          { name: "Pieds Poings", price: "290 €" },
-          { name: "Striking Ados", price: "290 €" }
-        ]
+        name: "KICK",
+        price: "350 €",
+        schedule: [
+          "Mardi : 18h00 – 19h30",
+          "Vendredi : 18h00 – 19h30"
+        ],
+        tel: "06 14 95 88 49"
       }
     ]
   },
@@ -142,11 +141,6 @@ const sections: Section[] = [
           "Vendredi : 20h00 – 21h00"
         ],
         tel: "06 43 40 76 45"
-      },
-      {
-        name: "KICK ADOS",
-        price: "290 €",
-        tel: "06 14 95 88 49"
       }
     ]
   },
