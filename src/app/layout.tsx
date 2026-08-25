@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     siteName: "Marseille Fight Club",
     images: [
       {
-        url: "/LogoGorill.jpg",
+        url: "/LogoRayan.jpeg",
         width: 800,
         height: 800,
         alt: "Marseille Fight Club Logo",
@@ -44,10 +44,10 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Marseille Fight Club | MMA & Boxe Marseille",
     description: "Entraînement de haut niveau en MMA, Boxe et Grappling à Marseille.",
-    images: ["/LogoGorill.jpg"],
+    images: ["/LogoRayan.jpeg"],
   },
   icons: {
-    icon: "/LogoGorill.jpg",
+    icon: "/LogoRayan.jpeg",
   },
   verification: {
     google: "67z8ufL0MJCs-2ow4QuljioLA-xfu26592OPrPJ5q3U",
@@ -76,7 +76,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "SportsClub",
               "name": "Marseille Fight Club",
-              "image": "https://marseillefightclub.com/LogoGorill.jpg",
+              "image": "https://marseillefightclub.com/LogoRayan.jpeg",
               "description": "Club premium de MMA, Boxe, et Grappling situé à Marseille 10ème.",
               "address": {
                 "@type": "PostalAddress",

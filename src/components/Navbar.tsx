@@ -43,13 +43,13 @@ export default function Navbar() {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 cursor-pointer group">
-            <div className="relative w-14 h-14 md:w-16 md:h-16 flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
+            <div className="relative w-20 h-20 md:w-24 md:h-24 flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
               <Image 
-                src="/LogoGorill.jpg" 
+                src="/LogoRayan.jpeg" 
                 alt="Marseille Fight Club Logo Gorilla" 
                 fill
                 className="object-contain opacity-90 group-hover:opacity-100 transition-opacity"
-                sizes="(max-width: 768px) 56px, 64px"
+                sizes="(max-width: 768px) 80px, 96px"
                 priority
               />
             </div>
