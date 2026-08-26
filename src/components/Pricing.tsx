@@ -78,7 +78,7 @@ const sections: Section[] = [
         schedule: [
           "Mardi : 19h30 – 21h00",
           "Jeudi : 19h30 – 21h00",
-          "Dimanche : 19h30 – 21h00"
+          "Dimanche : 10h – 11h30"
         ],
         tel: "06 61 67 91 09"
       },
