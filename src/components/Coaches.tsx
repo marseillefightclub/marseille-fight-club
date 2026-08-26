@@ -23,7 +23,7 @@ const coaches = [
     role: "Coach JJB",
     image: "/images/coaches/venino.png",
     bio: "Ceinture noire JJB | Champion d’Europe IBJJF No-Gi",
-    instagram: "https://www.instagram.com/veninjr/?hl=fr",
+    instagram: "https://www.instagram.com/firstjiujitsu.capelette/",
   },
   {
     name: "Mohamed Mahfoud",
