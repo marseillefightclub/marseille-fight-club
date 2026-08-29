@@ -31,7 +31,6 @@ export default function Footer() {
             <ul className="space-y-2 text-gray-400">
               <li>268 Avenue de la Capelette</li>
               <li>13010 Marseille, France</li>
-              <li><a href="mailto:contact@marseillefightclub.com" className="hover:text-mfc-red transition-colors">contact@marseillefightclub.com</a></li>
               <li>+33 6 43 40 76 45</li>
             </ul>
           </div>

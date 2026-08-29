@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const coaches = [
   {
-    name: "Jean Michel Foissard 'Papy'",
+    name: "Jean Michel Foissard",
     role: "Head Coach MMA",
     image: "/images/coaches/papy.png",
     bio: "Fondateur du Marseille fight Club",
@@ -21,9 +21,18 @@ const coaches = [
   {
     name: "Venino Junior",
     role: "Coach JJB",
-    image: "/images/coaches/venino.png",
+    image: "/images/coaches/veninoJR.png",
     bio: "Ceinture noire JJB | Champion d’Europe IBJJF No-Gi",
     instagram: "https://www.instagram.com/firstjiujitsu.capelette/",
+    objectPosition: "center",
+  },
+  {
+    name: "Sarah",
+    role: "Coach MMA 100% Féminine",
+    image: "/images/coaches/sarahCoach.png",
+    bio: "Transmet sa technique et son expérience",
+    instagram: "https://www.instagram.com/teamkuja_mma",
+    objectPosition: "center 20%",
   },
   {
     name: "Mohamed Mahfoud",
@@ -38,15 +47,15 @@ const coaches = [
     image: "/images/coaches/eva.png",
     bio: "Combattante pro KSW",
     instagram: "https://www.instagram.com/evadourthe/",
-    },
-    {
-      name: "Olivier",
-      role: "Coach MMA Ado",
-      image: "/images/coaches/olivier.jpg",
-      bio: "Coach expérimenté et bienveillant",
-      instagram: "https://www.instagram.com/olive_.7/",
-      objectPosition: "center 30%",
-    },
+  },
+  {
+    name: "Olivier",
+    role: "Coach MMA Ado",
+    image: "/images/coaches/olivier.jpg",
+    bio: "Coach expérimenté et bienveillant",
+    instagram: "https://www.instagram.com/olive_.7/",
+    objectPosition: "center 30%",
+  },
 ];
 
 export default function Coaches() {
@@ -85,6 +94,7 @@ export default function Coaches() {
                 src={coach.image} 
                 alt={coach.name} 
                 fill
+                quality={100}
                 style={{ objectPosition: coach.objectPosition || 'top' }}
                 className="object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100"
               />

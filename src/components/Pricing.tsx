@@ -83,14 +83,14 @@ const sections: Section[] = [
         tel: "06 61 67 91 09"
       },
       {
-        name: "100% FILLES",
+        name: "100% FILLE",
         subtitle: "À partir de 14 ans",
         price: "280 €",
         schedule: [
           "Mercredi : 19h30 – 21h00",
           "Samedi : 11h30 – 13h00"
         ],
-        tel: "06 43 40 76 45"
+        tel: "06 09 82 53 43"
       },
       {
         name: "BOXE",
