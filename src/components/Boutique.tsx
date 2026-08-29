@@ -181,10 +181,10 @@ export default function Boutique() {
                 <AnimatePresence mode="wait">
                   <motion.div
                     key={currentImageIndex}
-                    initial={{ opacity: 0, scale: 0.95 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    exit={{ opacity: 0, scale: 1.05 }}
-                    transition={{ duration: 0.3 }}
+                    initial={{ opacity: 0, x: 50 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: -50 }}
+                    transition={{ duration: 0.3, ease: "easeInOut" }}
                     className="absolute inset-0"
                   >
                     <Image 
@@ -200,13 +200,13 @@ export default function Boutique() {
                   <>
                     <button
                       onClick={() => setCurrentImageIndex((prev) => (prev === 0 ? selectedProduct.images.length - 1 : prev - 1))}
-                      className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-black/50 hover:bg-mfc-red text-white rounded-full flex items-center justify-center opacity-0 group-hover/carousel:opacity-100 transition-all duration-300"
+                      className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-black/50 hover:bg-mfc-red text-white rounded-full flex items-center justify-center opacity-100 md:opacity-0 group-hover/carousel:opacity-100 transition-all duration-300"
                     >
                       <ChevronLeft size={24} />
                     </button>
                     <button
                       onClick={() => setCurrentImageIndex((prev) => (prev === selectedProduct.images.length - 1 ? 0 : prev + 1))}
-                      className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-black/50 hover:bg-mfc-red text-white rounded-full flex items-center justify-center opacity-0 group-hover/carousel:opacity-100 transition-all duration-300"
+                      className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-black/50 hover:bg-mfc-red text-white rounded-full flex items-center justify-center opacity-100 md:opacity-0 group-hover/carousel:opacity-100 transition-all duration-300"
                     >
                       <ChevronRight size={24} />
                     </button>
