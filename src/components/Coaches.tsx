@@ -29,8 +29,8 @@ const coaches = [
   {
     name: "Sarah",
     role: "Coach MMA 100% Féminine",
-    image: "/images/coaches/sarahCoach.png",
-    bio: "Transmet sa technique et son expérience",
+    image: "/images/coaches/coachSarah.jpeg",
+    bio: "Blue Belt JJB ➰",
     instagram: "https://www.instagram.com/teamkuja_mma",
     objectPosition: "center 20%",
   },

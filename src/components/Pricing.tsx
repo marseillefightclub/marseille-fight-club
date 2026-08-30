@@ -61,12 +61,13 @@ const sections: Section[] = [
         tel: "06 43 40 76 45"
       },
       {
-        name: "MMA LOISIR – 4 jours par semaine",
-        price: "550 €",
+        name: "MMA LOISIR – 5 jours par semaine",
+        price: "560 €",
         schedule: [
           "Lundi : 18h30 – 20h00",
           "Mardi : 19h30 – 21h00",
           "Mercredi : 18h00 – 19h30",
+          "Jeudi : 19h30 – 21h00",
           "Vendredi : 19h30 – 21h00"
         ],
         tel: "06 43 40 76 45"
