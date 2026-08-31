@@ -43,7 +43,7 @@ export default function Footer() {
             </p>
             <span className="hidden md:inline text-gray-700">|</span>
             <p className="text-gray-500 text-sm">
-              Développé par <a href="https://mickaelcode.com" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-white transition-colors hover:underline">Mickael</a>
+              Développé & Designé par <a href="https://mickaelcode.com" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-white transition-colors hover:underline">Mickael</a>
             </p>
           </div>
           <div className="flex gap-4">

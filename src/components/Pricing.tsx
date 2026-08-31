@@ -105,11 +105,12 @@ const sections: Section[] = [
         tel: "07 83 67 54 75"
       },
       {
-        name: "KICK",
+        name: "KICK BOXING",
         price: "350 €",
         schedule: [
           "Mardi : 18h00 – 19h30",
-          "Vendredi : 18h00 – 19h30"
+          "Vendredi : 18h00 – 19h30",
+          "Samedi : 10h00 – 11h30"
         ],
         tel: "06 14 95 88 49"
       }

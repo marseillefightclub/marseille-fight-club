@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     siteName: "Marseille Fight Club",
     images: [
       {
-        url: "/LogoGorill.jpg",
+        url: "/LogoRayan.jpeg",
         width: 800,
         height: 800,
         alt: "Marseille Fight Club Logo",
@@ -44,11 +44,11 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Marseille Fight Club | MMA, JJB, Grappling & Boxe à Marseille",
     description: "Marseille Fight Club, club de sports de combat à Marseille : MMA, Jiu-Jitsu Brésilien (JJB), Grappling, Boxe Anglaise et Lutte.",
-    images: ["/LogoGorill.jpg"],
+    images: ["/LogoRayan.jpeg"],
   },
   icons: {
-    icon: "/LogoGorill.jpg",
-    apple: "/LogoGorill.jpg",
+    icon: "/LogoRayan.jpeg",
+    apple: "/LogoRayan.jpeg",
   },
   verification: {
     google: "67z8ufL0MJCs-2ow4QuljioLA-xfu26592OPrPJ5q3U",
@@ -78,8 +78,8 @@ export default function RootLayout({
               "@type": "SportsClub",
               "name": "Marseille Fight Club",
               "alternateName": "MFC",
-              "image": "https://marseillefightclub.com/LogoGorill.jpg",
-              "logo": "https://marseillefightclub.com/LogoGorill.jpg",
+              "image": "https://marseillefightclub.com/LogoRayan.jpeg",
+              "logo": "https://marseillefightclub.com/LogoRayan.jpeg",
               "description": "Marseille Fight Club, club de sports de combat à Marseille. MMA, Jiu-Jitsu Brésilien, JJB, Grappling, Boxe Anglaise et Lutte.",
               "address": {
                 "@type": "PostalAddress",
