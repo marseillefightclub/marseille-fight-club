@@ -19,14 +19,6 @@ const coaches = [
     instagram: "https://www.instagram.com/hassou_captaincrochet/",
   },
   {
-    name: "Venino Junior",
-    role: "Coach JJB",
-    image: "/images/coaches/veninoJR.png",
-    bio: "Ceinture noire JJB | Champion d’Europe IBJJF No-Gi",
-    instagram: "https://www.instagram.com/veninjr/",
-    objectPosition: "center",
-  },
-  {
     name: "Sarah",
     role: "Coach MMA 100% Féminine",
     image: "/images/coaches/coachSarah.jpeg",
