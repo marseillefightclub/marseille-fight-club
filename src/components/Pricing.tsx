@@ -41,22 +41,10 @@ const sections: Section[] = [
     plans: [
       {
         name: "MMA LOISIR – 2 jours par semaine",
-        price: "450 €",
-        options: [
-          {
-            label: "Option 1",
-            schedule: [
-              "Lundi : 18h30 – 20h00",
-              "Mercredi : 18h00 – 19h30"
-            ]
-          },
-          {
-            label: "Option 2",
-            schedule: [
-              "Mardi : 19h30 – 21h00",
-              "Vendredi : 19h30 – 21h00"
-            ]
-          }
+        price: "460 €",
+        schedule: [
+          "Mardi : 19h30 – 20h00",
+          "Jeudi : 19h30 – 20h00"
         ],
         tel: "06 43 40 76 45"
       },
@@ -77,7 +65,7 @@ const sections: Section[] = [
         schedule: [
           "Mardi : 19h30 – 21h00",
           "Jeudi : 19h30 – 21h00",
-          "Dimanche : 10h – 11h30"
+          "Dimanche : 9h – 10h30"
         ]
       },
       {
