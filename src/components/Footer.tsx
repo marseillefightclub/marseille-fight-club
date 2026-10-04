@@ -23,6 +23,7 @@ export default function Footer() {
               <li><a href="coachs" className="text-gray-400 hover:text-mfc-red transition-colors">Nos Coachs</a></li>
               <li><a href="tarifs" className="text-gray-400 hover:text-mfc-red transition-colors">Tarifs & Inscription</a></li>
               <li><a href="/actualite" className="text-gray-400 hover:text-mfc-red transition-colors">Actualité</a></li>
+              <li><a href="/nos-partenaires" className="text-gray-400 hover:text-mfc-red transition-colors">Nos Partenaires</a></li>
             </ul>
           </div>
           
