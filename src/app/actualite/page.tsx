@@ -8,6 +8,14 @@ import { useRef } from "react";
 export default function PressPage() {
   const articles = [
     {
+      id: "ylies-djiroun-victoire-assem-ghanem-pfl-mena-11",
+      title: "De Marseille à la Finale : Ylies Djiroun Foudroie Assem Ghanem au PFL MENA 11",
+      excerpt: "Après un changement d'adversaire de dernière minute, Ylies « Broly » Djiroun a signé une victoire expéditive par TKO contre l'invaincu Assem Ghanem à Riyad.",
+      category: "PFL MENA 11",
+      date: "2 Octobre 2026",
+      image: "/images/press/ylies-pfl-mena-11-winner.jpg"
+    },
+    {
       id: "ylies-djiroun-pfl-mena-11",
       title: "Ylies Djiroun à Riyad : celui qui a fait tomber le champion invaincu joue sa place en finale du PFL MENA",
       excerpt: "Après avoir stoppé le champion invaincu Hamli par TKO au premier round à Dubaï, Ylies 'Broly' Djiroun dispute la demi-finale du tournoi lightweight PFL MENA 11 face à Basel Shalaan le 2 octobre 2026 à Riyad.",
