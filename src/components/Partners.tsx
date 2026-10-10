@@ -25,6 +25,11 @@ export default function Partners() {
       name: "PRO16",
       logo: "/images/partners/LogoPro16.jpg",
       url: "https://www.instagram.com/pro16_sportperformance/?hl=fr"
+    },
+    {
+      name: "MickaelCode",
+      logo: "/images/partners/LogoMickaelCode.jpeg",
+      url: "https://mickaelcode.com"
     }
   ];
 
@@ -40,7 +45,7 @@ export default function Partners() {
           </p>
         </div>
 
-        <div className="flex flex-col md:flex-row justify-center items-center gap-16 md:gap-24">
+        <div className="flex flex-wrap justify-center items-center gap-16 md:gap-20">
           {partners.map((partner, index) => (
             <motion.div
               key={partner.name}
@@ -50,7 +55,7 @@ export default function Partners() {
               viewport={{ once: true }}
               className="group"
             >
-              <Link href={partner.url} target="_blank" rel="noopener noreferrer" className="block relative w-48 h-24 md:w-56 md:h-28 opacity-70 hover:opacity-100 transition-all duration-300 transform hover:scale-105">
+              <Link href={partner.url} target="_blank" rel="noopener noreferrer" className="block relative w-64 h-32 md:w-80 md:h-40 opacity-70 hover:opacity-100 transition-all duration-300 transform hover:scale-105">
                 <div className="absolute inset-0 flex items-center justify-center">
                   <span className="sr-only">{partner.name}</span>
                   {/* Using standard img to avoid Next.js Image strict configuration issues if files are missing, 
@@ -58,7 +63,7 @@ export default function Partners() {
                   <img 
                     src={partner.logo} 
                     alt={`Logo officiel de ${partner.name}`} 
-                    className="max-w-full max-h-full object-contain invert mix-blend-screen drop-shadow-lg"
+                    className={`max-w-full max-h-full object-contain drop-shadow-lg mix-blend-screen ${partner.name !== 'MickaelCode' ? 'invert' : 'scale-125 md:scale-150'}`}
                     loading="lazy"
                   />
                 </div>
