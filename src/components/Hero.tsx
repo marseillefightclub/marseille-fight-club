@@ -9,7 +9,7 @@ export default function Hero() {
       {/* Background with overlay */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-mfc-dark z-10" />
-        <div className="absolute inset-0 bg-[url('/images/hero-bg-nobricks.png')] bg-cover bg-center bg-fixed" />
+        <div className="absolute inset-0 bg-[url('/images/hero-bg-nobricks.png')] bg-cover bg-top md:bg-center bg-scroll md:bg-fixed" />
       </div>
 
       <div className="relative z-20 flex flex-col items-center text-center px-4 max-w-5xl mx-auto pt-20 md:pt-16">

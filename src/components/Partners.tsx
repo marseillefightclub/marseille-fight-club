@@ -25,11 +25,6 @@ export default function Partners() {
       name: "PRO16",
       logo: "/images/partners/LogoPro16.jpg",
       url: "https://www.instagram.com/pro16_sportperformance/?hl=fr"
-    },
-    {
-      name: "MickaelCode",
-      logo: "/images/partners/LogoMickaelCode.jpeg",
-      url: "https://mickaelcode.com"
     }
   ];
 
@@ -63,7 +58,7 @@ export default function Partners() {
                   <img 
                     src={partner.logo} 
                     alt={`Logo officiel de ${partner.name}`} 
-                    className={`max-w-full max-h-full object-contain drop-shadow-lg mix-blend-screen ${partner.name !== 'MickaelCode' ? 'invert' : ''} ${partner.name === 'PRO16' || partner.name === 'MickaelCode' ? 'scale-150 md:scale-[1.75]' : ''}`}
+                    className={`max-w-full max-h-full object-contain drop-shadow-lg mix-blend-screen invert ${partner.name === 'PRO16' ? 'scale-150 md:scale-[1.75]' : ''}`}
                     loading="lazy"
                   />
                 </div>
