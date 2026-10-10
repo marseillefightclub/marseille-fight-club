@@ -91,7 +91,7 @@ const sections: Section[] = [
       },
       {
         name: "KICK BOXING",
-        price: "350 €",
+        price: "399 €",
         schedule: [
           "Mardi : 18h00 – 19h30",
           "Vendredi : 18h00 – 19h30",

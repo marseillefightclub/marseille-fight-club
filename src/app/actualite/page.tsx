@@ -16,14 +16,6 @@ export default function PressPage() {
       image: "/images/press/ylies-pfl-mena-11-winner.jpg"
     },
     {
-      id: "ylies-djiroun-pfl-mena-11",
-      title: "Ylies Djiroun à Riyad : celui qui a fait tomber le champion invaincu joue sa place en finale du PFL MENA",
-      excerpt: "Après avoir stoppé le champion invaincu Hamli par TKO au premier round à Dubaï, Ylies 'Broly' Djiroun dispute la demi-finale du tournoi lightweight PFL MENA 11 face à Basel Shalaan le 2 octobre 2026 à Riyad.",
-      category: "PFL MENA 11",
-      date: "13 Août 2026",
-      image: "/images/press/YliesPFL11.png"
-    },
-    {
       id: "nika-kobakhidze-hexagone-mma-44",
       title: "Nika Kobakhidze conquiert l'Hexagone MMA : une ceinture qui prend la route de Marseille",
       excerpt: "Nika Kobakhidze remporte la ceinture des poids plumes à l'Hexagone MMA 44. Revivez la victoire épique par soumission du combattant marseillais.",
@@ -38,14 +30,6 @@ export default function PressPage() {
       category: "Hexagone MMA",
       date: "25 Avril 2026",
       image: "/images/press/varela-belt.png"
-    },
-    {
-      id: "ylies-djiroun-pride-of-arabia-dubai",
-      title: "Exploit à Dubaï : Ylies 'Broly' Djiroun Terrasse le Champion Invaincu au Premier Round !",
-      excerpt: "Victoire historique par TKO en 4 minutes et 20 secondes ! Ylies Djiroun a fait tomber le champion invaincu Salah Eddine Hamli dès le premier round du PFL MENA à la Coca-Cola Arena.",
-      category: "PFL MENA",
-      date: "25 Mai 2026",
-      image: "/images/press/ylies-victoire-pfl.jpg"
     },
     {
       id: "lorenzo-navarro-cage-warriors-title",

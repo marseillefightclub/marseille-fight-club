@@ -20,6 +20,11 @@ export default function Partners() {
       name: "METAL BOXE",
       logo: "/images/partners/LogoMétalBoxe.avif",
       url: "https://metal-boxe.com"
+    },
+    {
+      name: "PRO16",
+      logo: "/images/partners/LogoPro16.jpg",
+      url: "https://www.instagram.com/pro16_sportperformance/?hl=fr"
     }
   ];
 

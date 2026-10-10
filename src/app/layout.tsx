@@ -19,13 +19,13 @@ const oswald = Oswald({
 });
 
 export const metadata: Metadata = {
-  title: "Marseille Fight Club | MMA, JJB, Grappling & Boxe à Marseille",
-  description: "Marseille Fight Club, club de sports de combat à Marseille. MMA, Jiu-Jitsu Brésilien (JJB), Grappling, Boxe Anglaise et Lutte. Découvrez nos disciplines et entraînez-vous à Marseille.",
+  title: "Marseille Fight Club | MMA, Grappling & Boxe à Marseille",
+  description: "Marseille Fight Club, club de sports de combat à Marseille. MMA, Grappling, Boxe Anglaise et Lutte. Découvrez nos disciplines et entraînez-vous à Marseille.",
   keywords: ["MMA Marseille", "Marseille Fight Club", "Boxe Anglaise Marseille", "Grappling Marseille", "Lutta Livre Marseille", "Jean Michel Foissard", "Souhil Tairi", "Hassou Coach", "Sports de combat 13010"],
   authors: [{ name: "Marseille Fight Club" }],
   openGraph: {
-    title: "Marseille Fight Club | MMA, JJB, Grappling & Boxe à Marseille",
-    description: "Marseille Fight Club, club de sports de combat à Marseille : MMA, Jiu-Jitsu Brésilien (JJB), Grappling, Boxe Anglaise et Lutte.",
+    title: "Marseille Fight Club | MMA, Grappling & Boxe à Marseille",
+    description: "Marseille Fight Club, club de sports de combat à Marseille : MMA, Grappling, Boxe Anglaise et Lutte.",
     url: "https://marseillefightclub.com",
     siteName: "Marseille Fight Club",
     images: [
@@ -41,8 +41,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Marseille Fight Club | MMA, JJB, Grappling & Boxe à Marseille",
-    description: "Marseille Fight Club, club de sports de combat à Marseille : MMA, Jiu-Jitsu Brésilien (JJB), Grappling, Boxe Anglaise et Lutte.",
+    title: "Marseille Fight Club | MMA, Grappling & Boxe à Marseille",
+    description: "Marseille Fight Club, club de sports de combat à Marseille : MMA, Grappling, Boxe Anglaise et Lutte.",
     images: ["/LogoRayan.jpeg"],
   },
   icons: {
@@ -79,7 +79,7 @@ export default function RootLayout({
               "alternateName": "MFC",
               "image": "https://marseillefightclub.com/LogoRayan.jpeg",
               "logo": "https://marseillefightclub.com/LogoRayan.jpeg",
-              "description": "Marseille Fight Club, club de sports de combat à Marseille. MMA, Jiu-Jitsu Brésilien, JJB, Grappling, Boxe Anglaise et Lutte.",
+              "description": "Marseille Fight Club, club de sports de combat à Marseille. MMA, Grappling, Boxe Anglaise et Lutte.",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "268 Avenue de la Capelette",
