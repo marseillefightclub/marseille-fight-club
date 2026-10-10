@@ -63,7 +63,7 @@ export default function Partners() {
                   <img 
                     src={partner.logo} 
                     alt={`Logo officiel de ${partner.name}`} 
-                    className={`max-w-full max-h-full object-contain drop-shadow-lg mix-blend-screen ${partner.name !== 'MickaelCode' ? 'invert' : 'scale-125 md:scale-150'}`}
+                    className={`max-w-full max-h-full object-contain drop-shadow-lg mix-blend-screen ${partner.name !== 'MickaelCode' ? 'invert' : ''} ${partner.name === 'PRO16' || partner.name === 'MickaelCode' ? 'scale-150 md:scale-[1.75]' : ''}`}
                     loading="lazy"
                   />
                 </div>
