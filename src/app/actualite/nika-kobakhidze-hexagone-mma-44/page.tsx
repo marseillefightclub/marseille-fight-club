@@ -10,44 +10,50 @@ export const metadata = {
 
 export default function ArticlePage() {
   return (
-    <main className="min-h-screen bg-mfc-dark pt-24 pb-20">
+    <main className="min-h-screen bg-mfc-dark pt-24 sm:pt-28 pb-20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
         
         {/* Navigation */}
-        <div className="mb-8">
-          <Link href="/actualite" className="inline-flex items-center text-mfc-red hover:text-white transition-colors duration-300 font-oswald tracking-widest uppercase">
-            <ArrowLeft className="mr-2" size={20} />
+        <div className="mb-3 sm:mb-4">
+          <Link href="/actualite" className="inline-flex items-center text-mfc-red hover:text-white transition-colors duration-300 font-oswald tracking-widest uppercase text-sm">
+            <ArrowLeft className="mr-2" size={18} />
             Retour aux articles
           </Link>
         </div>
 
-        {/* Header Image */}
-        <div className="relative w-full h-[450px] md:h-[600px] rounded-xl overflow-hidden mb-10 shadow-2xl shadow-mfc-red/10 border border-white/5 bg-[#0a0a0a]">
-          <Image 
-            src="/images/press/nika-kobakhidze-belt.png" 
-            alt="Nika Kobakhidze Champion Hexagone MMA 44 avec la ceinture" 
-            fill
-            className="object-contain object-right md:object-right-top p-4 md:p-8"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-mfc-dark via-mfc-dark/80 to-transparent md:via-mfc-dark/40"></div>
-          <div className="absolute bottom-0 left-0 p-8">
-            <div className="flex gap-3 mb-4">
-              <span className="px-3 py-1 bg-mfc-red text-white text-xs font-bold uppercase tracking-widest rounded-sm">Événement</span>
-              <span className="px-3 py-1 bg-white/10 text-white text-xs font-bold uppercase tracking-widest rounded-sm backdrop-blur-md">Hexagone MMA 44</span>
-            </div>
+        {/* Header Image with Title 50% Straddling (à cheval de moitié, sans fond, transparence totale) */}
+        <div>
+          <div className="relative w-full h-[520px] sm:h-[680px] md:h-[820px] rounded-2xl overflow-hidden border border-white/10 bg-black shadow-2xl group">
+            <Image 
+              src="/images/press/nika-kobakhidze-belt.png" 
+              alt="Nika Kobakhidze Champion Hexagone MMA 44 avec la ceinture" 
+              fill
+              style={{ objectFit: 'contain' }}
+              className="object-contain object-center transition-transform duration-700 group-hover:scale-105"
+              priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none"></div>
           </div>
+
+          {/* Title Header: 100% transparent, sans fond, sans flou, à cheval de moitié sur la bordure basse */}
+          <header className="relative -mt-28 sm:-mt-32 md:-mt-36 px-2 sm:px-6 z-20 mb-8 sm:mb-12">
+            <div className="flex flex-wrap gap-2.5 mb-3 sm:mb-4">
+              <span className="px-3 py-1 bg-mfc-red text-white text-[10px] sm:text-xs font-bold uppercase tracking-widest rounded shadow-lg">Hexagone MMA 44</span>
+              <span className="px-3 py-1 bg-black/60 text-white text-[10px] sm:text-xs font-bold uppercase tracking-widest rounded border border-white/20 shadow-lg">Ceinture</span>
+            </div>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-oswald font-bold text-white uppercase tracking-tight leading-tight mb-4 drop-shadow-[0_4px_24px_rgba(0,0,0,1)] [text-shadow:_0_4px_28px_rgb(0_0_0_/_95%)]">
+              Nika Kobakhidze conquiert l&apos;Hexagone MMA : une ceinture qui prend la route de Marseille
+            </h1>
+            <div className="flex flex-wrap items-center gap-3 sm:gap-4 text-gray-300 font-inter text-xs sm:text-sm uppercase tracking-widest drop-shadow-[0_2px_12px_rgba(0,0,0,1)]">
+              <span className="text-white font-medium">1 juin 2026</span>
+              <span className="w-4 h-px bg-white/40"></span>
+              <span>Par La Rédaction MFC</span>
+            </div>
+          </header>
         </div>
 
         {/* Article Content */}
         <article className="prose prose-invert prose-lg max-w-none font-inter text-gray-300">
-          
-          {/* Title Block */}
-          <div className="mb-12">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-oswald font-bold text-white uppercase tracking-wider leading-tight mb-4">
-              Nika Kobakhidze conquiert l'Hexagone MMA : une ceinture qui prend la route de Marseille
-            </h1>
-            <p className="text-gray-400 font-inter text-lg">Publié le 1 juin 2026 • Par La Rédaction MFC</p>
-          </div>
 
           <p className="lead text-xl text-white font-medium mb-6 border-l-4 border-mfc-red pl-6">
             L'Arkéa Arena de Bordeaux a tremblé. Nika Kobakhidze, le joyau géorgien, a écrit l'une des pages les plus glorieuses de sa jeune carrière lors de l'Hexagone MMA 44. Face à un adversaire réputé infranchissable, il a fait parler la foudre, la résilience et une intelligence martiale affûtée pour s'emparer de l'or.

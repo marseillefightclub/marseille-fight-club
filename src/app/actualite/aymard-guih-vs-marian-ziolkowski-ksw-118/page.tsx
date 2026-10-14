@@ -10,44 +10,50 @@ export const metadata = {
 
 export default function ArticlePage() {
   return (
-    <main className="min-h-screen bg-mfc-dark pt-24 pb-20">
+    <main className="min-h-screen bg-mfc-dark pt-24 sm:pt-28 pb-20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
         
         {/* Navigation */}
-        <div className="mb-8">
-          <Link href="/actualite" className="inline-flex items-center text-mfc-red hover:text-white transition-colors duration-300 font-oswald tracking-widest uppercase">
-            <ArrowLeft className="mr-2" size={20} />
+        <div className="mb-3 sm:mb-4">
+          <Link href="/actualite" className="inline-flex items-center text-mfc-red hover:text-white transition-colors duration-300 font-oswald tracking-widest uppercase text-sm">
+            <ArrowLeft className="mr-2" size={18} />
             Retour aux articles
           </Link>
         </div>
 
-        {/* Header Image */}
-        <div className="relative w-full h-[500px] md:h-[650px] rounded-xl overflow-hidden mb-10 shadow-2xl shadow-mfc-red/10 border border-white/5 bg-black">
-          <Image 
-            src="/images/press/aymard-guih-ksw118.png" 
-            alt="Affiche Aymard Guih vs Marian Ziółkowski — KSW 118, Arena Kalisz" 
-            fill
-            className="object-contain"
-          />
-          <div className="absolute inset-0 bg-linear-to-t from-mfc-dark via-transparent to-transparent"></div>
-          <div className="absolute bottom-0 left-0 p-8">
-            <div className="flex gap-3 mb-4">
-              <span className="px-3 py-1 bg-mfc-red text-white text-xs font-bold uppercase tracking-widest rounded-sm">MFC × KSW 118</span>
-              <span className="px-3 py-1 bg-white/10 text-white text-xs font-bold uppercase tracking-widest rounded-sm backdrop-blur-md">16 Mai 2026</span>
-            </div>
+        {/* Header Image with Title 50% Straddling (à cheval de moitié, sans fond, transparence totale) */}
+        <div>
+          <div className="relative w-full h-[520px] sm:h-[680px] md:h-[820px] rounded-2xl overflow-hidden border border-white/10 bg-black shadow-2xl group">
+            <Image 
+              src="/images/press/aymard-guih-ksw118.png" 
+              alt="Affiche Aymard Guih vs Marian Ziółkowski — KSW 118, Arena Kalisz" 
+              fill
+              style={{ objectFit: 'contain' }}
+              className="object-contain object-center transition-transform duration-700 group-hover:scale-105"
+              priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none"></div>
           </div>
+
+          {/* Title Header: 100% transparent, sans fond, sans flou, à cheval de moitié sur la bordure basse */}
+          <header className="relative -mt-28 sm:-mt-32 md:-mt-36 px-2 sm:px-6 z-20 mb-8 sm:mb-12">
+            <div className="flex flex-wrap gap-2.5 mb-3 sm:mb-4">
+              <span className="px-3 py-1 bg-mfc-red text-white text-[10px] sm:text-xs font-bold uppercase tracking-widest rounded shadow-lg">MFC × KSW 118</span>
+              <span className="px-3 py-1 bg-black/60 text-white text-[10px] sm:text-xs font-bold uppercase tracking-widest rounded border border-white/20 shadow-lg">16 Mai 2026</span>
+            </div>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-oswald font-bold text-white uppercase tracking-tight leading-tight mb-4 drop-shadow-[0_4px_24px_rgba(0,0,0,1)] [text-shadow:_0_4px_28px_rgb(0_0_0_/_95%)]">
+              Aymard <span className="text-mfc-red">Guih</span> face à un ancien champion — la nuit où tout peut changer
+            </h1>
+            <div className="flex flex-wrap items-center gap-3 sm:gap-4 text-gray-300 font-inter text-xs sm:text-sm uppercase tracking-widest drop-shadow-[0_2px_12px_rgba(0,0,0,1)]">
+              <span className="text-white font-medium">2 mai 2026</span>
+              <span className="w-4 h-px bg-white/40"></span>
+              <span>Par La Rédaction MFC</span>
+            </div>
+          </header>
         </div>
 
         {/* Article Content */}
         <article className="prose prose-invert prose-lg max-w-none font-inter text-gray-300">
-          
-          {/* Title Block */}
-          <div className="mb-12">
-            <h1 className="text-3xl md:text-5xl font-oswald font-bold text-white uppercase tracking-wider leading-tight mb-4">
-              Aymard <span className="text-mfc-red">Guih</span> face à un ancien champion — la nuit où tout peut changer
-            </h1>
-            <p className="text-gray-500 font-inter text-base">2 mai 2026 — Par La Rédaction MFC</p>
-          </div>
 
           <p className="lead text-xl text-white font-medium mb-14 border-l-4 border-mfc-red pl-6">
             Le 16 mai à Kalisz, en Pologne, Aymard « Barracuda » Guih monte dans l'octogone face à Marian « Golden Boy » Ziółkowski. Ancien champion KSW des poids légers, trois défaites dans les jambes. C'est ce genre de combat que les vrais compétiteurs cherchent.

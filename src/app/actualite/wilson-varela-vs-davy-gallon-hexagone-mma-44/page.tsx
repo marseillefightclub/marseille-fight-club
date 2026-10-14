@@ -10,45 +10,47 @@ export const metadata = {
 
 export default function ArticlePage() {
   return (
-    <main className="min-h-screen bg-mfc-dark pt-24 pb-20">
+    <main className="min-h-screen bg-mfc-dark pt-24 sm:pt-28 pb-20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
         
         {/* Navigation */}
-        <div className="mb-4">
+        <div className="mb-3 sm:mb-4">
           <Link href="/actualite" className="inline-flex items-center text-mfc-red hover:text-white transition-colors duration-300 font-oswald tracking-widest uppercase text-sm">
             <ArrowLeft className="mr-2" size={18} />
             Retour aux articles
           </Link>
         </div>
 
-        {/* Header Image */}
-        <div className="relative w-full aspect-video md:aspect-21/9 rounded-xl overflow-hidden mb-12 border border-white/5 bg-mfc-gray/50 group">
-          <a href="/images/press/varela-fight.jpg" target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+        {/* Header Image with Title 50% Straddling (à cheval de moitié, sans fond, transparence totale) */}
+        <div>
+          <div className="relative w-full h-[460px] sm:h-[540px] md:h-[620px] rounded-2xl overflow-hidden border border-white/10 bg-black shadow-2xl group">
             <Image 
               src="/images/press/varela-fight.jpg" 
               alt="Wilson Varela" 
               fill
-              className="object-cover transition-transform duration-500 group-hover:scale-105"
+              style={{ objectFit: 'contain' }}
+              className="object-contain object-center transition-transform duration-700 group-hover:scale-105"
+              priority
             />
-          </a>
-          <div className="absolute inset-0 bg-linear-to-t from-mfc-dark via-transparent to-transparent pointer-events-none"></div>
-        </div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none"></div>
+          </div>
 
-        {/* Article Header */}
-        <header className="mb-12">
-          <div className="flex gap-3 mb-6">
-            <span className="px-3 py-1 bg-mfc-red text-white text-[10px] font-bold uppercase tracking-widest rounded-sm">Hexagone MMA</span>
-            <span className="px-3 py-1 bg-white/10 text-white text-[10px] font-bold uppercase tracking-widest rounded-sm backdrop-blur-sm">Événement</span>
-          </div>
-          <h1 className="text-4xl md:text-6xl font-oswald font-bold text-white uppercase tracking-tight leading-tight mb-6">
-            Wilson "The Prototype" Varela en Demi-Finale de l'Hexagone MMA 44 à Bordeaux
-          </h1>
-          <div className="flex items-center gap-4 text-gray-500 font-inter text-sm uppercase tracking-widest">
-            <span>25 Avril 2026</span>
-            <span className="w-4 h-px bg-white/20"></span>
-            <span>Par la rédaction MFC</span>
-          </div>
-        </header>
+          {/* Title Header: 100% transparent, sans fond, sans flou, à cheval de moitié sur la bordure basse */}
+          <header className="relative -mt-28 sm:-mt-32 md:-mt-36 px-2 sm:px-6 z-20 mb-8 sm:mb-12">
+            <div className="flex flex-wrap gap-2.5 mb-3 sm:mb-4">
+              <span className="px-3 py-1 bg-mfc-red text-white text-[10px] sm:text-xs font-bold uppercase tracking-widest rounded shadow-lg">Hexagone MMA</span>
+              <span className="px-3 py-1 bg-black/60 text-white text-[10px] sm:text-xs font-bold uppercase tracking-widest rounded border border-white/20 shadow-lg">Événement</span>
+            </div>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-oswald font-bold text-white uppercase tracking-tight leading-tight mb-4 drop-shadow-[0_4px_24px_rgba(0,0,0,1)] [text-shadow:_0_4px_28px_rgb(0_0_0_/_95%)]">
+              Wilson &quot;The Prototype&quot; Varela en Demi-Finale de l&apos;Hexagone MMA 44 à Bordeaux
+            </h1>
+            <div className="flex flex-wrap items-center gap-3 sm:gap-4 text-gray-300 font-inter text-xs sm:text-sm uppercase tracking-widest drop-shadow-[0_2px_12px_rgba(0,0,0,1)]">
+              <span className="text-white font-medium">25 Avril 2026</span>
+              <span className="w-4 h-px bg-white/40"></span>
+              <span>Par la rédaction MFC</span>
+            </div>
+          </header>
+        </div>
 
         {/* Article Content */}
         <article className="prose prose-invert prose-lg max-w-none font-inter text-gray-300 leading-relaxed">

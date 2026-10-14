@@ -19,9 +19,9 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-oswald font-bold text-white uppercase mb-4">Liens Rapides</h4>
             <ul className="space-y-2">
-              <li><a href="club" className="text-gray-400 hover:text-mfc-red transition-colors">Le Club</a></li>
-              <li><a href="coachs" className="text-gray-400 hover:text-mfc-red transition-colors">Nos Coachs</a></li>
-              <li><a href="tarifs" className="text-gray-400 hover:text-mfc-red transition-colors">Tarifs & Inscription</a></li>
+              <li><a href="/club" className="text-gray-400 hover:text-mfc-red transition-colors">Le Club</a></li>
+              <li><a href="/coachs" className="text-gray-400 hover:text-mfc-red transition-colors">Nos Coachs</a></li>
+              <li><a href="/tarifs" className="text-gray-400 hover:text-mfc-red transition-colors">Tarifs & Inscription</a></li>
               <li><a href="/actualite" className="text-gray-400 hover:text-mfc-red transition-colors">Actualité</a></li>
               <li><a href="/nos-partenaires" className="text-gray-400 hover:text-mfc-red transition-colors">Nos Partenaires</a></li>
             </ul>

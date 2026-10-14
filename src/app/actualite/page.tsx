@@ -8,6 +8,14 @@ import { useRef } from "react";
 export default function PressPage() {
   const articles = [
     {
+      id: "wilson-varela-victoire-marian-ziolkowski-ksw-122",
+      title: "KSW 122 : Wilson Varela bat Marian Ziółkowski par soumission au premier round",
+      excerpt: "À Rzeszów, Wilson Varela s'est imposé face à Marian Ziółkowski par soumission (clé de bras) au premier round du KSW 122, concluant leur duel avec autorité.",
+      category: "KSW 122",
+      date: "10 Octobre 2026",
+      image: "/images/press/WilsonVarela.jpeg"
+    },
+    {
       id: "ylies-djiroun-victoire-assem-ghanem-pfl-mena-11",
       title: "De Marseille à la Finale : Ylies Djiroun Foudroie Assem Ghanem au PFL MENA 11",
       excerpt: "Après un changement d'adversaire de dernière minute, Ylies « Broly » Djiroun a signé une victoire expéditive par TKO contre l'invaincu Assem Ghanem à Riyad.",

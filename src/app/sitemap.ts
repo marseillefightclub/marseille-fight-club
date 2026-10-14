@@ -9,6 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/coachs",
     "/tarifs",
     "/actualite",
+    "/actualite/wilson-varela-victoire-marian-ziolkowski-ksw-122",
     "/actualite/ylies-djiroun-victoire-assem-ghanem-pfl-mena-11",
     "/actualite/eva-dourthe-ksw-116",
     "/actualite/souhil-tairi-pfl-mena",
