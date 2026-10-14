@@ -2,15 +2,92 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
-export const metadata = {
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
   title: "Wilson \"The Prototype\" Varela en Demi-Finale de l'Hexagone MMA 44 | Marseille Fight Club",
   description: "Découvrez Wilson Varela avant son choc face à Davy Gallon à Bordeaux. Analyse de son parcours, de sa victoire sur Bivol et des enjeux du tournoi.",
   keywords: "Wilson Varela, The Prototype, Hexagone MMA 44, Davy Gallon, MMA Bordeaux, Arkéa Arena, Marseille Fight Club",
+  alternates: {
+    canonical: "https://marseillefightclub.com/actualite/wilson-varela-vs-davy-gallon-hexagone-mma-44",
+  },
+  openGraph: {
+    title: "Wilson \"The Prototype\" Varela en Demi-Finale de l'Hexagone MMA 44",
+    description: "Le 29 mai 2026, l'Arkéa Arena accueillera Wilson Varela face au vétéran Davy Gallon. Analyse et préparation MFC.",
+    url: "https://marseillefightclub.com/actualite/wilson-varela-vs-davy-gallon-hexagone-mma-44",
+    type: "article",
+    publishedTime: "2026-04-25T10:00:00+02:00",
+    modifiedTime: "2026-04-25T10:00:00+02:00",
+    authors: ["Marseille Fight Club"],
+    images: [
+      {
+        url: "https://marseillefightclub.com/images/press/varela-fight.jpg",
+        width: 1200,
+        height: 675,
+        alt: "Wilson Varela en plein combat - Marseille Fight Club",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Wilson Varela en Demi-Finale de l'Hexagone MMA 44 | Marseille Fight Club",
+    description: "Wilson Varela face à Davy Gallon à l'Arkéa Arena de Bordeaux.",
+    images: ["https://marseillefightclub.com/images/press/varela-fight.jpg"],
+  },
 };
 
 export default function ArticlePage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "Wilson \"The Prototype\" Varela en Demi-Finale de l'Hexagone MMA 44 à Bordeaux",
+    "description": "Le 29 mai 2026, l'Arkéa Arena accueillera Wilson Varela face au vétéran Davy Gallon. Le champion marseillais arrive dans la forme de sa vie pour ce choc au sommet.",
+    "inLanguage": "fr-FR",
+    "datePublished": "2026-04-25T10:00:00+02:00",
+    "dateModified": "2026-04-25T10:00:00+02:00",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://marseillefightclub.com/actualite/wilson-varela-vs-davy-gallon-hexagone-mma-44"
+    },
+    "image": [
+      "https://marseillefightclub.com/images/press/varela-fight.jpg"
+    ],
+    "author": {
+      "@type": "Organization",
+      "name": "Marseille Fight Club",
+      "url": "https://marseillefightclub.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Marseille Fight Club",
+      "url": "https://marseillefightclub.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://marseillefightclub.com/LogoGorill.jpg"
+      }
+    },
+    "about": [
+      {
+        "@type": "Person",
+        "name": "Wilson Varela"
+      },
+      {
+        "@type": "Person",
+        "name": "Davy Gallon"
+      },
+      {
+        "@type": "SportsEvent",
+        "name": "Hexagone MMA 44"
+      }
+    ]
+  };
+
   return (
     <main className="min-h-screen bg-mfc-dark pt-24 sm:pt-28 pb-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
         
         {/* Navigation */}

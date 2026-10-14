@@ -2,15 +2,88 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
-export const metadata = {
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
   title: "Nika Kobakhidze Champion Hexagone MMA 44 | Marseille Fight Club",
   description: "Nika Kobakhidze remporte la ceinture mondiale des poids plumes à l'Hexagone MMA 44. Revivez la victoire épique par soumission du combattant du Marseille Fight Club.",
   keywords: "Nika Kobakhidze, Hexagone MMA 44, Marseille Fight Club, Jean-Michel Foissard, ceinture Hexagone MMA, MMA Marseille, MMA France, champion poids plume",
+  alternates: {
+    canonical: "https://marseillefightclub.com/actualite/nika-kobakhidze-hexagone-mma-44",
+  },
+  openGraph: {
+    title: "Nika Kobakhidze conquiert l'Hexagone MMA : une ceinture pour Marseille",
+    description: "Nika Kobakhidze remporte la ceinture des poids plumes à l'Hexagone MMA 44 par soumission.",
+    url: "https://marseillefightclub.com/actualite/nika-kobakhidze-hexagone-mma-44",
+    type: "article",
+    publishedTime: "2026-06-02T22:00:00+02:00",
+    modifiedTime: "2026-06-02T22:00:00+02:00",
+    authors: ["Marseille Fight Club"],
+    images: [
+      {
+        url: "https://marseillefightclub.com/images/press/nika-kobakhidze-belt.png",
+        width: 1200,
+        height: 675,
+        alt: "Nika Kobakhidze Champion Hexagone MMA 44 avec la ceinture",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Nika Kobakhidze Champion Hexagone MMA 44 | Marseille Fight Club",
+    description: "Nika Kobakhidze champion mondial des poids plumes à l'Hexagone MMA 44.",
+    images: ["https://marseillefightclub.com/images/press/nika-kobakhidze-belt.png"],
+  },
 };
 
 export default function ArticlePage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "Nika Kobakhidze conquiert l'Hexagone MMA : une ceinture qui prend la route de Marseille",
+    "description": "Nika Kobakhidze remporte la ceinture des poids plumes à l'Hexagone MMA 44. Revivez la victoire épique par soumission du combattant marseillais.",
+    "inLanguage": "fr-FR",
+    "datePublished": "2026-06-02T22:00:00+02:00",
+    "dateModified": "2026-06-02T22:00:00+02:00",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://marseillefightclub.com/actualite/nika-kobakhidze-hexagone-mma-44"
+    },
+    "image": [
+      "https://marseillefightclub.com/images/press/nika-kobakhidze-belt.png"
+    ],
+    "author": {
+      "@type": "Organization",
+      "name": "Marseille Fight Club",
+      "url": "https://marseillefightclub.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Marseille Fight Club",
+      "url": "https://marseillefightclub.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://marseillefightclub.com/LogoGorill.jpg"
+      }
+    },
+    "about": [
+      {
+        "@type": "Person",
+        "name": "Nika Kobakhidze"
+      },
+      {
+        "@type": "SportsEvent",
+        "name": "Hexagone MMA 44"
+      }
+    ]
+  };
+
   return (
     <main className="min-h-screen bg-mfc-dark pt-24 sm:pt-28 pb-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
         
         {/* Navigation */}

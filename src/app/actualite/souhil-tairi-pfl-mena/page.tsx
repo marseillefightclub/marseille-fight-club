@@ -2,15 +2,88 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
-export const metadata = {
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
   title: "Souhil Tairi Passe en Demi-Finales du PFL MENA | Marseille Fight Club",
   description: "Retour sur la victoire par TKO de Souhil Tairi face à Abdullah Saleem au PFL MENA à Jeddah. Analyse du combat, parcours et prochaines étapes.",
   keywords: "PFL MENA, Souhil Tairi, MMA, Marseille Fight Club, TKO, Abdullah Saleem, Jeddah, MMA France, Doctor MMA",
+  alternates: {
+    canonical: "https://marseillefightclub.com/actualite/souhil-tairi-pfl-mena",
+  },
+  openGraph: {
+    title: "Souhil Tairi en Demi-Finales du PFL MENA après un TKO Magistral",
+    description: "Victoire de Souhil Tairi face à Abdullah Saleem au PFL MENA. Analyse officielle par le Marseille Fight Club.",
+    url: "https://marseillefightclub.com/actualite/souhil-tairi-pfl-mena",
+    type: "article",
+    publishedTime: "2025-05-09T10:00:00+02:00",
+    modifiedTime: "2025-05-09T10:00:00+02:00",
+    authors: ["Marseille Fight Club"],
+    images: [
+      {
+        url: "https://marseillefightclub.com/images/press/souhilStriking.png",
+        width: 1200,
+        height: 675,
+        alt: "Souhil Tairi en action au PFL MENA - Marseille Fight Club",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Souhil Tairi en Demi-Finales du PFL MENA | Marseille Fight Club",
+    description: "Souhil Tairi triomphe par TKO face à Abdullah Saleem à Jeddah.",
+    images: ["https://marseillefightclub.com/images/press/souhilStriking.png"],
+  },
 };
 
 export default function ArticlePage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "Souhil Tairi Passe en Demi-Finales du PFL MENA Après un TKO au Deuxième Round",
+    "description": "Face à Abdullah Saleem, combattant koweïtien invaincu, notre pensionnaire Souhil Tairi a montré l'étendue de son talent : encaisser, rester lucide, et finir le travail avec un TKO magistral.",
+    "inLanguage": "fr-FR",
+    "datePublished": "2025-05-09T10:00:00+02:00",
+    "dateModified": "2025-05-09T10:00:00+02:00",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://marseillefightclub.com/actualite/souhil-tairi-pfl-mena"
+    },
+    "image": [
+      "https://marseillefightclub.com/images/press/souhilStriking.png"
+    ],
+    "author": {
+      "@type": "Organization",
+      "name": "Marseille Fight Club",
+      "url": "https://marseillefightclub.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Marseille Fight Club",
+      "url": "https://marseillefightclub.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://marseillefightclub.com/LogoGorill.jpg"
+      }
+    },
+    "about": [
+      {
+        "@type": "Person",
+        "name": "Souhil Tairi"
+      },
+      {
+        "@type": "SportsEvent",
+        "name": "PFL MENA"
+      }
+    ]
+  };
+
   return (
     <main className="min-h-screen bg-mfc-dark pt-24 sm:pt-28 pb-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
         
         {/* Navigation */}

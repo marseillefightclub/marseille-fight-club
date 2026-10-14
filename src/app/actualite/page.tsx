@@ -90,6 +90,28 @@ export default function PressPage() {
 
   return (
     <main className="min-h-screen bg-mfc-dark pt-32 pb-0 overflow-x-hidden">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": "Actualités & Résultats MMA | Marseille Fight Club",
+            "description": "Toutes les actualités et résultats des combattants du Marseille Fight Club.",
+            "url": "https://marseillefightclub.com/actualite",
+            "mainEntity": {
+              "@type": "ItemList",
+              "itemListElement": articles.map((article, index) => ({
+                "@type": "ListItem",
+                "position": index + 1,
+                "url": `https://marseillefightclub.com/actualite/${article.id}`,
+                "name": article.title,
+                "image": `https://marseillefightclub.com${article.image}`
+              }))
+            }
+          })
+        }}
+      />
       {/* Header */}
       <div className="max-w-7xl mx-auto px-4 mb-12">
         <h1 className="text-5xl md:text-7xl font-oswald font-bold text-white uppercase tracking-tighter leading-none mb-4"> <span className="text-mfc-red">Press</span>

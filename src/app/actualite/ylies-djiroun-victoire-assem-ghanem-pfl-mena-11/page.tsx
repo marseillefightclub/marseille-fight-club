@@ -2,15 +2,88 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
-export const metadata = {
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
   title: "Ylies Djiroun en finale : victoire choc au PFL MENA 11 | Marseille Fight Club",
   description: "Victoire historique d'Ylies Djiroun au PFL MENA 11 ! Le combattant du Marseille Fight Club bat Assem Ghanem par TKO et file en finale du PFL MENA 2026.",
   keywords: "Ylies Djiroun PFL MENA 11, Ylies Djiroun victoire, Marseille Fight Club, MMA Marseille, PFL MENA 2026, Assem Ghanem, Finale PFL MENA, Jean-Michel Foissard",
+  alternates: {
+    canonical: "https://marseillefightclub.com/actualite/ylies-djiroun-victoire-assem-ghanem-pfl-mena-11",
+  },
+  openGraph: {
+    title: "De Marseille à la Finale : Ylies Djiroun Foudroie Assem Ghanem au PFL MENA 11",
+    description: "Victoire historique d'Ylies Djiroun par TKO au PFL MENA 11. Compte rendu officiel par le Marseille Fight Club.",
+    url: "https://marseillefightclub.com/actualite/ylies-djiroun-victoire-assem-ghanem-pfl-mena-11",
+    type: "article",
+    publishedTime: "2026-10-02T22:00:00+02:00",
+    modifiedTime: "2026-10-02T22:00:00+02:00",
+    authors: ["Marseille Fight Club"],
+    images: [
+      {
+        url: "https://marseillefightclub.com/images/press/ylies-pfl-mena-11-winner.jpg",
+        width: 1200,
+        height: 675,
+        alt: "Ylies Djiroun vainqueur au PFL MENA 11 - Marseille Fight Club",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ylies Djiroun en finale du PFL MENA 11 | Marseille Fight Club",
+    description: "Victoire par TKO d'Ylies Djiroun au PFL MENA 11 à Riyad.",
+    images: ["https://marseillefightclub.com/images/press/ylies-pfl-mena-11-winner.jpg"],
+  },
 };
 
 export default function ArticlePage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "De Marseille à la Finale : Ylies Djiroun Foudroie Assem Ghanem au PFL MENA 11",
+    "description": "Victoire historique d'Ylies Djiroun au PFL MENA 11 ! Le combattant du Marseille Fight Club bat Assem Ghanem par TKO et file en finale du PFL MENA 2026.",
+    "inLanguage": "fr-FR",
+    "datePublished": "2026-10-02T22:00:00+02:00",
+    "dateModified": "2026-10-02T22:00:00+02:00",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://marseillefightclub.com/actualite/ylies-djiroun-victoire-assem-ghanem-pfl-mena-11"
+    },
+    "image": [
+      "https://marseillefightclub.com/images/press/ylies-pfl-mena-11-winner.jpg"
+    ],
+    "author": {
+      "@type": "Organization",
+      "name": "Marseille Fight Club",
+      "url": "https://marseillefightclub.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Marseille Fight Club",
+      "url": "https://marseillefightclub.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://marseillefightclub.com/LogoGorill.jpg"
+      }
+    },
+    "about": [
+      {
+        "@type": "Person",
+        "name": "Ylies Djiroun"
+      },
+      {
+        "@type": "SportsEvent",
+        "name": "PFL MENA 11"
+      }
+    ]
+  };
+
   return (
     <main className="min-h-screen bg-mfc-dark pt-24 sm:pt-28 pb-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
         
         {/* Navigation */}

@@ -2,15 +2,88 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
-export const metadata = {
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
   title: "Lorenzo Navarro conquiert la ceinture Cage Warriors | Marseille Fight Club",
   description: "Lorenzo Navarro remporte la ceinture des poids mouches à Cage Warriors Academy South East 41, une victoire décisive pour le Marseille Fight Club.",
   keywords: "Lorenzo Navarro, Cage Warriors, MFC, Jean-Michel Papy Foissard, titre Cage Warriors, combat, MMA France",
+  alternates: {
+    canonical: "https://marseillefightclub.com/actualite/lorenzo-navarro-cage-warriors-title",
+  },
+  openGraph: {
+    title: "Lorenzo Navarro s'empare de la ceinture Cage Warriors | Marseille Fight Club",
+    description: "Lorenzo Navarro remporte la ceinture des poids mouches à Cage Warriors Academy South East 41.",
+    url: "https://marseillefightclub.com/actualite/lorenzo-navarro-cage-warriors-title",
+    type: "article",
+    publishedTime: "2026-04-20T10:00:00+02:00",
+    modifiedTime: "2026-04-20T10:00:00+02:00",
+    authors: ["Marseille Fight Club"],
+    images: [
+      {
+        url: "https://marseillefightclub.com/images/press/navarro_cage_warriors_title2.png",
+        width: 1200,
+        height: 675,
+        alt: "Lorenzo Navarro brandissant la ceinture Cage Warriors - Marseille Fight Club",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Lorenzo Navarro champion Cage Warriors | Marseille Fight Club",
+    description: "Lorenzo Navarro s'empare de la ceinture des poids mouches Cage Warriors.",
+    images: ["https://marseillefightclub.com/images/press/navarro_cage_warriors_title2.png"],
+  },
 };
 
 export default function ArticlePage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "Lorenzo Navarro s'empare de la ceinture Cage Warriors",
+    "description": "Lorenzo Navarro remporte la ceinture des poids mouches à Cage Warriors Academy South East 41, une victoire décisive pour le Marseille Fight Club.",
+    "inLanguage": "fr-FR",
+    "datePublished": "2026-04-20T10:00:00+02:00",
+    "dateModified": "2026-04-20T10:00:00+02:00",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://marseillefightclub.com/actualite/lorenzo-navarro-cage-warriors-title"
+    },
+    "image": [
+      "https://marseillefightclub.com/images/press/navarro_cage_warriors_title2.png"
+    ],
+    "author": {
+      "@type": "Organization",
+      "name": "Marseille Fight Club",
+      "url": "https://marseillefightclub.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Marseille Fight Club",
+      "url": "https://marseillefightclub.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://marseillefightclub.com/LogoGorill.jpg"
+      }
+    },
+    "about": [
+      {
+        "@type": "Person",
+        "name": "Lorenzo Navarro"
+      },
+      {
+        "@type": "SportsEvent",
+        "name": "Cage Warriors Academy South East 41"
+      }
+    ]
+  };
+
   return (
     <main className="min-h-screen bg-mfc-dark pt-24 sm:pt-28 pb-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
         {/* Navigation */}
         <div className="mb-3 sm:mb-4">

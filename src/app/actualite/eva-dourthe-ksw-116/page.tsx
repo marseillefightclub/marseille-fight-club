@@ -2,15 +2,88 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
-export const metadata = {
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
   title: "Eva Dourthe au KSW 116 | 'La Soldat' triomphe en Pologne",
   description: "Retour sur la performance magistrale d'Eva Dourthe face à Ewelina Woźniak au XTB KSW 116. Une victoire par soumission qui marque un tournant.",
   keywords: "Eva Dourthe, KSW 116, MMA France, Marseille Fight Club, Ewelina Woźniak, soumission, armbar, MMA Pologne",
+  alternates: {
+    canonical: "https://marseillefightclub.com/actualite/eva-dourthe-ksw-116",
+  },
+  openGraph: {
+    title: "Eva Dourthe : Masterclass en Terre Polonaise au KSW 116 | Marseille Fight Club",
+    description: "Retour sur la victoire par soumission d'Eva Dourthe face à Ewelina Woźniak au KSW 116.",
+    url: "https://marseillefightclub.com/actualite/eva-dourthe-ksw-116",
+    type: "article",
+    publishedTime: "2026-03-15T10:00:00+02:00",
+    modifiedTime: "2026-03-15T10:00:00+02:00",
+    authors: ["Marseille Fight Club"],
+    images: [
+      {
+        url: "https://marseillefightclub.com/images/press/eva-dourthe-victory-real.jpg",
+        width: 1200,
+        height: 675,
+        alt: "Eva Dourthe victorieuse avec sa ceinture au KSW 116 - Marseille Fight Club",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Eva Dourthe triomphe au KSW 116 | Marseille Fight Club",
+    description: "Masterclass d'Eva Dourthe face à Ewelina Woźniak au KSW 116.",
+    images: ["https://marseillefightclub.com/images/press/eva-dourthe-victory-real.jpg"],
+  },
 };
 
 export default function ArticlePage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "Eva Dourthe : Masterclass en Terre Polonaise au KSW 116",
+    "description": "Retour sur la performance magistrale d'Eva Dourthe face à Ewelina Woźniak. Une victoire par soumission qui marque un tournant pour 'La Soldat'.",
+    "inLanguage": "fr-FR",
+    "datePublished": "2026-03-15T10:00:00+02:00",
+    "dateModified": "2026-03-15T10:00:00+02:00",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://marseillefightclub.com/actualite/eva-dourthe-ksw-116"
+    },
+    "image": [
+      "https://marseillefightclub.com/images/press/eva-dourthe-victory-real.jpg"
+    ],
+    "author": {
+      "@type": "Organization",
+      "name": "Marseille Fight Club",
+      "url": "https://marseillefightclub.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Marseille Fight Club",
+      "url": "https://marseillefightclub.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://marseillefightclub.com/LogoGorill.jpg"
+      }
+    },
+    "about": [
+      {
+        "@type": "Person",
+        "name": "Eva Dourthe"
+      },
+      {
+        "@type": "SportsEvent",
+        "name": "XTB KSW 116"
+      }
+    ]
+  };
+
   return (
     <main className="min-h-screen bg-mfc-dark pt-24 sm:pt-28 pb-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
         
         {/* Navigation */}

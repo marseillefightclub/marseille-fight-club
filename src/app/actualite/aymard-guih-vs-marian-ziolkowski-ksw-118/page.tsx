@@ -2,15 +2,92 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
-export const metadata = {
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
   title: "Aymard Guih vs Marian Ziółkowski au KSW 118 | MFC × KSW 118",
   description: "Le 16 mai 2026, Aymard Guih affronte l'ancien champion Marian Ziółkowski sur la main card du KSW 118 à l'Arena Kalisz. Analyse, parcours, préparation MFC.",
   keywords: "Aymard Guih, Marian Ziółkowski, KSW 118, MMA, Poids Légers, Lightweight, Marseille Fight Club, Arena Kalisz, Pologne, Jean-Michel Foissard",
+  alternates: {
+    canonical: "https://marseillefightclub.com/actualite/aymard-guih-vs-marian-ziolkowski-ksw-118",
+  },
+  openGraph: {
+    title: "Aymard Guih vs Marian Ziółkowski : Le Choc des Poids Légers au KSW 118",
+    description: "Le 16 mai 2026, Aymard Guih affronte Marian Ziółkowski sur la main card du KSW 118 à Kalisz.",
+    url: "https://marseillefightclub.com/actualite/aymard-guih-vs-marian-ziolkowski-ksw-118",
+    type: "article",
+    publishedTime: "2026-05-02T10:00:00+02:00",
+    modifiedTime: "2026-05-02T10:00:00+02:00",
+    authors: ["Marseille Fight Club"],
+    images: [
+      {
+        url: "https://marseillefightclub.com/images/press/aymard-guih-ksw118.png",
+        width: 1200,
+        height: 675,
+        alt: "Affiche Aymard Guih vs Marian Ziółkowski — KSW 118",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Aymard Guih au KSW 118 face à Ziółkowski | Marseille Fight Club",
+    description: "Le choc des poids légers à l'Arena Kalisz pour le MFC.",
+    images: ["https://marseillefightclub.com/images/press/aymard-guih-ksw118.png"],
+  },
 };
 
 export default function ArticlePage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "Aymard Guih vs Marian Ziółkowski : Le Choc des Poids Légers au KSW 118",
+    "description": "Le 16 mai 2026 à l'Arena Kalisz, Aymard Guih affronte l'ancien champion Marian Ziółkowski sur la main card du KSW 118. Analyse technique, enjeux et préparation MFC.",
+    "inLanguage": "fr-FR",
+    "datePublished": "2026-05-02T10:00:00+02:00",
+    "dateModified": "2026-05-02T10:00:00+02:00",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://marseillefightclub.com/actualite/aymard-guih-vs-marian-ziolkowski-ksw-118"
+    },
+    "image": [
+      "https://marseillefightclub.com/images/press/aymard-guih-ksw118.png"
+    ],
+    "author": {
+      "@type": "Organization",
+      "name": "Marseille Fight Club",
+      "url": "https://marseillefightclub.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Marseille Fight Club",
+      "url": "https://marseillefightclub.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://marseillefightclub.com/LogoGorill.jpg"
+      }
+    },
+    "about": [
+      {
+        "@type": "Person",
+        "name": "Aymard Guih"
+      },
+      {
+        "@type": "Person",
+        "name": "Marian Ziółkowski"
+      },
+      {
+        "@type": "SportsEvent",
+        "name": "KSW 118"
+      }
+    ]
+  };
+
   return (
     <main className="min-h-screen bg-mfc-dark pt-24 sm:pt-28 pb-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
         
         {/* Navigation */}

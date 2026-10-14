@@ -2,10 +2,38 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
-export const metadata = {
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
   title: "Wilson Varela bat Marian Ziółkowski au KSW 122 | Marseille Fight Club",
   description: "Wilson Varela bat Marian Ziółkowski par soumission (clé de bras) au 1er round du KSW 122 à Rzeszów. Analyse du résultat et de la revanche par le Marseille Fight Club.",
   keywords: "Wilson Varela, Marian Ziółkowski, KSW 122, Wilson Varela victoire, Wilson Varela soumission, Marseille Fight Club, MMA Marseille, Jean-Michel Foissard",
+  alternates: {
+    canonical: "https://marseillefightclub.com/actualite/wilson-varela-victoire-marian-ziolkowski-ksw-122",
+  },
+  openGraph: {
+    title: "KSW 122 : Wilson Varela bat Marian Ziółkowski par soumission au premier round",
+    description: "Wilson Varela s'impose par soumission face à Marian Ziółkowski au 1er round du KSW 122 à Rzeszów. Compte rendu officiel par le Marseille Fight Club.",
+    url: "https://marseillefightclub.com/actualite/wilson-varela-victoire-marian-ziolkowski-ksw-122",
+    type: "article",
+    publishedTime: "2026-10-11T09:00:00+02:00",
+    modifiedTime: "2026-10-11T09:00:00+02:00",
+    authors: ["Marseille Fight Club"],
+    images: [
+      {
+        url: "https://marseillefightclub.com/images/press/WilsonVarela.jpeg",
+        width: 1200,
+        height: 675,
+        alt: "Wilson Varela vainqueur au KSW 122 - Marseille Fight Club",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "KSW 122 : Wilson Varela bat Marian Ziółkowski par soumission",
+    description: "Wilson Varela s'impose par soumission au 1er round du KSW 122.",
+    images: ["https://marseillefightclub.com/images/press/WilsonVarela.jpeg"],
+  },
 };
 
 export default function ArticlePage() {
@@ -17,24 +45,26 @@ export default function ArticlePage() {
     "inLanguage": "fr-FR",
     "datePublished": "2026-10-11T09:00:00+02:00",
     "dateModified": "2026-10-11T09:00:00+02:00",
-    "mainEntityOfPage": "https://marseillefightclub.com/actualite/wilson-varela-victoire-marian-ziolkowski-ksw-122",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://marseillefightclub.com/actualite/wilson-varela-victoire-marian-ziolkowski-ksw-122"
+    },
+    "image": [
+      "https://marseillefightclub.com/images/press/WilsonVarela.jpeg"
+    ],
     "author": {
       "@type": "Organization",
       "name": "Marseille Fight Club",
       "url": "https://marseillefightclub.com"
     },
     "publisher": {
-      "@type": "SportsClub",
+      "@type": "Organization",
       "name": "Marseille Fight Club",
       "url": "https://marseillefightclub.com",
       "logo": {
         "@type": "ImageObject",
         "url": "https://marseillefightclub.com/LogoGorill.jpg"
       }
-    },
-    "image": {
-      "@type": "ImageObject",
-      "url": "https://marseillefightclub.com/images/press/WilsonVarela.jpeg"
     },
     "about": [
       {
