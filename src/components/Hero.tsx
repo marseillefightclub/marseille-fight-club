@@ -1,16 +1,155 @@
 "use client";
 
+import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
+import { Pause, Play } from "lucide-react";
 
 export default function Hero() {
+  const sectionRef = useRef<HTMLElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const isManuallyPausedRef = useRef(false);
+
+  const [isPlaying, setIsPlaying] = useState(true);
+  const [isReducedMotion, setIsReducedMotion] = useState(false);
+  const [isSaveData, setIsSaveData] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
+
+  // 1. Detection of accessibility preferences and Save-Data on mount
+  useEffect(() => {
+    setIsMounted(true);
+
+    // prefers-reduced-motion check & dynamic listener
+    const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+    setIsReducedMotion(mediaQuery.matches);
+    const motionHandler = (e: MediaQueryListEvent) => setIsReducedMotion(e.matches);
+    mediaQuery.addEventListener("change", motionHandler);
+
+    // navigator.connection?.saveData check
+    const nav =
+      typeof navigator !== "undefined"
+        ? (navigator as Navigator & { connection?: { saveData?: boolean } })
+        : undefined;
+    if (nav?.connection?.saveData) {
+      setIsSaveData(true);
+    }
+
+    return () => {
+      mediaQuery.removeEventListener("change", motionHandler);
+    };
+  }, []);
+
+  // 2. IntersectionObserver to pause when leaving viewport and resume when re-entering
+  useEffect(() => {
+    const section = sectionRef.current;
+    if (!section || !isMounted || isReducedMotion || isSaveData) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const entry = entries[0];
+        if (!entry) return;
+
+        const video = videoRef.current;
+        if (!video) return;
+
+        if (entry.isIntersecting) {
+          // Re-entering viewport: resume playback only if user didn't manually pause
+          if (!isManuallyPausedRef.current && video.paused) {
+            video.play().catch(() => {
+              // Gracefully ignore autoplay restrictions if blocked
+            });
+          }
+        } else {
+          // Leaving viewport: pause video to save CPU/GPU and battery
+          if (!video.paused) {
+            video.pause();
+          }
+        }
+      },
+      {
+        threshold: 0.15,
+      }
+    );
+
+    observer.observe(section);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, [isMounted, isReducedMotion, isSaveData]);
+
+  // 3. User toggle with explicit manual control priority
+  const togglePlay = () => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    if (video.paused) {
+      isManuallyPausedRef.current = false;
+      video
+        .play()
+        .then(() => setIsPlaying(true))
+        .catch(() => {});
+    } else {
+      isManuallyPausedRef.current = true;
+      video.pause();
+      setIsPlaying(false);
+    }
+  };
+
+  const showVideo = isMounted && !isReducedMotion && !isSaveData;
+
   return (
-    <section className="relative h-screen w-full flex items-center justify-center overflow-hidden">
+    <section
+      ref={sectionRef}
+      className="relative min-h-[100dvh] h-[100dvh] w-full flex items-center justify-center overflow-hidden"
+    >
       {/* Background with overlay */}
-      <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-mfc-dark z-10" />
-        <div className="absolute inset-0 bg-[url('/images/hero-bg-nobricks.png')] bg-cover bg-top md:bg-center bg-scroll md:bg-fixed" />
+      <div className="absolute inset-0 z-0 bg-mfc-dark">
+        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/50 to-mfc-dark z-10 pointer-events-none" />
+
+        {!showVideo ? (
+          <img
+            src="/images/hero/hero-poster.webp"
+            alt="Salle Marseille Fight Club"
+            className="absolute inset-0 w-full h-full object-cover opacity-50"
+          />
+        ) : (
+          <video
+            ref={videoRef}
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="metadata"
+            poster="/images/hero/hero-poster.webp"
+            className="absolute inset-0 w-full h-full object-cover opacity-50"
+            onPlay={() => setIsPlaying(true)}
+            onPause={() => setIsPlaying(false)}
+          >
+            <source src="/images/hero/hero-bg.webm" type="video/webm" />
+            <source src="/images/hero/hero-bg.mp4" type="video/mp4" />
+          </video>
+        )}
       </div>
+
+      {/* Accessible play/pause toggle */}
+      {showVideo && (
+        <button
+          type="button"
+          onClick={togglePlay}
+          aria-label={
+            isPlaying
+              ? "Mettre en pause la vidéo d'arrière-plan"
+              : "Lire la vidéo d'arrière-plan"
+          }
+          className="absolute bottom-5 right-5 z-30 p-2.5 rounded-full bg-black/40 hover:bg-black/70 border border-white/10 text-white/70 hover:text-white transition-all backdrop-blur-sm cursor-pointer focus:outline-none focus:ring-2 focus:ring-mfc-red"
+        >
+          {isPlaying ? (
+            <Pause size={18} aria-hidden="true" />
+          ) : (
+            <Play size={18} aria-hidden="true" />
+          )}
+        </button>
+      )}
 
       <div className="relative z-20 flex flex-col items-center text-center px-4 max-w-5xl mx-auto pt-20 md:pt-16">
         <motion.h1 

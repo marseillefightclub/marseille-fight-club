@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# raw heavy media (keep only optimized assets)
+*.mov
+*.MOV
+public/images/gallery/
