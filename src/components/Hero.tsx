@@ -104,13 +104,13 @@ export default function Hero() {
     >
       {/* Background with overlay */}
       <div className="absolute inset-0 z-0 bg-mfc-dark">
-        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/50 to-mfc-dark z-10 pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-mfc-dark/90 z-10 pointer-events-none" />
 
         {!showVideo ? (
           <img
             src="/images/hero/hero-poster.webp"
             alt="Salle Marseille Fight Club"
-            className="absolute inset-0 w-full h-full object-cover opacity-50"
+            className="absolute inset-0 w-full h-full object-cover opacity-65"
           />
         ) : (
           <video
@@ -121,7 +121,7 @@ export default function Hero() {
             playsInline
             preload="metadata"
             poster="/images/hero/hero-poster.webp"
-            className="absolute inset-0 w-full h-full object-cover opacity-50"
+            className="absolute inset-0 w-full h-full object-cover opacity-65"
             onPlay={() => setIsPlaying(true)}
             onPause={() => setIsPlaying(false)}
           >
@@ -165,7 +165,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
-          className="mt-3 text-xl md:text-2xl text-gray-300 font-light max-w-2xl tracking-wide"
+          className="mt-3 text-xl md:text-2xl text-gray-200 font-light max-w-2xl tracking-wide drop-shadow-md"
         >
           Discipline. Performance. Respect. Le centre de MMA N°1 de la cité phocéenne.
         </motion.p>

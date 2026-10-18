@@ -1,27 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Dumbbell, Shield, Zap, MapPin } from "lucide-react";
+import { MapPin } from "lucide-react";
+import ClubGallery from "@/components/ClubGallery";
 
 export default function About() {
-  const features = [
-    {
-      icon: <Shield size={40} className="text-mfc-red" />,
-      title: "Ancré à Marseille",
-      description: "Un club à l'image de la ville : intense, chaleureux, authentique."
-    },
-    {
-      icon: <Zap size={40} className="text-mfc-red" />,
-      title: "MMA & combat",
-      description: "Boxe, grappling, arts martiaux mixtes pour tous niveaux.."
-    },
-    {
-      icon: <Dumbbell size={40} className="text-mfc-red" />,
-      title: "Progression réelle",
-      description: "Du premier cours débutant à la compétition, un suivi individualisé.."
-    }
-  ];
-
   return (
     <section id="about" className="py-16 md:py-24 bg-mfc-dark relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -48,24 +31,8 @@ Le Marseille Fight Club a également l'honneur d'accueillir une section 100% fé
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          {features.map((feature, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
-              className="bg-mfc-gray/50 p-8 rounded-xl border border-white/5 hover:border-mfc-red/30 transition-all duration-300 group hover:-translate-y-2"
-            >
-              <div className="bg-black/50 w-20 h-20 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                {feature.icon}
-              </div>
-              <h3 className="text-2xl font-oswald uppercase font-bold text-white mb-4">{feature.title}</h3>
-              <p className="text-gray-400 font-light">{feature.description}</p>
-            </motion.div>
-          ))}
-        </div>
+        {/* Galerie photographique de la vie du club */}
+        <ClubGallery />
 
         {/* Localisation */}
         <motion.div
