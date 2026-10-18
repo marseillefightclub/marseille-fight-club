@@ -43,4 +43,6 @@ next-env.d.ts
 # raw heavy media (keep only optimized assets)
 *.mov
 *.MOV
-public/images/gallery/
+public/images/gallery/*.mp4
+public/images/gallery/*.MOV
+public/images/gallery/*.mov
