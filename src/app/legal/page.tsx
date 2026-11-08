@@ -16,7 +16,6 @@ export default function LegalPage() {
           <p className="text-gray-300">
             <strong>Dénomination :</strong> FOISSARD PROMOTION<br />
             <strong>Forme juridique :</strong> Association déclarée<br />
-            <strong>Siège social :</strong> 14 TRAVERSE CHEVALIER 13010 MARSEILLE<br />
             <strong>SIRET :</strong> 853 147 213 00013<br />
             <strong>Code NAF/APE :</strong> 94.99Z<br />
             <strong>Date de création :</strong> 17/05/2017<br />

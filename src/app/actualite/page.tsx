@@ -8,6 +8,14 @@ import { useRef } from "react";
 export default function PressPage() {
   const articles = [
     {
+      id: "kenza-elkihel-vice-championne-du-monde-immaf-2026",
+      title: "Kenza Elkihel Vice-Championne du Monde : L'Argent Mondial à Tbilissi pour le Marseille Fight Club",
+      excerpt: "À Tbilissi, Kenza Elkihel décroche la médaille d'argent aux Championnats du Monde IMMAF 2026 (-52,2 kg) au terme d'une finale d'exception contre Assita Ouattara.",
+      category: "IMMAF 2026",
+      date: "8 Novembre 2026",
+      image: "/images/press/kenza-elkihel-vice-championne-du-monde-immaf.jpg"
+    },
+    {
       id: "wilson-varela-victoire-marian-ziolkowski-ksw-122",
       title: "KSW 122 : Wilson Varela bat Marian Ziółkowski par soumission au premier round",
       excerpt: "À Rzeszów, Wilson Varela s'est imposé face à Marian Ziółkowski par soumission (clé de bras) au premier round du KSW 122, concluant leur duel avec autorité.",
@@ -54,14 +62,6 @@ export default function PressPage() {
       category: "KSW 118",
       date: "2 Mai 2026",
       image: "/images/press/aymard-guih-ksw118.png"
-    },
-    {
-      id: "souhil-tairi-pfl-mena",
-      title: "Souhil Tairi Passe en Demi-Finales du PFL MENA Après un TKO au Deuxième Round",
-      excerpt: "Face à Abdullah Saleem, combattant koweïtien invaincu, notre pensionnaire Souhil Tairi a montré l'étendue de son talent : encaisser, rester lucide, et finir le travail avec un TKO magistral.",
-      category: "PFL MENA",
-      date: "9 Mai 2025",
-      image: "/images/press/souhil-portrait.png"
     },
     {
       id: "eva-dourthe-ksw-116",

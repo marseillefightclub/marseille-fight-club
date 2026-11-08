@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://marseillefightclub.com"),
   title: "Marseille Fight Club | MMA, Grappling & Boxe à Marseille",
   description: "Marseille Fight Club, club de sports de combat à Marseille. MMA, Grappling, Boxe Anglaise et Lutte. Découvrez nos disciplines et entraînez-vous à Marseille.",
-  keywords: ["MMA Marseille", "Marseille Fight Club", "Boxe Anglaise Marseille", "Grappling Marseille", "Lutta Livre Marseille", "Jean Michel Foissard", "Souhil Tairi", "Hassou Coach", "Sports de combat 13010"],
+  keywords: ["MMA Marseille", "Marseille Fight Club", "Boxe Anglaise Marseille", "Grappling Marseille", "Lutta Livre Marseille", "Jean Michel Foissard", "Kenza Elkihel", "Hassou Coach", "Sports de combat 13010"],
   authors: [{ name: "Marseille Fight Club" }],
   openGraph: {
     title: "Marseille Fight Club | MMA, Grappling & Boxe à Marseille",

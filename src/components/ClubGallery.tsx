@@ -158,19 +158,6 @@ export default function ClubGallery() {
       className="w-full my-12 md:my-16"
       aria-label="Galerie photographique Marseille Fight Club"
     >
-      {/* En-tête éditorial */}
-      <div className="mb-6 md:mb-8 text-center sm:text-left">
-        <span className="text-xs uppercase tracking-widest text-mfc-red font-semibold font-mono">
-          Marseille Fight Club
-        </span>
-        <h3 className="text-3xl md:text-4xl font-oswald font-bold uppercase tracking-wide text-white mt-1">
-          La vie <span className="text-mfc-red">du club</span>
-        </h3>
-        <p className="mt-2 text-sm md:text-base text-gray-400 font-light max-w-xl">
-          Des premiers entraînements aux combats, découvrez celles et ceux qui font vivre le club au quotidien.
-        </p>
-      </div>
-
       {/* Carrousel photographique */}
       <div className="relative">
         <div
