@@ -244,10 +244,6 @@ export default function KenzaElkihelArticlePage() {
             </li>
           </ul>
 
-          <h2 className="text-3xl font-oswald font-bold text-white uppercase mt-16 mb-8 tracking-wider">
-            Tableau synthétique du palmarès
-          </h2>
-
           {/* Tableau Palmarès */}
           <div className="not-prose my-8 overflow-x-auto rounded-xl border border-white/10 bg-black/40 shadow-2xl">
             <table className="w-full text-left text-sm text-gray-300">
