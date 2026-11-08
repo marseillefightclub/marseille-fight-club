@@ -144,7 +144,7 @@ export default function KenzaElkihelArticlePage() {
         <article className="prose prose-invert prose-lg max-w-none font-inter text-gray-300 leading-relaxed">
           
           <p className="lead text-xl text-white font-medium mb-12 border-l-4 border-mfc-red pl-6">
-            Le 7 novembre 2026 restera gravé dans les annales du MMA phocéen. À Tbilissi, en Géorgie, lors de la journée de clôture des Championnats du Monde IMMAF 2026, Kenza Elkihel a franchi le palier ultime du circuit amateur en décrochant la médaille d&apos;argent mondiale dans la division Senior des −52,2 kg (Strawweight). Au terme d&apos;une finale d&apos;une intensité exceptionnelle face à la Française Assita Ouattara, la représentante du <Link href="/club" className="text-mfc-red hover:underline">Marseille Fight Club</Link> s&apos;est inclinée aux points par décision unanime, concrétisant une semaine magistrale qui la propulse parmi l&apos;élite planétaire des arts martiaux mixtes.
+            Le 7 novembre 2026 restera gravé dans les annales du MMA phocéen. À Tbilissi, en Géorgie, lors de la journée de clôture des Championnats du Monde IMMAF 2026, Kenza Elkihel a franchi le palier ultime du circuit amateur en décrochant la médaille d&apos;argent mondiale dans la division Senior des −52,2 kg (Strawweight). Au terme d&apos;une finale d&apos;une intensité exceptionnelle face à la Française Assita Ouattara, la représentante du <Link href="/club" className="text-mfc-red hover:underline">Marseille Fight Club</Link> s&apos;est inclinée aux points par décision unanime, concrétisant une semaine magistrale qui la propulse parmi l&apos;élite mondiale des arts martiaux mixtes.
           </p>
 
           {/* Fiche Athlète Card */}
