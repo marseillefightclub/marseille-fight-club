@@ -245,11 +245,8 @@ export default function KenzaElkihelArticlePage() {
           </ul>
 
           <h2 className="text-3xl font-oswald font-bold text-white uppercase mt-16 mb-8 tracking-wider">
-            Tableau synthétique du palmarès vérifié
+            Tableau synthétique du palmarès
           </h2>
-          <p>
-            Afin d&apos;offrir aux observateurs, aux entraîneurs et aux promoteurs une lisibilité parfaite, voici la synthèse vérifiée de ses performances sur le circuit officiel :
-          </p>
 
           {/* Tableau Palmarès */}
           <div className="not-prose my-8 overflow-x-auto rounded-xl border border-white/10 bg-black/40 shadow-2xl">
@@ -297,9 +294,6 @@ export default function KenzaElkihelArticlePage() {
               </tbody>
             </table>
           </div>
-          <p className="text-xs text-gray-400 italic">
-            Note technique : Ce tableau recense les résultats dûment homologués en MMA amateur selon les registres Smoothcomp et les communications fédérales. Ses engagements annexes en tournois de Jiu-Jitsu Brésilien et No-Gi font l&apos;objet d&apos;un classement distinct.
-          </p>
 
           <h2 className="text-3xl font-oswald font-bold text-white uppercase mt-16 mb-8 tracking-wider">
             La forge marseillaise : L&apos;exigence au service du talent
