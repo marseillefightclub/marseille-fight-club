@@ -144,7 +144,7 @@ export default function KenzaElkihelArticlePage() {
         <article className="prose prose-invert prose-lg max-w-none font-inter text-gray-300 leading-relaxed">
           
           <p className="lead text-xl text-white font-medium mb-12 border-l-4 border-mfc-red pl-6">
-            Le 7 novembre 2026 restera gravé dans les annales du MMA phocéen. À Tbilissi, en Géorgie, lors de la journée de clôture des Championnats du Monde IMMAF 2026, Kenza Elkihel a franchi le palier ultime du circuit amateur international en décrochant la médaille d&apos;argent mondiale dans la division Senior des −52,2 kg (Strawweight). Au terme d&apos;une finale d&apos;une intensité exceptionnelle face à la Française Assita Ouattara, la représentante du <Link href="/club" className="text-mfc-red hover:underline">Marseille Fight Club</Link> s&apos;est inclinée aux points par décision unanime, concrétisant une semaine magistrale qui la propulse parmi l&apos;élite planétaire des arts martiaux mixtes.
+            Le 7 novembre 2026 restera gravé dans les annales du MMA phocéen. À Tbilissi, en Géorgie, lors de la journée de clôture des Championnats du Monde IMMAF 2026, Kenza Elkihel a franchi le palier ultime du circuit amateur en décrochant la médaille d&apos;argent mondiale dans la division Senior des −52,2 kg (Strawweight). Au terme d&apos;une finale d&apos;une intensité exceptionnelle face à la Française Assita Ouattara, la représentante du <Link href="/club" className="text-mfc-red hover:underline">Marseille Fight Club</Link> s&apos;est inclinée aux points par décision unanime, concrétisant une semaine magistrale qui la propulse parmi l&apos;élite planétaire des arts martiaux mixtes.
           </p>
 
           {/* Fiche Athlète Card */}
@@ -192,7 +192,7 @@ export default function KenzaElkihelArticlePage() {
             Tbilissi 2026 : Le grand théâtre du MMA amateur mondial
           </h2>
           <p>
-            Pour mesurer la portée exacte de cette performance, il convient de rappeler ce que représentent les Championnats du Monde de l&apos;International Mixed Martial Arts Federation (IMMAF). Loin des rassemblements régionaux ou des circuits promotionnels isolés, l&apos;IMMAF est l&apos;unique instance internationale à proposer un championnat du monde sous forme de tournoi olympique à élimination directe, homologué par les comités sportifs internationaux.
+            Pour mesurer la portée exacte de cette performance, il convient de rappeler ce que représentent les Championnats du Monde de l&apos;International Mixed Martial Arts Federation (IMMAF). Loin des rassemblements régionaux ou des circuits promotionnels isolés, l&apos;IMMAF est l&apos;unique instance globale à proposer un championnat du monde sous forme de tournoi olympique à élimination directe, homologué par les comités sportifs officiels.
           </p>
           <p>
             Pendant sept jours consécutifs, du 1er au 7 novembre 2026, la capitale géorgienne a réuni des centaines d&apos;athlètes triés sur le volet, délégués par plus de 60 nations. Pas de passe-droit, pas de tirage complaisant : pour survivre dans le tableau des Seniors Strawweight, les prétendantes doivent enchaîner les pesées quotidiennes, maintenir un régime drastique à 52,2 kg, et affronter l&apos;élite du striking et de la lutte dans des combats sans round d&apos;observation.
@@ -211,7 +211,7 @@ export default function KenzaElkihelArticlePage() {
             Dès le coup d&apos;envoi de la première reprise, le ton était donné. Assita Ouattara a cherché à imposer son envergure et une pression continue en striking, combinée à des intentions franches de cadrage contre la cage. De son côté, Kenza Elkihel a répondu avec une vigilance tactique exemplaire : gestion rigoureuse des distances, remises rapides en anglaise et recherche d&apos;angles pour désamorcer les enchaînements adverses.
           </p>
           <p>
-            Au fil des trois rounds de trois minutes disputés sur un rythme étouffant, les deux athlètes se sont rendu coup pour coup. Kenza a su défendre avec sang-froid plusieurs assauts au sol, cherchant à inverser les positions et à placer des phases de contre-attaque en clinch. Cependant, l&apos;activité soutenue et le contrôle territorial d&apos;Assita Ouattara ont pesé lourd sur les fiches des juges internationaux.
+            Au fil des trois rounds de trois minutes disputés sur un rythme étouffant, les deux athlètes se sont rendu coup pour coup. Kenza a su défendre avec sang-froid plusieurs assauts au sol, cherchant à inverser les positions et à placer des phases de contre-attaque en clinch. Cependant, l&apos;activité soutenue et le contrôle territorial d&apos;Assita Ouattara ont pesé lourd sur les fiches des juges officiels.
           </p>
           
           <div className="not-prose text-xl text-white font-bold text-center bg-mfc-red/10 border border-mfc-red/30 py-5 my-10 rounded-xl shadow-lg">
@@ -224,10 +224,10 @@ export default function KenzaElkihelArticlePage() {
           </p>
 
           <h2 className="text-3xl font-oswald font-bold text-white uppercase mt-16 mb-8 tracking-wider">
-            L&apos;ascension d&apos;une compétitrice : De la MMA League aux sommets internationaux
+            L&apos;ascension d&apos;une compétitrice : De la MMA League aux sommets mondiaux
           </h2>
           <p>
-            Ce sacre de vice-championne du monde n&apos;a rien d&apos;un accident de parcours. Il couronne des années de rigueur, d&apos;entraînements biquotidiens et de confrontation continue avec les meilleures structures hexagonales et internationales.
+            Ce sacre de vice-championne du monde n&apos;a rien d&apos;un accident de parcours. Il couronne des années de rigueur, d&apos;entraînements biquotidiens et de confrontation continue avec les meilleures structures de l&apos;Hexagone et d&apos;Europe.
           </p>
           <p>
             Avant de briller en Géorgie, Kenza Elkihel s&apos;est forgé une solide réputation de guerrière méthodique sur le circuit de la Fédération Française de Mixed Martial Arts (FMMAF). Les archives de compétitions Smoothcomp et les bilans nationaux témoignent de cette montée en puissance graduelle :
@@ -240,7 +240,7 @@ export default function KenzaElkihelArticlePage() {
               <strong>En octobre 2025, à la Coupe de France de MMA Amateur à Grenoble :</strong> elle répond une nouvelle fois présente dans l&apos;arène de la Halle Clemenceau, affirmant sa capacité à rivaliser avec les meilleurs gabarits nationaux.
             </li>
             <li>
-              <strong>En janvier 2026, à la MMA League 22 de Guyancourt :</strong> sous la bannière officielle du Marseille Fight Club, Kenza frappe un grand coup en catégorie −52,2 kg en dominant sa division et en s&apos;adjugeant la première place face à Ornella Vivaldi. Cette victoire inaugurait avec éclat une saison 2026 placée sous le signe de l&apos;ambition internationale.
+              <strong>En janvier 2026, à la MMA League 22 de Guyancourt :</strong> sous la bannière officielle du Marseille Fight Club, Kenza frappe un grand coup en catégorie −52,2 kg en dominant sa division et en s&apos;adjugeant la première place face à Ornella Vivaldi. Cette victoire inaugurait avec éclat une saison 2026 placée sous le signe des grands rendez-vous mondiaux.
             </li>
           </ul>
 
@@ -298,7 +298,7 @@ export default function KenzaElkihelArticlePage() {
             On ne monte pas sur un podium mondial sans un écosystème d&apos;entraînement à la hauteur des exigences du très haut niveau. C&apos;est dans les travées du <Link href="/club" className="text-mfc-red hover:underline">Marseille Fight Club</Link>, sous le regard attentif de <Link href="/coachs" className="text-mfc-red hover:underline">Jean-Michel Foissard</Link> et de l&apos;ensemble du staff technique, que Kenza peaufine quotidiennement ses armes.
           </p>
           <p>
-            Au MFC, les combattants professionnels comme les espoirs partagent le même tatami, la même sueur et le même esprit de corps. Côtoyer au quotidien des figures internationales telles que <Link href="/actualite/wilson-varela-victoire-marian-ziolkowski-ksw-122" className="text-mfc-red hover:underline">Wilson Varela</Link>, engagé sur les sommets du KSW, ou <Link href="/actualite/ylies-djiroun-victoire-assem-ghanem-pfl-mena-11" className="text-mfc-red hover:underline">Ylies Djiroun</Link>, en route pour la finale du PFL MENA, offre un modèle d&apos;exigence et de professionnalisme incomparable.
+            Au MFC, les combattants professionnels comme les espoirs partagent le même tatami, la même sueur et le même esprit de corps. Côtoyer au quotidien des figures de premier plan telles que <Link href="/actualite/wilson-varela-victoire-marian-ziolkowski-ksw-122" className="text-mfc-red hover:underline">Wilson Varela</Link>, engagé sur les sommets du KSW, ou <Link href="/actualite/ylies-djiroun-victoire-assem-ghanem-pfl-mena-11" className="text-mfc-red hover:underline">Ylies Djiroun</Link>, en route pour la finale du PFL MENA, offre un modèle d&apos;exigence et de professionnalisme incomparable.
           </p>
           <p>
             Cette émulation collective profite particulièrement au pôle féminin du club, qui s&apos;affirme comme l&apos;un des plus compétitifs d&apos;Europe. La présence au club d&apos;<Link href="/actualite/eva-dourthe-ksw-116" className="text-mfc-red hover:underline">Eva Dourthe</Link>, victorieuse avec éclat au KSW 116 en Pologne et figure de la Team Dourthe, crée un terreau d&apos;entraînement exceptionnel. Des rounds de sparring appuyés, un travail méticuleux sur les transitions cage-sol et une discipline de fer constituent le socle sur lequel Kenza bâtit son ascension.
@@ -311,7 +311,7 @@ export default function KenzaElkihelArticlePage() {
             Cette médaille d&apos;argent dépasse le cadre individuel : elle résonne avec une force toute particulière pour l&apos;ensemble du sport de combat et illustre la vitalité du MMA féminin au plus haut niveau. Voir une combattante issue de la salle phocéenne atteindre la finale des championnats du monde amateurs IMMAF constitue un signal fort et pionnier pour toutes les passionnées de sports de combat.
           </p>
           <p>
-            Par son attitude mesurée en dehors de la cage, sa combativité exemplaire et son humilité dans l&apos;effort, Kenza Elkihel s&apos;impose comme une véritable source d&apos;inspiration pour toute une génération de jeunes pratiquantes. Elle démontre avec brio que le travail silencieux, répété jour après jour à la salle, est capable d&apos;ouvrir les portes des plus grandes arènes internationales.
+            Par son attitude mesurée en dehors de la cage, sa combativité exemplaire et son humilité dans l&apos;effort, Kenza Elkihel s&apos;impose comme une véritable source d&apos;inspiration pour toute une génération de jeunes pratiquantes. Elle démontre avec brio que le travail silencieux, répété jour après jour à la salle, est capable d&apos;ouvrir les portes des plus grandes arènes de la planète.
           </p>
 
           <h2 className="text-3xl font-oswald font-bold text-white uppercase mt-16 mb-8 tracking-wider">
