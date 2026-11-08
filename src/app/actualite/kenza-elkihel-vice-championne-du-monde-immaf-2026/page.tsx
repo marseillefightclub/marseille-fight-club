@@ -205,10 +205,10 @@ export default function KenzaElkihelArticlePage() {
             La finale mondiale : Le duel face à Assita Ouattara
           </h2>
           <p>
-            L&apos;affiche de cette finale mondiale féminine des −52,2 kg proposait une confrontation explosive entre deux combattantes qui se connaissent parfaitement pour avoir croisé le fer sur le circuit français : Kenza Elkihel face à la représentante de l&apos;équipe de France, Assita Ouattara.
+            L&apos;affiche de cette finale mondiale féminine des −52,2 kg proposait une confrontation explosive au sommet. Face à Kenza Elkihel se dressait une adversaire de très haut niveau : Assita Ouattara, représentante de l&apos;équipe de France. Révélée au grand public en remportant le tournoi féminin de <em>L&apos;Arène</em> sur Netflix, la combattante tricolore a confirmé son statut sur la scène internationale en devenant championne du monde IMMAF amateur 2026 en −52 kg, à l&apos;issue de cette finale remportée par décision unanime le 7 novembre 2026 à Tbilissi, en Géorgie.
           </p>
           <p>
-            Dès le coup d&apos;envoi de la première reprise, le ton était donné. Assita Ouattara a cherché à imposer son envergure et une pression continue en striking, combinée à des intentions franches de cadrage contre la cage. De son côté, Kenza Elkihel a répondu avec une vigilance tactique exemplaire : gestion rigoureuse des distances, remises rapides en anglaise et recherche d&apos;angles pour désamorcer les enchaînements adverses.
+            Dès le coup d&apos;envoi de la première reprise, le ton était donné entre deux athlètes qui se connaissent bien sur le circuit national. Assita Ouattara a cherché à imposer son envergure et une pression continue en striking, combinée à des intentions franches de cadrage contre la cage. De son côté, Kenza Elkihel a répondu avec une vigilance tactique exemplaire : gestion rigoureuse des distances, remises rapides en anglaise et recherche d&apos;angles pour désamorcer les enchaînements adverses.
           </p>
           <p>
             Au fil des trois rounds de trois minutes disputés sur un rythme étouffant, les deux athlètes se sont rendu coup pour coup. Kenza a su défendre avec sang-froid plusieurs assauts au sol, cherchant à inverser les positions et à placer des phases de contre-attaque en clinch. Cependant, l&apos;activité soutenue et le contrôle territorial d&apos;Assita Ouattara ont pesé lourd sur les fiches des juges officiels.
