@@ -122,32 +122,34 @@ export default function PressPage() {
       </div>
 
       {/* Hero Article */}
-      <section className="mb-24">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 mb-24 sm:mb-28">
         <Link href={`/actualite/${heroArticle.id}`} className="group block">
-          <div className="relative w-full aspect-video md:aspect-21/9 max-h-[500px] overflow-hidden mb-8 bg-black">
+          <div className="relative w-full h-[500px] sm:h-[650px] md:h-[780px] lg:h-[850px] rounded-2xl overflow-hidden bg-black border border-white/10 shadow-2xl">
             <Image
               src={heroArticle.image}
               alt={heroArticle.title}
               fill
-              className="object-contain group-hover:scale-105 transition-transform duration-1000"
+              sizes="(max-width: 768px) 100vw, 1280px"
+              className="object-contain object-center group-hover:scale-105 transition-transform duration-1000"
               priority
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none"></div>
           </div>
-          <div className="max-w-7xl mx-auto px-4">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+          <div className="relative -mt-20 sm:-mt-28 md:-mt-32 px-2 sm:px-6 z-10">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-end">
               <div className="lg:col-span-8">
-                <span className="inline-block px-3 py-1 bg-mfc-red text-white text-[10px] font-bold uppercase tracking-widest mb-4">
+                <span className="inline-block px-3 py-1 bg-mfc-red text-white text-[10px] sm:text-xs font-bold uppercase tracking-widest mb-3 rounded shadow-lg">
                   Featured Story
                 </span>
-                <h2 className="text-3xl md:text-5xl font-oswald font-bold text-white uppercase leading-none group-hover:text-mfc-red transition-colors duration-300">
+                <h2 className="text-2xl sm:text-4xl md:text-5xl font-oswald font-bold text-white uppercase leading-tight group-hover:text-mfc-red transition-colors duration-300 drop-shadow-[0_4px_24px_rgba(0,0,0,1)] [text-shadow:_0_4px_28px_rgb(0_0_0_/_95%)]">
                   {heroArticle.title}
                 </h2>
               </div>
-              <div className="lg:col-span-4 lg:pt-8">
-                <p className="text-gray-400 text-lg mb-6 leading-relaxed font-inter">
+              <div className="lg:col-span-4 lg:pb-2">
+                <p className="text-gray-300 text-sm sm:text-base md:text-lg mb-4 leading-relaxed font-inter line-clamp-3 drop-shadow-[0_2px_12px_rgba(0,0,0,1)]">
                   {heroArticle.excerpt}
                 </p>
-                <div className="flex items-center gap-4 text-white font-oswald uppercase tracking-widest text-sm group-hover:translate-x-3 transition-transform duration-300">
+                <div className="flex items-center gap-3 text-white font-oswald uppercase tracking-widest text-sm group-hover:translate-x-3 transition-transform duration-300 drop-shadow-[0_2px_12px_rgba(0,0,0,1)]">
                   Lire l'article <ArrowRight size={20} className="text-mfc-red" />
                 </div>
               </div>

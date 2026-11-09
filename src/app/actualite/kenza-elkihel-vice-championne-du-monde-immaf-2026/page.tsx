@@ -93,7 +93,7 @@ export default function KenzaElkihelArticlePage() {
   };
 
   return (
-    <main className="min-h-screen bg-mfc-dark pt-24 sm:pt-28 pb-20">
+    <main className="min-h-screen bg-mfc-dark pt-36 sm:pt-28 pb-20">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -101,7 +101,7 @@ export default function KenzaElkihelArticlePage() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
         
         {/* Navigation */}
-        <div className="mb-3 sm:mb-4">
+        <div className="mb-4 sm:mb-4">
           <Link href="/actualite" className="inline-flex items-center text-mfc-red hover:text-white transition-colors duration-300 font-oswald tracking-widest uppercase text-sm">
             <ArrowLeft className="mr-2" size={18} />
             Retour aux articles
@@ -230,7 +230,7 @@ export default function KenzaElkihelArticlePage() {
             Ce sacre de vice-championne du monde n&apos;a rien d&apos;un accident de parcours. Il couronne des années de rigueur, d&apos;entraînements biquotidiens et de confrontation continue avec les meilleures structures de l&apos;Hexagone et d&apos;Europe.
           </p>
           <p>
-            Avant de briller en Géorgie, Kenza Elkihel s&apos;est forgé une solide réputation de guerrière méthodique sur le circuit de la Fédération Française de Mixed Martial Arts (FMMAF). Les archives de compétitions Smoothcomp et les bilans nationaux témoignent de cette montée en puissance graduelle :
+            Avant de briller en Géorgie, Kenza Elkihel s&apos;est forgé une solide réputation de guerrière méthodique sur le circuit de la Fédération Française de Mixed Martial Arts (FMMAF). Les archives des compétitions et les bilans nationaux témoignent de cette montée en puissance graduelle :
           </p>
           <ul>
             <li>

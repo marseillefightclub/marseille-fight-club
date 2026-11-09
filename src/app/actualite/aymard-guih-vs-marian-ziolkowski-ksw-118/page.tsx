@@ -83,7 +83,7 @@ export default function ArticlePage() {
   };
 
   return (
-    <main className="min-h-screen bg-mfc-dark pt-24 sm:pt-28 pb-20">
+    <main className="min-h-screen bg-mfc-dark pt-36 sm:pt-28 pb-20">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -91,7 +91,7 @@ export default function ArticlePage() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
         
         {/* Navigation */}
-        <div className="mb-3 sm:mb-4">
+        <div className="mb-4 sm:mb-4">
           <Link href="/actualite" className="inline-flex items-center text-mfc-red hover:text-white transition-colors duration-300 font-oswald tracking-widest uppercase text-sm">
             <ArrowLeft className="mr-2" size={18} />
             Retour aux articles
