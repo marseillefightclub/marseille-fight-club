@@ -18,6 +18,11 @@ const galleryImages: GalleryItem[] = [
     caption: "Entraînement et sparring sur le tatami",
   },
   {
+    src: "/images/gallery/boxeAnglaisejpeg.jpeg",
+    alt: "Séance d'entraînement et pratique de la boxe anglaise au Marseille Fight Club",
+    caption: "Entraînement de boxe anglaise",
+  },
+  {
     src: "/images/gallery/IMG_8821.jpeg",
     alt: "Espace tatami et panneaux de travail contre la cage au Marseille Fight Club",
     caption: "Travail contre la cage",

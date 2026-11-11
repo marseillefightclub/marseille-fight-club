@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { MapPin } from "lucide-react";
 import ClubGallery from "@/components/ClubGallery";
+import ClubVideoPlayer from "@/components/ClubVideoPlayer";
 
 export default function About() {
   return (
@@ -33,6 +34,9 @@ Le Marseille Fight Club a également l'honneur d'accueillir une section 100% fé
 
         {/* Galerie photographique de la vie du club */}
         <ClubGallery />
+
+        {/* Vidéo de présentation avec déclenchement au scroll */}
+        <ClubVideoPlayer />
 
         {/* Localisation */}
         <motion.div
