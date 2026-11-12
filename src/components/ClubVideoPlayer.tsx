@@ -159,7 +159,7 @@ export default function ClubVideoPlayer() {
         <iframe
           ref={iframeRef}
           id="mfc-youtube-player"
-          src="https://www.youtube-nocookie.com/embed/9EMlhty2LuM?enablejsapi=1&mute=1&playsinline=1&rel=0&controls=1"
+          src="https://www.youtube-nocookie.com/embed/zg1S4jG0bsI?enablejsapi=1&mute=1&playsinline=1&rel=0&controls=1"
           title="Marseille Fight Club - Vidéo de présentation"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
